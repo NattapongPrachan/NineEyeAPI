@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 442f8bf8a3632c94db067af3d6d5c228, type: 3}
+  m_Name: ServerFriendConfig
+  m_EditorClassIdentifier: 
+  isSelect: 1
+  isShowingLog: 1
+  isUseEditorAccessToken: 1
+  editorAccessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJjMmJiNGQyNC0wZTEwLTRlMDMtOGZmMy0xYzdjNjVmYjBmZTUiLCJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAwNTg1ODU2LCJpc3MiOiJzdXJmLXBsYXllci1zZXJ2aWNlIn0.cRxN4sTcHX0r-gTjpFKES-PALpE2t3FZHuOaz3yXs6o
+  isForceUseServerDebugModeFormThisConfig: 0
+  serverDebugMode: 0
+  URL: http://node52360-grandora-uat.th2.proen.cloud:11509/social-service/graph
+  targetServer: 1
+  serverConnectionURL:
+  - publicURL: http://node52360-grandora-uat.th2.proen.cloud:11509/social-service/graph
+    internalURL: 
+    serverConnected: 1
+  extensionServerConnectionURL: []
+  timeoutInSeconds: 10
+  delayBetweenEachChainedREquestInSeconds: 1
+  accessTokenFieldName: Authorization
+  accessTokenPrefix: Bearer
+  additionalRequestHeaders:
+  - key: Content-Type
+    value: application/json
+  successStatusCodeRange:
+  - start: 100
+    end: 399
+  serverFailStatusCodeRange:
+  - start: 400
+    end: 499
+  connectionFailStatusCodeRange:
+  - start: 500
+    end: 599
+  messageFieldName: message
+  dataFieldName: data
+  statusCodeFieldName: statusCode
+  currentDateTimeFieldName: currentDateTime
+  tokenFieldName: token
+  errorFieldName: errors

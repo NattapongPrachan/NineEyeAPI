@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/InputSystem.inputsettings.asset.meta
+guid: e5edfc5e00c4741429f376df25baed28
+========
+guid: 9ce8f42e1982a7242a4ed8739811b99b
+>>>>>>>> ee4f0d35e70bad98d1794baa30e3dc5c5d3634c3:Assets/_Dev/API/ScriptableObject/GraphAPI/MonsterShopAPI.asset.meta
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

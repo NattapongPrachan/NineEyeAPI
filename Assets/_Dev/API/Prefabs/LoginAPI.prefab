@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &764190131940117849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1087031634899759326}
+  - component: {fileID: 4794330231157711194}
+  - component: {fileID: 4559897888369280667}
+  - component: {fileID: 1769468345148343762}
+  - component: {fileID: 6082871068444569312}
+  - component: {fileID: 800666383089744044}
+  m_Layer: 0
+  m_Name: LoginAPI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1087031634899759326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764190131940117849}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4794330231157711194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764190131940117849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea23548fe50fbe4ab4c642404ac0ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: 60dcbc33b2a52cf479f13d0cd17aa28b, type: 2}
+  _ignoreFirstDataHolder: 1
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: LoginEmailSSO
+  QueryType: 1
+  quriesName:
+  - LoginEmail
+  - LoginSocial
+  - UpdateProfile
+  - LoginEmailv2
+  - LoginSocialv2
+  - LoginEmailSSO
+  loginData:
+    email: 
+    password: 123456
+--- !u!114 &4559897888369280667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764190131940117849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb219b23cdf4b314f94a27bca3cc8012, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1769468345148343762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764190131940117849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1900711016e67d8489a12cdc2d0a38c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: 60dcbc33b2a52cf479f13d0cd17aa28b, type: 2}
+  _ignoreFirstDataHolder: 1
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetSelf
+  QueryType: 0
+  quriesName:
+  - GetSelf
+  _updateQueryReciver: {fileID: 0}
+  isLogin: 0
+--- !u!114 &6082871068444569312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764190131940117849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59e4d7f852e934a45a4041a11c50e5a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: 60dcbc33b2a52cf479f13d0cd17aa28b, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: LoginSocial
+  QueryType: 1
+  quriesName:
+  - LoginEmail
+  - LoginSocial
+  - UpdateProfile
+  - LoginEmailv2
+  - LoginSocialv2
+  - LoginEmailSSO
+  loginData:
+    token: 
+    social: 0
+--- !u!114 &800666383089744044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764190131940117849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8e5778088f96b646836cea5ed3f9774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: 60dcbc33b2a52cf479f13d0cd17aa28b, type: 2}
+  _ignoreFirstDataHolder: 1
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: UpdateProfile
+  QueryType: 1
+  quriesName:
+  - LoginEmail
+  - LoginSocial
+  - UpdateProfile
+  - LoginEmailv2
+  - LoginSocialv2
+  - LoginEmailSSO

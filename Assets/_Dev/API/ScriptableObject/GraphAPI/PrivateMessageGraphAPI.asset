@@ -1,0 +1,1101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccf793b7ca1cc645b9cd36d753b8e3c, type: 3}
+  m_Name: PrivateMessageGraphAPI
+  m_EditorClassIdentifier: 
+  url: https://preview.api-grandoragame.com/chat-service/graph
+  queries:
+  - name: GetPrivateChatList
+    type: 0
+    query: "query GetPrivateChatList{\n    GetPrivateChats{\n        last_read_at\n       
+      messages{\n            chat_type\n            content\n            created_at\n           
+      sender_player_id\n            sender_player_info{\n                player_id\n               
+      profile{\n                    friend_code\n                    icon_id\n                   
+      last_online\n                    name\n                }\n            }\n       
+      }\n        target_player_id\n        target_player_info{\n            player_id\n           
+      profile{\n                friend_code\n                icon_id\n               
+      last_online\n                name\n            }\n        }\n    }\n}"
+    queryString: GetPrivateChats
+    returnType: Chat
+    queryOptions:
+    - GetPrivateChats
+    - GetPrivateMessagesWithTarget
+    fields:
+    - index: 0
+      name: last_read_at
+      type: DateTime
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: last_read_at
+        type: DateTime
+      - name: messages
+        type: ChatMessage
+      - name: target_player_id
+        type: String
+      - name: target_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 1
+      name: messages
+      type: ChatMessage
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: last_read_at
+        type: DateTime
+      - name: messages
+        type: ChatMessage
+      - name: target_player_id
+        type: String
+      - name: target_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 0
+      name: chat_type
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: chat_type
+        type: String
+      - name: content
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 1
+      name: content
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: chat_type
+        type: String
+      - name: content
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 2
+      name: created_at
+      type: DateTime
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: chat_type
+        type: String
+      - name: content
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 3
+      name: sender_player_id
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: chat_type
+        type: String
+      - name: content
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 4
+      name: sender_player_info
+      type: OtherPlayer
+      parentIndexes: 01000000
+      hasSubField: 1
+      possibleFields:
+      - name: chat_type
+        type: String
+      - name: content
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 1
+      name: player_id
+      type: String
+      parentIndexes: 0100000006000000
+      hasSubField: 0
+      possibleFields:
+      - name: character
+        type: Character
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      hasChanged: 0
+    - index: 2
+      name: profile
+      type: profile
+      parentIndexes: 0100000006000000
+      hasSubField: 1
+      possibleFields:
+      - name: character
+        type: Character
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 010000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: icon_id
+      type: String
+      parentIndexes: 010000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: last_online
+      type: DateTime
+      parentIndexes: 010000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: name
+      type: String
+      parentIndexes: 010000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: target_player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: last_read_at
+        type: DateTime
+      - name: messages
+        type: ChatMessage
+      - name: target_player_id
+        type: String
+      - name: target_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 3
+      name: target_player_info
+      type: OtherPlayer
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: last_read_at
+        type: DateTime
+      - name: messages
+        type: ChatMessage
+      - name: target_player_id
+        type: String
+      - name: target_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 1
+      name: player_id
+      type: String
+      parentIndexes: 0e000000
+      hasSubField: 0
+      possibleFields:
+      - name: character
+        type: Character
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      hasChanged: 0
+    - index: 2
+      name: profile
+      type: profile
+      parentIndexes: 0e000000
+      hasSubField: 1
+      possibleFields:
+      - name: character
+        type: Character
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 0e00000010000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: icon_id
+      type: String
+      parentIndexes: 0e00000010000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: last_online
+      type: DateTime
+      parentIndexes: 0e00000010000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: name
+      type: String
+      parentIndexes: 0e00000010000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  - name: GetTargetPrivateMessageList
+    type: 0
+    query: "query GetTargetPrivateMessageList{\n    GetPrivateMessagesWithTarget{\n       
+      last_read_at\n        messages{\n            chat_type\n            content\n           
+      created_at\n            sender_player_id\n            sender_player_info{\n               
+      player_id\n                profile{\n                    friend_code\n                   
+      icon_id\n                    last_online\n                    name\n               
+      }\n            }\n        }\n        target_player_id\n        target_player_info{\n           
+      player_id\n            profile{\n                friend_code\n               
+      icon_id\n                last_online\n                name\n            }\n       
+      }\n    }\n}"
+    queryString: GetPrivateMessagesWithTarget
+    returnType: Chat
+    queryOptions:
+    - GetPrivateChats
+    - GetPrivateMessagesWithTarget
+    fields:
+    - index: 0
+      name: last_read_at
+      type: DateTime
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: last_read_at
+        type: DateTime
+      - name: messages
+        type: ChatMessage
+      - name: target_player_id
+        type: String
+      - name: target_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 1
+      name: messages
+      type: ChatMessage
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: last_read_at
+        type: DateTime
+      - name: messages
+        type: ChatMessage
+      - name: target_player_id
+        type: String
+      - name: target_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 0
+      name: chat_type
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: chat_type
+        type: String
+      - name: content
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 1
+      name: content
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: chat_type
+        type: String
+      - name: content
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 2
+      name: created_at
+      type: DateTime
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: chat_type
+        type: String
+      - name: content
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 3
+      name: sender_player_id
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: chat_type
+        type: String
+      - name: content
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 4
+      name: sender_player_info
+      type: OtherPlayer
+      parentIndexes: 01000000
+      hasSubField: 1
+      possibleFields:
+      - name: chat_type
+        type: String
+      - name: content
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 1
+      name: player_id
+      type: String
+      parentIndexes: 0100000006000000
+      hasSubField: 0
+      possibleFields:
+      - name: character
+        type: Character
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      hasChanged: 0
+    - index: 2
+      name: profile
+      type: profile
+      parentIndexes: 0100000006000000
+      hasSubField: 1
+      possibleFields:
+      - name: character
+        type: Character
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 010000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: icon_id
+      type: String
+      parentIndexes: 010000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: last_online
+      type: DateTime
+      parentIndexes: 010000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: name
+      type: String
+      parentIndexes: 010000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: target_player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: last_read_at
+        type: DateTime
+      - name: messages
+        type: ChatMessage
+      - name: target_player_id
+        type: String
+      - name: target_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 3
+      name: target_player_info
+      type: OtherPlayer
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: last_read_at
+        type: DateTime
+      - name: messages
+        type: ChatMessage
+      - name: target_player_id
+        type: String
+      - name: target_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 1
+      name: player_id
+      type: String
+      parentIndexes: 0e000000
+      hasSubField: 0
+      possibleFields:
+      - name: character
+        type: Character
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      hasChanged: 0
+    - index: 2
+      name: profile
+      type: profile
+      parentIndexes: 0e000000
+      hasSubField: 1
+      possibleFields:
+      - name: character
+        type: Character
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 0e00000010000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: icon_id
+      type: String
+      parentIndexes: 0e00000010000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: last_online
+      type: DateTime
+      parentIndexes: 0e00000010000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: name
+      type: String
+      parentIndexes: 0e00000010000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  mutations:
+  - name: DeletePrivateMessage
+    type: 1
+    query: "mutation DeletePrivateMessage{\n    DeletePrivateMessage{\n        message\n       
+      success\n    }\n}"
+    queryString: DeletePrivateMessage
+    returnType: ResponseObj
+    queryOptions:
+    - DeletePrivateMessage
+    - SendPrivatemessage
+    fields:
+    - index: 0
+      name: message
+      type: DateTime
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: message
+        type: DateTime
+      - name: success
+        type: Boolean
+      hasChanged: 0
+    - index: 1
+      name: success
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: message
+        type: DateTime
+      - name: success
+        type: Boolean
+      hasChanged: 0
+    isComplete: 1
+  - name: UpdateLastRead
+    type: 1
+    query: "mutation UpdateLastRead{\n    UpdateLastRead(  target_player_id :\"Test\"
+      ){\n        message\n        success\n    }\n}"
+    queryString: UpdateLastRead
+    returnType: ResponseObj
+    queryOptions:
+    - DeletePrivateMessage
+    - SendPrivatemessage
+    - UpdateLastRead
+    fields:
+    - index: 0
+      name: message
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: message
+        type: String
+      - name: success
+        type: Boolean
+      hasChanged: 0
+    - index: 1
+      name: success
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: message
+        type: String
+      - name: success
+        type: Boolean
+      hasChanged: 0
+    isComplete: 1
+  - name: SendPrivateMessage
+    type: 1
+    query: "mutation SendPrivateMessage{\n    SendPrivatemessage(  target_player_id
+      :null, content :\"ssss\" ){\n        chat_type\n        content\n        created_at\n       
+      sender_player_id\n        sender_player_info{\n            player_id\n           
+      profile{\n                friend_code\n                icon_id\n               
+      last_online\n                name\n            }\n        }\n    }\n}"
+    queryString: SendPrivatemessage
+    returnType: ChatMessage
+    queryOptions:
+    - DeletePrivateMessage
+    - SendPrivatemessage
+    - UpdateLastRead
+    fields:
+    - index: 0
+      name: chat_type
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: chat_type
+        type: String
+      - name: content
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 1
+      name: content
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: chat_type
+        type: String
+      - name: content
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 2
+      name: created_at
+      type: DateTime
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: chat_type
+        type: String
+      - name: content
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 3
+      name: sender_player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: chat_type
+        type: String
+      - name: content
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 4
+      name: sender_player_info
+      type: OtherPlayer
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: chat_type
+        type: String
+      - name: content
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: OtherPlayer
+      hasChanged: 0
+    - index: 1
+      name: player_id
+      type: String
+      parentIndexes: 04000000
+      hasSubField: 0
+      possibleFields:
+      - name: character
+        type: Character
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      hasChanged: 0
+    - index: 2
+      name: profile
+      type: profile
+      parentIndexes: 04000000
+      hasSubField: 1
+      possibleFields:
+      - name: character
+        type: Character
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 0400000006000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: icon_id
+      type: String
+      parentIndexes: 0400000006000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: last_online
+      type: DateTime
+      parentIndexes: 0400000006000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: name
+      type: String
+      parentIndexes: 0400000006000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  subscriptions: []
+  loading: 0

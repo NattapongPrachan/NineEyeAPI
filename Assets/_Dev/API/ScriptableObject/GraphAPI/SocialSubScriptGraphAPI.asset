@@ -1,0 +1,738 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccf793b7ca1cc645b9cd36d753b8e3c, type: 3}
+  m_Name: SocialSubScriptGraphAPI
+  m_EditorClassIdentifier: 
+  url: https://preview.api-grandoragame.com/subscription-service/graph
+  queries: []
+  mutations: []
+  subscriptions:
+  - name: ChatMessage
+    type: 2
+    query: "subscription ChatMessage{\n    ChatMessage{\n        sender_player_id\n       
+      sender_player_info{\n            name\n            icon_id\n        }\n       
+      content\n        chat_type\n        created_at\n    }\n}"
+    queryString: ChatMessage
+    returnType: ChatMessage
+    queryOptions:
+    - ChatMessage
+    - Tst
+    fields:
+    - index: 0
+      name: sender_player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: PlayerInfo
+      - name: content
+        type: String
+      - name: chat_type
+        type: String
+      - name: created_at
+        type: Time
+      hasChanged: 0
+    - index: 1
+      name: sender_player_info
+      type: PlayerInfo
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: PlayerInfo
+      - name: content
+        type: String
+      - name: chat_type
+        type: String
+      - name: created_at
+        type: Time
+      hasChanged: 0
+    - index: 0
+      name: name
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: name
+        type: String
+      - name: icon_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: icon_id
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: name
+        type: String
+      - name: icon_id
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: content
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: PlayerInfo
+      - name: content
+        type: String
+      - name: chat_type
+        type: String
+      - name: created_at
+        type: Time
+      hasChanged: 0
+    - index: 3
+      name: chat_type
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: PlayerInfo
+      - name: content
+        type: String
+      - name: chat_type
+        type: String
+      - name: created_at
+        type: Time
+      hasChanged: 0
+    - index: 4
+      name: created_at
+      type: Time
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: sender_player_id
+        type: String
+      - name: sender_player_info
+        type: PlayerInfo
+      - name: content
+        type: String
+      - name: chat_type
+        type: String
+      - name: created_at
+        type: Time
+      hasChanged: 0
+    isComplete: 1
+  - name: NewFriend
+    type: 2
+    query: "subscription NewFriend{\n    Friend{\n        friend_id\n        state\n       
+      is_read\n        friend_profile{\n            description\n            icon_id\n           
+      friend_code\n            last_online\n        }\n    }\n}"
+    queryString: Friend
+    returnType: FriendMsg
+    queryOptions:
+    - ChatMessage
+    - Friend
+    - OnlineStatus
+    - Tst
+    fields:
+    - index: 0
+      name: friend_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_id
+        type: String
+      - name: state
+        type: FriendshipState
+      - name: is_read
+        type: Boolean
+      - name: friend_profile
+        type: Profile
+      - name: friend_character
+        type: Character
+      hasChanged: 0
+    - index: 1
+      name: state
+      type: FriendshipState
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_id
+        type: String
+      - name: state
+        type: FriendshipState
+      - name: is_read
+        type: Boolean
+      - name: friend_profile
+        type: Profile
+      - name: friend_character
+        type: Character
+      hasChanged: 0
+    - index: 2
+      name: is_read
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_id
+        type: String
+      - name: state
+        type: FriendshipState
+      - name: is_read
+        type: Boolean
+      - name: friend_profile
+        type: Profile
+      - name: friend_character
+        type: Character
+      hasChanged: 0
+    - index: 3
+      name: friend_profile
+      type: Profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: friend_id
+        type: String
+      - name: state
+        type: FriendshipState
+      - name: is_read
+        type: Boolean
+      - name: friend_profile
+        type: Profile
+      - name: friend_character
+        type: Character
+      hasChanged: 0
+    - index: 0
+      name: description
+      type: String
+      parentIndexes: 03000000
+      hasSubField: 0
+      possibleFields:
+      - name: description
+        type: String
+      - name: icon_id
+        type: String
+      - name: friend_code
+        type: String
+      - name: last_online
+        type: Time
+      hasChanged: 0
+    - index: 1
+      name: icon_id
+      type: String
+      parentIndexes: 03000000
+      hasSubField: 0
+      possibleFields:
+      - name: description
+        type: String
+      - name: icon_id
+        type: String
+      - name: friend_code
+        type: String
+      - name: last_online
+        type: Time
+      hasChanged: 0
+    - index: 2
+      name: friend_code
+      type: String
+      parentIndexes: 03000000
+      hasSubField: 0
+      possibleFields:
+      - name: description
+        type: String
+      - name: icon_id
+        type: String
+      - name: friend_code
+        type: String
+      - name: last_online
+        type: Time
+      hasChanged: 0
+    - index: 3
+      name: last_online
+      type: Time
+      parentIndexes: 03000000
+      hasSubField: 0
+      possibleFields:
+      - name: description
+        type: String
+      - name: icon_id
+        type: String
+      - name: friend_code
+        type: String
+      - name: last_online
+        type: Time
+      hasChanged: 0
+    isComplete: 1
+  - name: OnlineStatus
+    type: 2
+    query: "subscription OnlineStatus{\n    OnlineStatus{\n        player_id\n       
+      online_status\n        playing_game_name\n    }\n}"
+    queryString: OnlineStatus
+    returnType: OnlineStatusMsg
+    queryOptions:
+    - ChatMessage
+    - Friend
+    - InviteGame
+    - RequestJoinGame
+    - AcceptJoinGame
+    - OnlineStatus
+    - Tst
+    fields:
+    - index: 0
+      name: player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: online_status
+        type: String
+      - name: playing_game_name
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: online_status
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: online_status
+        type: String
+      - name: playing_game_name
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: playing_game_name
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: online_status
+        type: String
+      - name: playing_game_name
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  - name: InviteGame
+    type: 2
+    query: "subscription InviteGame{\n    InviteGame{\n        player_id\n       
+      lobby_id\n        profile{\n            description\n            icon_id\n           
+      friend_code\n            last_online\n        }\n        character{\n           
+      body_part{\n                skin\n                head{\n                   
+      hair\n                    face\n                    head_ears\n        }\n               
+      top{\n                    top\n                    hands\n        }\n               
+      bottom{\n                    bottom\n        }\n                shoes{\n                   
+      shoes\n            }\n        }\n            set_id\n        }\n    }\n}"
+    queryString: InviteGame
+    returnType: InviteGameMsg
+    queryOptions:
+    - ChatMessage
+    - Friend
+    - InviteGame
+    - RequestJoinGame
+    - AcceptJoinGame
+    - OnlineStatus
+    - Tst
+    fields:
+    - index: 0
+      name: player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: lobby_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: character
+        type: Character
+      hasChanged: 0
+    - index: 1
+      name: lobby_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: lobby_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: character
+        type: Character
+      hasChanged: 0
+    - index: 2
+      name: profile
+      type: Profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: lobby_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: character
+        type: Character
+      hasChanged: 0
+    - index: 0
+      name: description
+      type: String
+      parentIndexes: 02000000
+      hasSubField: 0
+      possibleFields:
+      - name: description
+        type: String
+      - name: icon_id
+        type: String
+      - name: friend_code
+        type: String
+      - name: last_online
+        type: Time
+      hasChanged: 0
+    - index: 1
+      name: icon_id
+      type: String
+      parentIndexes: 02000000
+      hasSubField: 0
+      possibleFields:
+      - name: description
+        type: String
+      - name: icon_id
+        type: String
+      - name: friend_code
+        type: String
+      - name: last_online
+        type: Time
+      hasChanged: 0
+    - index: 2
+      name: friend_code
+      type: String
+      parentIndexes: 02000000
+      hasSubField: 0
+      possibleFields:
+      - name: description
+        type: String
+      - name: icon_id
+        type: String
+      - name: friend_code
+        type: String
+      - name: last_online
+        type: Time
+      hasChanged: 0
+    - index: 3
+      name: last_online
+      type: Time
+      parentIndexes: 02000000
+      hasSubField: 0
+      possibleFields:
+      - name: description
+        type: String
+      - name: icon_id
+        type: String
+      - name: friend_code
+        type: String
+      - name: last_online
+        type: Time
+      hasChanged: 0
+    - index: 3
+      name: character
+      type: Character
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: lobby_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: character
+        type: Character
+      hasChanged: 0
+    - index: 0
+      name: body_part
+      type: BodyPart
+      parentIndexes: 07000000
+      hasSubField: 1
+      possibleFields:
+      - name: body_part
+        type: BodyPart
+      - name: set_id
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: skin
+      type: String
+      parentIndexes: 0700000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: skin
+        type: String
+      - name: head
+        type: HeadPart
+      - name: top
+        type: TopPart
+      - name: bottom
+        type: BottomPart
+      - name: shoes
+        type: ShoePart
+      hasChanged: 0
+    - index: 1
+      name: head
+      type: HeadPart
+      parentIndexes: 0700000008000000
+      hasSubField: 1
+      possibleFields:
+      - name: skin
+        type: String
+      - name: head
+        type: HeadPart
+      - name: top
+        type: TopPart
+      - name: bottom
+        type: BottomPart
+      - name: shoes
+        type: ShoePart
+      hasChanged: 0
+    - index: 0
+      name: hair
+      type: String
+      parentIndexes: 07000000080000000a000000
+      hasSubField: 0
+      possibleFields:
+      - name: hair
+        type: String
+      - name: face
+        type: String
+      - name: head_ears
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: face
+      type: String
+      parentIndexes: 07000000080000000a000000
+      hasSubField: 0
+      possibleFields:
+      - name: hair
+        type: String
+      - name: face
+        type: String
+      - name: head_ears
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: head_ears
+      type: String
+      parentIndexes: 07000000080000000a000000
+      hasSubField: 0
+      possibleFields:
+      - name: hair
+        type: String
+      - name: face
+        type: String
+      - name: head_ears
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: top
+      type: TopPart
+      parentIndexes: 0700000008000000
+      hasSubField: 1
+      possibleFields:
+      - name: skin
+        type: String
+      - name: head
+        type: HeadPart
+      - name: top
+        type: TopPart
+      - name: bottom
+        type: BottomPart
+      - name: shoes
+        type: ShoePart
+      hasChanged: 0
+    - index: 0
+      name: top
+      type: String
+      parentIndexes: 07000000080000000e000000
+      hasSubField: 0
+      possibleFields:
+      - name: top
+        type: String
+      - name: hands
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: hands
+      type: String
+      parentIndexes: 07000000080000000e000000
+      hasSubField: 0
+      possibleFields:
+      - name: top
+        type: String
+      - name: hands
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: bottom
+      type: BottomPart
+      parentIndexes: 0700000008000000
+      hasSubField: 1
+      possibleFields:
+      - name: skin
+        type: String
+      - name: head
+        type: HeadPart
+      - name: top
+        type: TopPart
+      - name: bottom
+        type: BottomPart
+      - name: shoes
+        type: ShoePart
+      hasChanged: 0
+    - index: 0
+      name: bottom
+      type: String
+      parentIndexes: 070000000800000011000000
+      hasSubField: 0
+      possibleFields:
+      - name: bottom
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: shoes
+      type: ShoePart
+      parentIndexes: 0700000008000000
+      hasSubField: 1
+      possibleFields:
+      - name: skin
+        type: String
+      - name: head
+        type: HeadPart
+      - name: top
+        type: TopPart
+      - name: bottom
+        type: BottomPart
+      - name: shoes
+        type: ShoePart
+      hasChanged: 0
+    - index: 0
+      name: shoes
+      type: String
+      parentIndexes: 070000000800000013000000
+      hasSubField: 0
+      possibleFields:
+      - name: shoes
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: set_id
+      type: String
+      parentIndexes: 07000000
+      hasSubField: 0
+      possibleFields:
+      - name: body_part
+        type: BodyPart
+      - name: set_id
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  - name: RequestJoinGame
+    type: 2
+    query: "subscription RequestJoinGame{\n    RequestJoinGame{\n        player_id\n   
+      }\n}"
+    queryString: RequestJoinGame
+    returnType: RequestJoinGameMsg
+    queryOptions:
+    - ChatMessage
+    - Friend
+    - InviteGame
+    - RequestJoinGame
+    - AcceptJoinGame
+    - OnlineStatus
+    - Tst
+    fields:
+    - index: 0
+      name: player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: character
+        type: Character
+      hasChanged: 0
+    isComplete: 1
+  - name: AcceptJoinGame
+    type: 2
+    query: "subscription AcceptJoinGame{\n    AcceptJoinGame{\n        player_id\n       
+      lobby_id\n    }\n}"
+    queryString: AcceptJoinGame
+    returnType: AcceptRequestJoinGameMsg
+    queryOptions:
+    - ChatMessage
+    - Friend
+    - InviteGame
+    - RequestJoinGame
+    - AcceptJoinGame
+    - OnlineStatus
+    - Tst
+    fields:
+    - index: 0
+      name: player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: lobby_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: character
+        type: Character
+      hasChanged: 0
+    - index: 1
+      name: lobby_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: lobby_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: character
+        type: Character
+      hasChanged: 0
+    isComplete: 1
+  loading: 0

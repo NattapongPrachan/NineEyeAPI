@@ -1,0 +1,2600 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccf793b7ca1cc645b9cd36d753b8e3c, type: 3}
+  m_Name: LeaderboardAPI
+  m_EditorClassIdentifier: 
+  url: https://preview.api-grandoragame.com/gameplay-service/graph
+  queries:
+  - name: GetLeaderboardScore
+    type: 0
+    query: "query GetLeaderboardScore{\n    GetLeaderBoardScore(  week :0 ){\n       
+      leaderboard_score{\n            created_at\n            player_id\n           
+      profile{\n                name\n                icon_id\n        }\n           
+      rank\n            score\n            week\n        }\n        leaderboard_score_vip{\n           
+      created_at\n            player_id\n            profile{\n                name\n               
+      icon_id\n        }\n            rank\n            score\n            week\n       
+      }\n        lucky_number\n        lucky_player_score{\n            created_at\n           
+      player_id\n            profile{\n                name\n                icon_id\n       
+      }\n            rank\n            score\n            week\n        }\n    }\n}"
+    queryString: GetLeaderBoardScore
+    returnType: LeaderBoardScoreRes
+    queryOptions:
+    - GetLeaderBoardCoupon
+    - GetLeaderBoardScore
+    - GetSelfLeaderBoardCoupon
+    - GetSelfLeaderBoardScore
+    fields:
+    - index: 0
+      name: leaderboard_score
+      type: LeaderScoreBoard
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: leaderboard_score
+        type: LeaderScoreBoard
+      - name: leaderboard_score_vip
+        type: LeaderScoreBoard
+      - name: lucky_number
+        type: Int
+      - name: lucky_player_score
+        type: LeaderScoreBoard
+      hasChanged: 0
+    - index: 0
+      name: created_at
+      type: DateTime
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: player_id
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 2
+      name: profile
+      type: Profile
+      parentIndexes: 00000000
+      hasSubField: 1
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 0000000003000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 0000000003000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: rank
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 4
+      name: score
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 5
+      name: week
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: leaderboard_score_vip
+      type: LeaderScoreBoard
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: leaderboard_score
+        type: LeaderScoreBoard
+      - name: leaderboard_score_vip
+        type: LeaderScoreBoard
+      - name: lucky_number
+        type: Int
+      - name: lucky_player_score
+        type: LeaderScoreBoard
+      hasChanged: 0
+    - index: 0
+      name: created_at
+      type: DateTime
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: player_id
+      type: String
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 2
+      name: profile
+      type: Profile
+      parentIndexes: 09000000
+      hasSubField: 1
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 090000000c000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 090000000c000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: rank
+      type: Int
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 4
+      name: score
+      type: Int
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 5
+      name: week
+      type: Int
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 2
+      name: lucky_number
+      type: Int
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: leaderboard_score
+        type: LeaderScoreBoard
+      - name: leaderboard_score_vip
+        type: LeaderScoreBoard
+      - name: lucky_number
+        type: Int
+      - name: lucky_player_score
+        type: LeaderScoreBoard
+      hasChanged: 0
+    - index: 3
+      name: lucky_player_score
+      type: LeaderScoreBoard
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: leaderboard_score
+        type: LeaderScoreBoard
+      - name: leaderboard_score_vip
+        type: LeaderScoreBoard
+      - name: lucky_number
+        type: Int
+      - name: lucky_player_score
+        type: LeaderScoreBoard
+      hasChanged: 0
+    - index: 0
+      name: created_at
+      type: DateTime
+      parentIndexes: 13000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: player_id
+      type: String
+      parentIndexes: 13000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 2
+      name: profile
+      type: Profile
+      parentIndexes: 13000000
+      hasSubField: 1
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 1300000016000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 1300000016000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: rank
+      type: Int
+      parentIndexes: 13000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 4
+      name: score
+      type: Int
+      parentIndexes: 13000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 5
+      name: week
+      type: Int
+      parentIndexes: 13000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    isComplete: 1
+  - name: GetSelfLeaderboardScore
+    type: 0
+    query: "query GetSelfLeaderboardScore{\n    GetSelfLeaderBoardScore(  week :0
+      ){\n        self_leaderboard_score{\n            created_at\n            player_id\n           
+      profile{\n                name\n                icon_id\n        }\n           
+      rank\n            score\n            week\n        }\n        self_leaderboard_score_vip{\n           
+      created_at\n            player_id\n            profile{\n                name\n               
+      icon_id\n        }\n            rank\n            score\n            week\n       
+      }\n    }\n}"
+    queryString: GetSelfLeaderBoardScore
+    returnType: SelfLeaderBoardScoreRes
+    queryOptions:
+    - GetLeaderBoardCoupon
+    - GetLeaderBoardScore
+    - GetSelfLeaderBoardCoupon
+    - GetSelfLeaderBoardScore
+    fields:
+    - index: 0
+      name: self_leaderboard_score
+      type: LeaderScoreBoard
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: self_leaderboard_score
+        type: LeaderScoreBoard
+      - name: self_leaderboard_score_vip
+        type: LeaderScoreBoard
+      hasChanged: 0
+    - index: 0
+      name: created_at
+      type: DateTime
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: player_id
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 2
+      name: profile
+      type: Profile
+      parentIndexes: 00000000
+      hasSubField: 1
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 0000000003000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 0000000003000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: rank
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 4
+      name: score
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 5
+      name: week
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: self_leaderboard_score_vip
+      type: LeaderScoreBoard
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: self_leaderboard_score
+        type: LeaderScoreBoard
+      - name: self_leaderboard_score_vip
+        type: LeaderScoreBoard
+      hasChanged: 0
+    - index: 0
+      name: created_at
+      type: DateTime
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: player_id
+      type: String
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 2
+      name: profile
+      type: Profile
+      parentIndexes: 09000000
+      hasSubField: 1
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 090000000c000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 090000000c000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: rank
+      type: Int
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 4
+      name: score
+      type: Int
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 5
+      name: week
+      type: Int
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: score
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    isComplete: 1
+  - name: GetSelfLeaderboardCoupon
+    type: 0
+    query: "query GetSelfLeaderboardCoupon{\n    GetSelfLeaderBoardCoupon(  week
+      :0 ){\n        self_leaderboard_coupon{\n            bonus_coupon\n           
+      created_at\n            player_id\n            profile{\n                name\n               
+      icon_id\n        }\n            rank\n            week\n        }\n       
+      self_leaderboard_coupon_vip{\n            bonus_coupon\n            created_at\n           
+      player_id\n            profile{\n                name\n                icon_id\n       
+      }\n            rank\n            week\n        }\n    }\n}"
+    queryString: GetSelfLeaderBoardCoupon
+    returnType: SelfLeaderBonusBoardRes
+    queryOptions:
+    - GetLeaderBoardCoupon
+    - GetLeaderBoardScore
+    - GetSelfLeaderBoardCoupon
+    - GetSelfLeaderBoardScore
+    fields:
+    - index: 0
+      name: self_leaderboard_coupon
+      type: LeaderBonusBoard
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: self_leaderboard_coupon
+        type: LeaderBonusBoard
+      - name: self_leaderboard_coupon_vip
+        type: LeaderBonusBoard
+      hasChanged: 0
+    - index: 0
+      name: bonus_coupon
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: created_at
+      type: DateTime
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 2
+      name: player_id
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 3
+      name: profile
+      type: Profile
+      parentIndexes: 00000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 0000000004000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 0000000004000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: rank
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 5
+      name: week
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: self_leaderboard_coupon_vip
+      type: LeaderBonusBoard
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: self_leaderboard_coupon
+        type: LeaderBonusBoard
+      - name: self_leaderboard_coupon_vip
+        type: LeaderBonusBoard
+      hasChanged: 0
+    - index: 0
+      name: bonus_coupon
+      type: Int
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: created_at
+      type: DateTime
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 2
+      name: player_id
+      type: String
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 3
+      name: profile
+      type: Profile
+      parentIndexes: 09000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 090000000d000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 090000000d000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: rank
+      type: Int
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 5
+      name: week
+      type: Int
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    isComplete: 1
+  - name: GetLeaderboardCoupon
+    type: 0
+    query: "query GetLeaderboardCoupon{\n    GetLeaderBoardCoupon(  week :0 ){\n       
+      leaderboard_coupon{\n            bonus_coupon\n            created_at\n           
+      player_id\n            profile{\n                name\n                icon_id\n       
+      }\n            rank\n            week\n        }\n        leaderboard_coupon_vip{\n           
+      bonus_coupon\n            created_at\n            player_id\n            profile{\n               
+      name\n                icon_id\n        }\n            rank\n            week\n       
+      }\n        lucky_number\n        lucky_player_score{\n            bonus_coupon\n           
+      created_at\n            player_id\n            profile{\n                name\n               
+      icon_id\n        }\n            rank\n            week\n        }\n    }\n}"
+    queryString: GetLeaderBoardCoupon
+    returnType: LeaderBonusBoardRes
+    queryOptions:
+    - GetLeaderBoardCoupon
+    - GetLeaderBoardScore
+    - GetSelfLeaderBoardCoupon
+    - GetSelfLeaderBoardScore
+    fields:
+    - index: 0
+      name: leaderboard_coupon
+      type: LeaderBonusBoard
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: leaderboard_coupon
+        type: LeaderBonusBoard
+      - name: leaderboard_coupon_vip
+        type: LeaderBonusBoard
+      - name: lucky_number
+        type: Int
+      - name: lucky_player_score
+        type: LeaderBonusBoard
+      hasChanged: 0
+    - index: 0
+      name: bonus_coupon
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: created_at
+      type: DateTime
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 2
+      name: player_id
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 3
+      name: profile
+      type: Profile
+      parentIndexes: 00000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 0000000004000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 0000000004000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: rank
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 5
+      name: week
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: leaderboard_coupon_vip
+      type: LeaderBonusBoard
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: leaderboard_coupon
+        type: LeaderBonusBoard
+      - name: leaderboard_coupon_vip
+        type: LeaderBonusBoard
+      - name: lucky_number
+        type: Int
+      - name: lucky_player_score
+        type: LeaderBonusBoard
+      hasChanged: 0
+    - index: 0
+      name: bonus_coupon
+      type: Int
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: created_at
+      type: DateTime
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 2
+      name: player_id
+      type: String
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 3
+      name: profile
+      type: Profile
+      parentIndexes: 09000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 090000000d000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 090000000d000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: rank
+      type: Int
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 5
+      name: week
+      type: Int
+      parentIndexes: 09000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 2
+      name: lucky_number
+      type: Int
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: leaderboard_coupon
+        type: LeaderBonusBoard
+      - name: leaderboard_coupon_vip
+        type: LeaderBonusBoard
+      - name: lucky_number
+        type: Int
+      - name: lucky_player_score
+        type: LeaderBonusBoard
+      hasChanged: 0
+    - index: 3
+      name: lucky_player_score
+      type: LeaderBonusBoard
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: leaderboard_coupon
+        type: LeaderBonusBoard
+      - name: leaderboard_coupon_vip
+        type: LeaderBonusBoard
+      - name: lucky_number
+        type: Int
+      - name: lucky_player_score
+        type: LeaderBonusBoard
+      hasChanged: 0
+    - index: 0
+      name: bonus_coupon
+      type: Int
+      parentIndexes: 13000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: created_at
+      type: DateTime
+      parentIndexes: 13000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 2
+      name: player_id
+      type: String
+      parentIndexes: 13000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 3
+      name: profile
+      type: Profile
+      parentIndexes: 13000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 1300000017000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 1300000017000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: rank
+      type: Int
+      parentIndexes: 13000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 5
+      name: week
+      type: Int
+      parentIndexes: 13000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_coupon
+        type: Int
+      - name: created_at
+        type: DateTime
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: rank
+        type: Int
+      - name: week
+        type: Int
+      hasChanged: 0
+    isComplete: 1
+  - name: GetLeaderboardConfigList
+    type: 0
+    query: "query GetLeaderboardConfigList{\n    GetLeaderboardConfigs{\n       
+      end_time\n        lucky_number_board_coupon\n        lucky_number_board_score\n       
+      start_time\n        week\n    }\n}"
+    queryString: GetLeaderboardConfigs
+    returnType: LeaderBoardConfig
+    queryOptions:
+    - GetLeaderBoardCoupon
+    - GetLeaderBoardScore
+    - GetLeaderboardConfigs
+    - GetSelfLeaderBoardCoupon
+    - GetSelfLeaderBoardScore
+    fields:
+    - index: 0
+      name: end_time
+      type: DateTime
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: end_time
+        type: DateTime
+      - name: lucky_number_board_coupon
+        type: Int
+      - name: lucky_number_board_score
+        type: Int
+      - name: start_time
+        type: DateTime
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: lucky_number_board_coupon
+      type: Int
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: end_time
+        type: DateTime
+      - name: lucky_number_board_coupon
+        type: Int
+      - name: lucky_number_board_score
+        type: Int
+      - name: start_time
+        type: DateTime
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 2
+      name: lucky_number_board_score
+      type: Int
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: end_time
+        type: DateTime
+      - name: lucky_number_board_coupon
+        type: Int
+      - name: lucky_number_board_score
+        type: Int
+      - name: start_time
+        type: DateTime
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 3
+      name: start_time
+      type: DateTime
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: end_time
+        type: DateTime
+      - name: lucky_number_board_coupon
+        type: Int
+      - name: lucky_number_board_score
+        type: Int
+      - name: start_time
+        type: DateTime
+      - name: week
+        type: Int
+      hasChanged: 0
+    - index: 4
+      name: week
+      type: Int
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: end_time
+        type: DateTime
+      - name: lucky_number_board_coupon
+        type: Int
+      - name: lucky_number_board_score
+        type: Int
+      - name: start_time
+        type: DateTime
+      - name: week
+        type: Int
+      hasChanged: 0
+    isComplete: 1
+  mutations:
+  - name: EndGame
+    type: 1
+    query: "mutation EndGame{\n    Endgame{\n        response_player_results{\n           
+      assist\n            bonus_coupon\n            coin\n            death\n           
+      kill\n            player{\n                playing_game_name\n               
+      profile{\n                    country\n                    description\n                   
+      exp\n                    friend_code\n                    highest_score\n                   
+      icon_id\n                    icon_url\n                    last_online\n                   
+      name\n                    region\n            }\n        }\n            player_id\n           
+      score\n            total_score\n        }\n    }\n}"
+    queryString: Endgame
+    returnType: EndgameRes
+    queryOptions:
+    - AcceptJoinPartyRequest
+    - AcceptPartyInvite
+    - DeclinePartyInvite
+    - Endgame
+    - InviteParty
+    - RequestJoinParty
+    fields:
+    - index: 1
+      name: response_player_results
+      type: PlayerResultRes
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: item_transaction
+        type: ItemTransactionResponse
+      - name: response_player_results
+        type: PlayerResultRes
+      hasChanged: 0
+    - index: 0
+      name: assist
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: assist
+        type: Int
+      - name: bonus_coupon
+        type: Int
+      - name: coin
+        type: Int
+      - name: death
+        type: Int
+      - name: kill
+        type: Int
+      - name: player
+        type: Player
+      - name: player_id
+        type: String
+      - name: score
+        type: Int
+      - name: total_score
+        type: Int
+      hasChanged: 0
+    - index: 1
+      name: bonus_coupon
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: assist
+        type: Int
+      - name: bonus_coupon
+        type: Int
+      - name: coin
+        type: Int
+      - name: death
+        type: Int
+      - name: kill
+        type: Int
+      - name: player
+        type: Player
+      - name: player_id
+        type: String
+      - name: score
+        type: Int
+      - name: total_score
+        type: Int
+      hasChanged: 0
+    - index: 2
+      name: coin
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: assist
+        type: Int
+      - name: bonus_coupon
+        type: Int
+      - name: coin
+        type: Int
+      - name: death
+        type: Int
+      - name: kill
+        type: Int
+      - name: player
+        type: Player
+      - name: player_id
+        type: String
+      - name: score
+        type: Int
+      - name: total_score
+        type: Int
+      hasChanged: 0
+    - index: 3
+      name: death
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: assist
+        type: Int
+      - name: bonus_coupon
+        type: Int
+      - name: coin
+        type: Int
+      - name: death
+        type: Int
+      - name: kill
+        type: Int
+      - name: player
+        type: Player
+      - name: player_id
+        type: String
+      - name: score
+        type: Int
+      - name: total_score
+        type: Int
+      hasChanged: 0
+    - index: 4
+      name: kill
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: assist
+        type: Int
+      - name: bonus_coupon
+        type: Int
+      - name: coin
+        type: Int
+      - name: death
+        type: Int
+      - name: kill
+        type: Int
+      - name: player
+        type: Player
+      - name: player_id
+        type: String
+      - name: score
+        type: Int
+      - name: total_score
+        type: Int
+      hasChanged: 0
+    - index: 5
+      name: player
+      type: Player
+      parentIndexes: 00000000
+      hasSubField: 1
+      possibleFields:
+      - name: assist
+        type: Int
+      - name: bonus_coupon
+        type: Int
+      - name: coin
+        type: Int
+      - name: death
+        type: Int
+      - name: kill
+        type: Int
+      - name: player
+        type: Player
+      - name: player_id
+        type: String
+      - name: score
+        type: Int
+      - name: total_score
+        type: Int
+      hasChanged: 0
+    - index: 3
+      name: playing_game_name
+      type: String
+      parentIndexes: 0000000006000000
+      hasSubField: 0
+      possibleFields:
+      - name: character
+        type: Character
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: player_id
+        type: String
+      - name: playing_game_name
+        type: String
+      - name: profile
+        type: Profile
+      hasChanged: 0
+    - index: 4
+      name: profile
+      type: Profile
+      parentIndexes: 0000000006000000
+      hasSubField: 1
+      possibleFields:
+      - name: character
+        type: Character
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: player_id
+        type: String
+      - name: playing_game_name
+        type: String
+      - name: profile
+        type: Profile
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 000000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 000000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: exp
+      type: Int
+      parentIndexes: 000000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 000000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: highest_score
+      type: Int
+      parentIndexes: 000000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 000000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: icon_url
+      type: String
+      parentIndexes: 000000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: last_online
+      type: DateTime
+      parentIndexes: 000000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 000000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 9
+      name: region
+      type: String
+      parentIndexes: 000000000600000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: player_id
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: assist
+        type: Int
+      - name: bonus_coupon
+        type: Int
+      - name: coin
+        type: Int
+      - name: death
+        type: Int
+      - name: kill
+        type: Int
+      - name: player
+        type: Player
+      - name: player_id
+        type: String
+      - name: score
+        type: Int
+      - name: total_score
+        type: Int
+      hasChanged: 0
+    - index: 7
+      name: score
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: assist
+        type: Int
+      - name: bonus_coupon
+        type: Int
+      - name: coin
+        type: Int
+      - name: death
+        type: Int
+      - name: kill
+        type: Int
+      - name: player
+        type: Player
+      - name: player_id
+        type: String
+      - name: score
+        type: Int
+      - name: total_score
+        type: Int
+      hasChanged: 0
+    - index: 8
+      name: total_score
+      type: Int
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: assist
+        type: Int
+      - name: bonus_coupon
+        type: Int
+      - name: coin
+        type: Int
+      - name: death
+        type: Int
+      - name: kill
+        type: Int
+      - name: player
+        type: Player
+      - name: player_id
+        type: String
+      - name: score
+        type: Int
+      - name: total_score
+        type: Int
+      hasChanged: 0
+    isComplete: 1
+  subscriptions: []
+  loading: 0

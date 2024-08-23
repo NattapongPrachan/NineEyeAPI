@@ -1,0 +1,4374 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccf793b7ca1cc645b9cd36d753b8e3c, type: 3}
+  m_Name: FriendGraphAPI
+  m_EditorClassIdentifier: 
+  url: https://preview.api-grandoragame.com/social-service/graph
+  queries:
+  - name: GetBlockPlayerList
+    type: 0
+    query: "query GetBlockPlayerList{\n    GetBlockPlayers{\n        block_player_character{\n           
+      body_part{\n                bottom{\n                    bottom\n        }\n               
+      head{\n                    face\n                    hair\n                   
+      head_ears\n        }\n                shoes{\n                    shoes\n       
+      }\n                skin\n                top{\n                    hands\n                   
+      top\n            }\n        }\n            set_id\n        }\n        block_player_id\n       
+      block_player_profile{\n            country\n            description\n           
+      exp\n            friend_code\n            icon_id\n            last_online\n           
+      name\n            region\n        }\n        created_at\n        updated_at\n   
+      }\n}"
+    queryString: GetBlockPlayers
+    returnType: BlockPlayer
+    queryOptions:
+    - GetBlockPlayers
+    - GetFriends
+    - GetPlayerByFriendCode
+    - GetPrivacies
+    - GetSuggestFriends
+    fields:
+    - index: 0
+      name: block_player_character
+      type: Character
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: block_player_character
+        type: Character
+      - name: block_player_id
+        type: String
+      - name: block_player_profile
+        type: profile
+      - name: created_at
+        type: String
+      - name: updated_at
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: body_part
+      type: BodyPart
+      parentIndexes: 00000000
+      hasSubField: 1
+      possibleFields:
+      - name: body_part
+        type: BodyPart
+      - name: set_id
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: bottom
+      type: BottomPart
+      parentIndexes: 0000000001000000
+      hasSubField: 1
+      possibleFields:
+      - name: bottom
+        type: BottomPart
+      - name: head
+        type: HeadPart
+      - name: shoes
+        type: Shoes
+      - name: skin
+        type: String
+      - name: top
+        type: TopPart
+      hasChanged: 0
+    - index: 0
+      name: bottom
+      type: String
+      parentIndexes: 000000000100000002000000
+      hasSubField: 0
+      possibleFields:
+      - name: bottom
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: head
+      type: HeadPart
+      parentIndexes: 0000000001000000
+      hasSubField: 1
+      possibleFields:
+      - name: bottom
+        type: BottomPart
+      - name: head
+        type: HeadPart
+      - name: shoes
+        type: Shoes
+      - name: skin
+        type: String
+      - name: top
+        type: TopPart
+      hasChanged: 0
+    - index: 0
+      name: face
+      type: String
+      parentIndexes: 000000000100000004000000
+      hasSubField: 0
+      possibleFields:
+      - name: face
+        type: String
+      - name: hair
+        type: String
+      - name: head_ears
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: hair
+      type: String
+      parentIndexes: 000000000100000004000000
+      hasSubField: 0
+      possibleFields:
+      - name: face
+        type: String
+      - name: hair
+        type: String
+      - name: head_ears
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: head_ears
+      type: String
+      parentIndexes: 000000000100000004000000
+      hasSubField: 0
+      possibleFields:
+      - name: face
+        type: String
+      - name: hair
+        type: String
+      - name: head_ears
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: shoes
+      type: Shoes
+      parentIndexes: 0000000001000000
+      hasSubField: 1
+      possibleFields:
+      - name: bottom
+        type: BottomPart
+      - name: head
+        type: HeadPart
+      - name: shoes
+        type: Shoes
+      - name: skin
+        type: String
+      - name: top
+        type: TopPart
+      hasChanged: 0
+    - index: 0
+      name: shoes
+      type: String
+      parentIndexes: 000000000100000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: shoes
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: skin
+      type: String
+      parentIndexes: 0000000001000000
+      hasSubField: 0
+      possibleFields:
+      - name: bottom
+        type: BottomPart
+      - name: head
+        type: HeadPart
+      - name: shoes
+        type: Shoes
+      - name: skin
+        type: String
+      - name: top
+        type: TopPart
+      hasChanged: 0
+    - index: 4
+      name: top
+      type: TopPart
+      parentIndexes: 0000000001000000
+      hasSubField: 1
+      possibleFields:
+      - name: bottom
+        type: BottomPart
+      - name: head
+        type: HeadPart
+      - name: shoes
+        type: Shoes
+      - name: skin
+        type: String
+      - name: top
+        type: TopPart
+      hasChanged: 0
+    - index: 0
+      name: hands
+      type: String
+      parentIndexes: 00000000010000000b000000
+      hasSubField: 0
+      possibleFields:
+      - name: hands
+        type: String
+      - name: top
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: top
+      type: String
+      parentIndexes: 00000000010000000b000000
+      hasSubField: 0
+      possibleFields:
+      - name: hands
+        type: String
+      - name: top
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: set_id
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: body_part
+        type: BodyPart
+      - name: set_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: block_player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: block_player_character
+        type: Character
+      - name: block_player_id
+        type: String
+      - name: block_player_profile
+        type: profile
+      - name: created_at
+        type: String
+      - name: updated_at
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: block_player_profile
+      type: profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: block_player_character
+        type: Character
+      - name: block_player_id
+        type: String
+      - name: block_player_profile
+        type: profile
+      - name: created_at
+        type: String
+      - name: updated_at
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: exp
+      type: Int
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: icon_id
+      type: String
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: last_online
+      type: DateTime
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: name
+      type: String
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: region
+      type: String
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: created_at
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: block_player_character
+        type: Character
+      - name: block_player_id
+        type: String
+      - name: block_player_profile
+        type: profile
+      - name: created_at
+        type: String
+      - name: updated_at
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: updated_at
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: block_player_character
+        type: Character
+      - name: block_player_id
+        type: String
+      - name: block_player_profile
+        type: profile
+      - name: created_at
+        type: String
+      - name: updated_at
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  - name: GetPrivacy
+    type: 0
+    query: "query GetPrivacy{\n    GetPrivacies{\n        active_status\n       
+      allow_friend_request\n        allow_invite_game\n        allow_join_game\n   
+      }\n}"
+    queryString: GetPrivacies
+    returnType: privacies
+    queryOptions:
+    - GetBlockPlayers
+    - GetFriends
+    - GetPlayerByFriendCode
+    - GetPrivacies
+    - GetSuggestFriends
+    fields:
+    - index: 0
+      name: active_status
+      type: ActiveStatusenum
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: active_status
+        type: ActiveStatusenum
+      - name: allow_friend_request
+        type: Boolean
+      - name: allow_invite_game
+        type: Boolean
+      - name: allow_join_game
+        type: Boolean
+      hasChanged: 0
+    - index: 1
+      name: allow_friend_request
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: active_status
+        type: ActiveStatusenum
+      - name: allow_friend_request
+        type: Boolean
+      - name: allow_invite_game
+        type: Boolean
+      - name: allow_join_game
+        type: Boolean
+      hasChanged: 0
+    - index: 2
+      name: allow_invite_game
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: active_status
+        type: ActiveStatusenum
+      - name: allow_friend_request
+        type: Boolean
+      - name: allow_invite_game
+        type: Boolean
+      - name: allow_join_game
+        type: Boolean
+      hasChanged: 0
+    - index: 3
+      name: allow_join_game
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: active_status
+        type: ActiveStatusenum
+      - name: allow_friend_request
+        type: Boolean
+      - name: allow_invite_game
+        type: Boolean
+      - name: allow_join_game
+        type: Boolean
+      hasChanged: 0
+    isComplete: 1
+  - name: GetPlayerByFriendCode
+    type: 0
+    query: "query GetPlayerByFriendCode{\n    GetPlayerByFriendCode{\n        friend_id\n       
+      friend_profile{\n            country\n            description\n           
+      exp\n            friend_code\n            icon_id\n            last_online\n           
+      name\n            region\n        }\n        is_favorite\n        is_read\n       
+      online_status\n        state\n    }\n}"
+    queryString: GetPlayerByFriendCode
+    returnType: friend
+    queryOptions:
+    - GetBlockPlayers
+    - GetFriends
+    - GetPlayerByFriendCode
+    - GetPrivacies
+    - GetSuggestFriends
+    fields:
+    - index: 1
+      name: friend_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 2
+      name: friend_profile
+      type: profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: exp
+      type: Int
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: icon_id
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: last_online
+      type: DateTime
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: name
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: region
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: is_favorite
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 4
+      name: is_read
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 5
+      name: online_status
+      type: OnlineStatusEnum
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 6
+      name: state
+      type: friendStateEnum
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    isComplete: 1
+  - name: GetSuggestFriendList
+    type: 0
+    query: "query GetSuggestFriendList{\n    GetSuggestFriends(  amount :3 ){\n       
+      online_status\n        player_id\n        profile{\n            country\n           
+      description\n            exp\n            friend_code\n            icon_id\n           
+      last_online\n            name\n            region\n        }\n    }\n}"
+    queryString: GetSuggestFriends
+    returnType: OtherPlayer
+    queryOptions:
+    - GetBlockPlayers
+    - GetFriends
+    - GetPlayerByFriendCode
+    - GetPrivacies
+    - GetSuggestFriends
+    fields:
+    - index: 1
+      name: online_status
+      type: OnlineStatusEnum
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: character
+        type: Character
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      hasChanged: 0
+    - index: 2
+      name: player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: character
+        type: Character
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      hasChanged: 0
+    - index: 3
+      name: profile
+      type: profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: character
+        type: Character
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 02000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 02000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: exp
+      type: Int
+      parentIndexes: 02000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 02000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: icon_id
+      type: String
+      parentIndexes: 02000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: last_online
+      type: DateTime
+      parentIndexes: 02000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: name
+      type: String
+      parentIndexes: 02000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: region
+      type: String
+      parentIndexes: 02000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  - name: GetFriendList
+    type: 0
+    query: "query GetFriendList{\n    GetFriends{\n        accepteds{\n           
+      friend_id\n            friend_profile{\n                description\n               
+      friend_code\n                highest_score\n                icon_id\n               
+      icon_url\n                last_online\n                name\n        }\n           
+      is_favorite\n            is_read\n            online_status\n            playing_game_name\n           
+      state\n        }\n        requests{\n            friend_id\n            friend_profile{\n               
+      description\n                friend_code\n                highest_score\n               
+      icon_id\n                icon_url\n                last_online\n               
+      name\n        }\n            is_favorite\n            is_read\n           
+      online_status\n            playing_game_name\n            state\n        }\n   
+      }\n}"
+    queryString: GetFriends
+    returnType: GetFriendsRes
+    queryOptions:
+    - GetBlockPlayers
+    - GetFollowerCount
+    - GetFriends
+    - GetLobbyByPlayerID
+    - GetPlayerByFriendCode
+    - GetPrivacies
+    - GetSuggestFriends
+    fields:
+    - index: 0
+      name: accepteds
+      type: Friend
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: accepteds
+        type: Friend
+      - name: requestings
+        type: Friend
+      - name: requests
+        type: Friend
+      hasChanged: 0
+    - index: 1
+      name: friend_id
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: Profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: playing_game_name
+        type: String
+      - name: state
+        type: FriendStateEnum
+      hasChanged: 0
+    - index: 2
+      name: friend_profile
+      type: Profile
+      parentIndexes: 00000000
+      hasSubField: 1
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: Profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: playing_game_name
+        type: String
+      - name: state
+        type: FriendStateEnum
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 0000000002000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 0000000002000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: highest_score
+      type: Int
+      parentIndexes: 0000000002000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 0000000002000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: icon_url
+      type: String
+      parentIndexes: 0000000002000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: last_online
+      type: DateTime
+      parentIndexes: 0000000002000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 0000000002000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: is_favorite
+      type: Boolean
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: Profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: playing_game_name
+        type: String
+      - name: state
+        type: FriendStateEnum
+      hasChanged: 0
+    - index: 4
+      name: is_read
+      type: Boolean
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: Profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: playing_game_name
+        type: String
+      - name: state
+        type: FriendStateEnum
+      hasChanged: 0
+    - index: 5
+      name: online_status
+      type: OnlineStatusEnum
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: Profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: playing_game_name
+        type: String
+      - name: state
+        type: FriendStateEnum
+      hasChanged: 0
+    - index: 6
+      name: playing_game_name
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: Profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: playing_game_name
+        type: String
+      - name: state
+        type: FriendStateEnum
+      hasChanged: 0
+    - index: 7
+      name: state
+      type: FriendStateEnum
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: Profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: playing_game_name
+        type: String
+      - name: state
+        type: FriendStateEnum
+      hasChanged: 0
+    - index: 2
+      name: requests
+      type: Friend
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: accepteds
+        type: Friend
+      - name: requestings
+        type: Friend
+      - name: requests
+        type: Friend
+      hasChanged: 0
+    - index: 1
+      name: friend_id
+      type: String
+      parentIndexes: 0f000000
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: Profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: playing_game_name
+        type: String
+      - name: state
+        type: FriendStateEnum
+      hasChanged: 0
+    - index: 2
+      name: friend_profile
+      type: Profile
+      parentIndexes: 0f000000
+      hasSubField: 1
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: Profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: playing_game_name
+        type: String
+      - name: state
+        type: FriendStateEnum
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 0f00000011000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 0f00000011000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: highest_score
+      type: Int
+      parentIndexes: 0f00000011000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 0f00000011000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: icon_url
+      type: String
+      parentIndexes: 0f00000011000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: last_online
+      type: DateTime
+      parentIndexes: 0f00000011000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 0f00000011000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: is_favorite
+      type: Boolean
+      parentIndexes: 0f000000
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: Profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: playing_game_name
+        type: String
+      - name: state
+        type: FriendStateEnum
+      hasChanged: 0
+    - index: 4
+      name: is_read
+      type: Boolean
+      parentIndexes: 0f000000
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: Profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: playing_game_name
+        type: String
+      - name: state
+        type: FriendStateEnum
+      hasChanged: 0
+    - index: 5
+      name: online_status
+      type: OnlineStatusEnum
+      parentIndexes: 0f000000
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: Profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: playing_game_name
+        type: String
+      - name: state
+        type: FriendStateEnum
+      hasChanged: 0
+    - index: 6
+      name: playing_game_name
+      type: String
+      parentIndexes: 0f000000
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: Profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: playing_game_name
+        type: String
+      - name: state
+        type: FriendStateEnum
+      hasChanged: 0
+    - index: 7
+      name: state
+      type: FriendStateEnum
+      parentIndexes: 0f000000
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: Profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: playing_game_name
+        type: String
+      - name: state
+        type: FriendStateEnum
+      hasChanged: 0
+    isComplete: 1
+  mutations:
+  - name: BlockPlayer
+    type: 1
+    query: "mutation BlockPlayer{\n    BlockPlayer{\n        block_player_character{\n           
+      body_part{\n                bottom{\n                    bottom\n        }\n               
+      head{\n                    face\n                    hair\n                   
+      head_ears\n        }\n                shoes{\n                    shoes\n       
+      }\n                skin\n                top{\n                    hands\n                   
+      top\n            }\n        }\n            set_id\n        }\n        block_player_id\n       
+      block_player_profile{\n            country\n            description\n           
+      exp\n            friend_code\n            icon_id\n            last_online\n           
+      name\n            region\n        }\n        created_at\n        updated_at\n   
+      }\n}"
+    queryString: BlockPlayer
+    returnType: BlockPlayer
+    queryOptions:
+    - AcceptFriendRequest
+    - BlockPlayer
+    - DeclineFriendRequest
+    - DeleteFriend
+    - SendFriendRequest
+    - UnblockPlayer
+    - UpdatePrivacies
+    fields:
+    - index: 0
+      name: block_player_character
+      type: Character
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: block_player_character
+        type: Character
+      - name: block_player_id
+        type: String
+      - name: block_player_profile
+        type: profile
+      - name: created_at
+        type: String
+      - name: updated_at
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: body_part
+      type: BodyPart
+      parentIndexes: 00000000
+      hasSubField: 1
+      possibleFields:
+      - name: body_part
+        type: BodyPart
+      - name: set_id
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: bottom
+      type: BottomPart
+      parentIndexes: 0000000001000000
+      hasSubField: 1
+      possibleFields:
+      - name: bottom
+        type: BottomPart
+      - name: head
+        type: HeadPart
+      - name: shoes
+        type: Shoes
+      - name: skin
+        type: String
+      - name: top
+        type: TopPart
+      hasChanged: 0
+    - index: 0
+      name: bottom
+      type: String
+      parentIndexes: 000000000100000002000000
+      hasSubField: 0
+      possibleFields:
+      - name: bottom
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: head
+      type: HeadPart
+      parentIndexes: 0000000001000000
+      hasSubField: 1
+      possibleFields:
+      - name: bottom
+        type: BottomPart
+      - name: head
+        type: HeadPart
+      - name: shoes
+        type: Shoes
+      - name: skin
+        type: String
+      - name: top
+        type: TopPart
+      hasChanged: 0
+    - index: 0
+      name: face
+      type: String
+      parentIndexes: 000000000100000004000000
+      hasSubField: 0
+      possibleFields:
+      - name: face
+        type: String
+      - name: hair
+        type: String
+      - name: head_ears
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: hair
+      type: String
+      parentIndexes: 000000000100000004000000
+      hasSubField: 0
+      possibleFields:
+      - name: face
+        type: String
+      - name: hair
+        type: String
+      - name: head_ears
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: head_ears
+      type: String
+      parentIndexes: 000000000100000004000000
+      hasSubField: 0
+      possibleFields:
+      - name: face
+        type: String
+      - name: hair
+        type: String
+      - name: head_ears
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: shoes
+      type: Shoes
+      parentIndexes: 0000000001000000
+      hasSubField: 1
+      possibleFields:
+      - name: bottom
+        type: BottomPart
+      - name: head
+        type: HeadPart
+      - name: shoes
+        type: Shoes
+      - name: skin
+        type: String
+      - name: top
+        type: TopPart
+      hasChanged: 0
+    - index: 0
+      name: shoes
+      type: String
+      parentIndexes: 000000000100000008000000
+      hasSubField: 0
+      possibleFields:
+      - name: shoes
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: skin
+      type: String
+      parentIndexes: 0000000001000000
+      hasSubField: 0
+      possibleFields:
+      - name: bottom
+        type: BottomPart
+      - name: head
+        type: HeadPart
+      - name: shoes
+        type: Shoes
+      - name: skin
+        type: String
+      - name: top
+        type: TopPart
+      hasChanged: 0
+    - index: 4
+      name: top
+      type: TopPart
+      parentIndexes: 0000000001000000
+      hasSubField: 1
+      possibleFields:
+      - name: bottom
+        type: BottomPart
+      - name: head
+        type: HeadPart
+      - name: shoes
+        type: Shoes
+      - name: skin
+        type: String
+      - name: top
+        type: TopPart
+      hasChanged: 0
+    - index: 0
+      name: hands
+      type: String
+      parentIndexes: 00000000010000000b000000
+      hasSubField: 0
+      possibleFields:
+      - name: hands
+        type: String
+      - name: top
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: top
+      type: String
+      parentIndexes: 00000000010000000b000000
+      hasSubField: 0
+      possibleFields:
+      - name: hands
+        type: String
+      - name: top
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: set_id
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: body_part
+        type: BodyPart
+      - name: set_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: block_player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: block_player_character
+        type: Character
+      - name: block_player_id
+        type: String
+      - name: block_player_profile
+        type: profile
+      - name: created_at
+        type: String
+      - name: updated_at
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: block_player_profile
+      type: profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: block_player_character
+        type: Character
+      - name: block_player_id
+        type: String
+      - name: block_player_profile
+        type: profile
+      - name: created_at
+        type: String
+      - name: updated_at
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: exp
+      type: Int
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: icon_id
+      type: String
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: last_online
+      type: DateTime
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: name
+      type: String
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: region
+      type: String
+      parentIndexes: 10000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: created_at
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: block_player_character
+        type: Character
+      - name: block_player_id
+        type: String
+      - name: block_player_profile
+        type: profile
+      - name: created_at
+        type: String
+      - name: updated_at
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: updated_at
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: block_player_character
+        type: Character
+      - name: block_player_id
+        type: String
+      - name: block_player_profile
+        type: profile
+      - name: created_at
+        type: String
+      - name: updated_at
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  - name: UnBlockPlayer
+    type: 1
+    query: "mutation UnBlockPlayer{\n    UnblockPlayer(  player_id :\"xxx0\" ){\n       
+      message\n        success\n    }\n}"
+    queryString: UnblockPlayer
+    returnType: ResponseObj
+    queryOptions:
+    - AcceptFriendRequest
+    - BlockPlayer
+    - DeclineFriendRequest
+    - DeleteFriend
+    - SendFriendRequest
+    - UnblockPlayer
+    - UpdatePrivacies
+    fields:
+    - index: 0
+      name: message
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: message
+        type: String
+      - name: success
+        type: Boolean
+      hasChanged: 0
+    - index: 1
+      name: success
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: message
+        type: String
+      - name: success
+        type: Boolean
+      hasChanged: 0
+    isComplete: 1
+  - name: UpdatePrivacy
+    type: 1
+    query: "mutation UpdatePrivacy{\n    UpdatePrivacies(  active_status :do_not_disturb,
+      allow_friend_request :false, allow_invite_game :false, allow_join_game :false
+      ){\n        active_status\n        allow_friend_request\n        allow_invite_game\n       
+      allow_join_game\n    }\n}"
+    queryString: UpdatePrivacies
+    returnType: privacies
+    queryOptions:
+    - AcceptFriendRequest
+    - BlockPlayer
+    - DeclineFriendRequest
+    - DeleteFriend
+    - SendFriendRequest
+    - UnblockPlayer
+    - UpdatePrivacies
+    fields:
+    - index: 0
+      name: active_status
+      type: ActiveStatusenum
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: active_status
+        type: ActiveStatusenum
+      - name: allow_friend_request
+        type: Boolean
+      - name: allow_invite_game
+        type: Boolean
+      - name: allow_join_game
+        type: Boolean
+      hasChanged: 0
+    - index: 1
+      name: allow_friend_request
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: active_status
+        type: ActiveStatusenum
+      - name: allow_friend_request
+        type: Boolean
+      - name: allow_invite_game
+        type: Boolean
+      - name: allow_join_game
+        type: Boolean
+      hasChanged: 0
+    - index: 2
+      name: allow_invite_game
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: active_status
+        type: ActiveStatusenum
+      - name: allow_friend_request
+        type: Boolean
+      - name: allow_invite_game
+        type: Boolean
+      - name: allow_join_game
+        type: Boolean
+      hasChanged: 0
+    - index: 3
+      name: allow_join_game
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: active_status
+        type: ActiveStatusenum
+      - name: allow_friend_request
+        type: Boolean
+      - name: allow_invite_game
+        type: Boolean
+      - name: allow_join_game
+        type: Boolean
+      hasChanged: 0
+    isComplete: 1
+  - name: AcceptFriend
+    type: 1
+    query: "mutation AcceptFriend{\n    AcceptFriendRequest{\n        friend_id\n       
+      friend_profile{\n            country\n            description\n           
+      exp\n            friend_code\n            icon_id\n            last_online\n           
+      name\n            region\n        }\n        is_favorite\n        is_read\n       
+      online_status\n        state\n    }\n}"
+    queryString: AcceptFriendRequest
+    returnType: friend
+    queryOptions:
+    - AcceptFriendRequest
+    - BlockPlayer
+    - DeclineFriendRequest
+    - DeleteFriend
+    - FavoriteFriend
+    - ReadFriendship
+    - SendFriendRequest
+    - UnblockPlayer
+    - UpdatePrivacies
+    fields:
+    - index: 1
+      name: friend_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 2
+      name: friend_profile
+      type: profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: exp
+      type: Int
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: icon_id
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: last_online
+      type: DateTime
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: name
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: region
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: is_favorite
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 4
+      name: is_read
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 5
+      name: online_status
+      type: OnlineStatusEnum
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 6
+      name: state
+      type: friendStateEnum
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    isComplete: 1
+  - name: DeclineFriendRequest
+    type: 1
+    query: "mutation DeclineFriendRequest{\n    DeclineFriendRequest{\n        friend_id\n       
+      friend_profile{\n            country\n            description\n           
+      exp\n            friend_code\n            icon_id\n            last_online\n           
+      name\n            region\n        }\n        is_favorite\n        is_read\n       
+      online_status\n        state\n    }\n}"
+    queryString: DeclineFriendRequest
+    returnType: friend
+    queryOptions:
+    - AcceptFriendRequest
+    - BlockPlayer
+    - DeclineFriendRequest
+    - DeleteFriend
+    - FavoriteFriend
+    - ReadFriendship
+    - SendFriendRequest
+    - UnblockPlayer
+    - UpdatePrivacies
+    fields:
+    - index: 1
+      name: friend_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 2
+      name: friend_profile
+      type: profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: exp
+      type: Int
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: icon_id
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: last_online
+      type: DateTime
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: name
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: region
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: is_favorite
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 4
+      name: is_read
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 5
+      name: online_status
+      type: OnlineStatusEnum
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 6
+      name: state
+      type: friendStateEnum
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    isComplete: 1
+  - name: RemoveFriend
+    type: 1
+    query: "mutation RemoveFriend{\n    DeleteFriend{\n        friend_id\n       
+      friend_profile{\n            country\n            description\n           
+      exp\n            friend_code\n            icon_id\n            last_online\n           
+      name\n            region\n        }\n        is_favorite\n        is_read\n       
+      online_status\n        state\n    }\n}"
+    queryString: DeleteFriend
+    returnType: friend
+    queryOptions:
+    - AcceptFriendRequest
+    - BlockPlayer
+    - DeclineFriendRequest
+    - DeleteFriend
+    - FavoriteFriend
+    - ReadFriendship
+    - SendFriendRequest
+    - UnblockPlayer
+    - UpdatePrivacies
+    fields:
+    - index: 1
+      name: friend_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 2
+      name: friend_profile
+      type: profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: exp
+      type: Int
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: icon_id
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: last_online
+      type: DateTime
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: name
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: region
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: is_favorite
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 4
+      name: is_read
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 5
+      name: online_status
+      type: OnlineStatusEnum
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 6
+      name: state
+      type: friendStateEnum
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    isComplete: 1
+  - name: SendFriendRequest
+    type: 1
+    query: "mutation SendFriendRequest{\n    SendFriendRequest{\n        friend_id\n       
+      friend_profile{\n            country\n            description\n           
+      exp\n            friend_code\n            icon_id\n            last_online\n           
+      name\n            region\n        }\n        is_favorite\n        is_read\n       
+      online_status\n        state\n    }\n}"
+    queryString: SendFriendRequest
+    returnType: friend
+    queryOptions:
+    - AcceptFriendRequest
+    - BlockPlayer
+    - DeclineFriendRequest
+    - DeleteFriend
+    - FavoriteFriend
+    - ReadFriendship
+    - SendFriendRequest
+    - UnblockPlayer
+    - UpdatePrivacies
+    fields:
+    - index: 1
+      name: friend_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 2
+      name: friend_profile
+      type: profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: exp
+      type: Int
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: icon_id
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: last_online
+      type: DateTime
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: name
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: region
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: is_favorite
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 4
+      name: is_read
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 5
+      name: online_status
+      type: OnlineStatusEnum
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 6
+      name: state
+      type: friendStateEnum
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    isComplete: 1
+  - name: FavoriteFriend
+    type: 1
+    query: "mutation FavoriteFriend{\n    FavoriteFriend{\n        friend_id\n       
+      friend_profile{\n            country\n            description\n           
+      exp\n            friend_code\n            icon_id\n            last_online\n           
+      name\n            region\n        }\n        is_favorite\n        is_read\n       
+      online_status\n        state\n    }\n}"
+    queryString: FavoriteFriend
+    returnType: friend
+    queryOptions:
+    - AcceptFriendRequest
+    - BlockPlayer
+    - DeclineFriendRequest
+    - DeleteFriend
+    - FavoriteFriend
+    - ReadFriendship
+    - SendFriendRequest
+    - UnblockPlayer
+    - UpdatePrivacies
+    fields:
+    - index: 1
+      name: friend_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 2
+      name: friend_profile
+      type: profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: exp
+      type: Int
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: icon_id
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: last_online
+      type: DateTime
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: name
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: region
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: icon_id
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: is_favorite
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 4
+      name: is_read
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 5
+      name: online_status
+      type: OnlineStatusEnum
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    - index: 6
+      name: state
+      type: friendStateEnum
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: friend_character
+        type: Character
+      - name: friend_id
+        type: String
+      - name: friend_profile
+        type: profile
+      - name: is_favorite
+        type: Boolean
+      - name: is_read
+        type: Boolean
+      - name: online_status
+        type: OnlineStatusEnum
+      - name: state
+        type: friendStateEnum
+      hasChanged: 0
+    isComplete: 1
+  - name: ReadFriendShip
+    type: 1
+    query: "mutation ReadFriendShip{\n    ReadFriendship(  friendship_type :request
+      ){\n        message\n        success\n    }\n}"
+    queryString: ReadFriendship
+    returnType: APIResponse
+    queryOptions:
+    - AcceptFriendRequest
+    - BlockPlayer
+    - DeclineFriendRequest
+    - DeleteFriend
+    - FavoriteFriend
+    - ReadFriendship
+    - SendFriendRequest
+    - UnblockPlayer
+    - UpdatePrivacies
+    fields:
+    - index: 0
+      name: message
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: message
+        type: String
+      - name: success
+        type: Boolean
+      hasChanged: 0
+    - index: 1
+      name: success
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: message
+        type: String
+      - name: success
+        type: Boolean
+      hasChanged: 0
+    isComplete: 1
+  - name: AcceptRequestJoinGame
+    type: 1
+    query: "mutation AcceptRequestJoinGame{\n    AcceptRequestJoinGame{\n       
+      message\n        success\n    }\n}"
+    queryString: AcceptRequestJoinGame
+    returnType: APIResponse
+    queryOptions:
+    - AcceptFriendRequest
+    - AcceptRequestJoinGame
+    - BlockPlayer
+    - DeclineFriendRequest
+    - DeleteFriend
+    - FavoriteFriend
+    - InviteToGame
+    - ReadFriendship
+    - RequestJoinGame
+    - SendFriendRequest
+    - UnblockPlayer
+    - UpdateLobby
+    - UpdatePrivacies
+    fields:
+    - index: 0
+      name: message
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: message
+        type: String
+      - name: success
+        type: Boolean
+      hasChanged: 0
+    - index: 1
+      name: success
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: message
+        type: String
+      - name: success
+        type: Boolean
+      hasChanged: 0
+    isComplete: 1
+  - name: InviteToGame
+    type: 1
+    query: "mutation InviteToGame{\n    InviteToGame{\n        message\n        success\n   
+      }\n}"
+    queryString: InviteToGame
+    returnType: APIResponse
+    queryOptions:
+    - AcceptFriendRequest
+    - AcceptRequestJoinGame
+    - BlockPlayer
+    - DeclineFriendRequest
+    - DeleteFriend
+    - FavoriteFriend
+    - InviteToGame
+    - ReadFriendship
+    - RequestJoinGame
+    - SendFriendRequest
+    - UnblockPlayer
+    - UpdateLobby
+    - UpdatePrivacies
+    fields:
+    - index: 0
+      name: message
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: message
+        type: String
+      - name: success
+        type: Boolean
+      hasChanged: 0
+    - index: 1
+      name: success
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: message
+        type: String
+      - name: success
+        type: Boolean
+      hasChanged: 0
+    isComplete: 1
+  - name: RequestJoinGame
+    type: 1
+    query: "mutation RequestJoinGame{\n    RequestJoinGame{\n        message\n       
+      success\n    }\n}"
+    queryString: RequestJoinGame
+    returnType: APIResponse
+    queryOptions:
+    - AcceptFriendRequest
+    - AcceptRequestJoinGame
+    - BlockPlayer
+    - DeclineFriendRequest
+    - DeleteFriend
+    - FavoriteFriend
+    - InviteToGame
+    - ReadFriendship
+    - RequestJoinGame
+    - SendFriendRequest
+    - UnblockPlayer
+    - UpdateLobby
+    - UpdatePrivacies
+    fields:
+    - index: 0
+      name: message
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: message
+        type: String
+      - name: success
+        type: Boolean
+      hasChanged: 0
+    - index: 1
+      name: success
+      type: Boolean
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: message
+        type: String
+      - name: success
+        type: Boolean
+      hasChanged: 0
+    isComplete: 1
+  - name: UpdateLobby
+    type: 1
+    query: "mutation UpdateLobby{\n    UpdateLobby(  lobby_id :\"Test\" ){\n       
+      lobby_id\n        player_id\n    }\n}"
+    queryString: UpdateLobby
+    returnType: Lobby
+    queryOptions:
+    - AcceptFriendRequest
+    - AcceptRequestJoinGame
+    - BlockPlayer
+    - DeclineFriendRequest
+    - DeleteFriend
+    - FavoriteFriend
+    - FollowPlayer
+    - InviteToGame
+    - ReadFriendship
+    - RequestJoinGame
+    - SendFriendRequest
+    - UnblockPlayer
+    - UnfollowPlayer
+    - UpdateLobby
+    - UpdatePrivacies
+    fields:
+    - index: 1
+      name: lobby_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: character
+        type: Character
+      - name: lobby_id
+        type: String
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 2
+      name: player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: character
+        type: Character
+      - name: lobby_id
+        type: String
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    isComplete: 1
+  subscriptions: []
+  loading: 0

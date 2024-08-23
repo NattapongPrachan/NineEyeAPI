@@ -1,0 +1,4385 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccf793b7ca1cc645b9cd36d753b8e3c, type: 3}
+  m_Name: LoginAPI
+  m_EditorClassIdentifier: 
+  url: https://preview.api-grandoragame.com/player-service/graph
+  queries:
+  - name: GetSelf
+    type: 0
+    query: "query GetSelf{\n    GetSelf{\n        player_id\n        profile{\n           
+      description\n            friend_code\n            highest_score\n           
+      icon_id\n            icon_url\n            last_online\n            name\n           
+      region\n            country\n            exp\n        }\n        social_networks{\n           
+      application\n            created_at\n            email\n            profile_icon\n           
+      user_id\n        }\n        inventory{\n            avatar{\n               
+      amount\n                attribute_json\n                category\n               
+      item_id\n                player_id\n                sub_category\n        }\n           
+      currency{\n                amount\n                attribute_json\n               
+      category\n                item_id\n                player_id\n               
+      sub_category\n        }\n            decorate{\n                amount\n               
+      attribute_json\n                category\n                item_id\n               
+      player_id\n                sub_category\n        }\n            environment{\n               
+      amount\n                attribute_json\n                category\n               
+      item_id\n                player_id\n                sub_category\n        }\n           
+      item{\n                amount\n                attribute_json\n               
+      category\n                item_id\n                player_id\n               
+      sub_category\n        }\n            mechanic{\n                amount\n               
+      attribute_json\n                category\n                item_id\n               
+      player_id\n                sub_category\n        }\n            mob{\n               
+      amount\n                attribute_json\n                category\n               
+      item_id\n                player_id\n                sub_category\n        }\n           
+      moodtone{\n                amount\n                attribute_json\n               
+      category\n                item_id\n                player_id\n               
+      sub_category\n        }\n            preset{\n                amount\n               
+      attribute_json\n                category\n                item_id\n               
+      player_id\n                sub_category\n        }\n            structure{\n               
+      amount\n                attribute_json\n                category\n               
+      item_id\n                player_id\n                sub_category\n        }\n           
+      user_inventory{\n                expire_at\n                amount\n               
+      attribute_json\n                category\n                item_id\n               
+      player_id\n                sub_category\n            }\n        }\n    }\n}"
+    queryString: GetSelf
+    returnType: SelfPlayer
+    queryOptions:
+    - GetCharacter
+    - GetPlayers
+    - GetSelf
+    - GetSetDataByID
+    fields:
+    - index: 2
+      name: player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: character
+        type: Character
+      - name: inventory
+        type: Inventory
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: social_networks
+        type: SocialNetwork
+      hasChanged: 0
+    - index: 3
+      name: profile
+      type: Profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: character
+        type: Character
+      - name: inventory
+        type: Inventory
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: social_networks
+        type: SocialNetwork
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: highest_score
+      type: Int
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: icon_url
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: last_online
+      type: DateTime
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 9
+      name: region
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: exp
+      type: Int
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: social_networks
+      type: SocialNetwork
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: character
+        type: Character
+      - name: inventory
+        type: Inventory
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: social_networks
+        type: SocialNetwork
+      hasChanged: 0
+    - index: 0
+      name: application
+      type: SocialApplicationEnum
+      parentIndexes: 0c000000
+      hasSubField: 0
+      possibleFields:
+      - name: application
+        type: SocialApplicationEnum
+      - name: created_at
+        type: DateTime
+      - name: email
+        type: String
+      - name: profile_icon
+        type: String
+      - name: user_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: created_at
+      type: DateTime
+      parentIndexes: 0c000000
+      hasSubField: 0
+      possibleFields:
+      - name: application
+        type: SocialApplicationEnum
+      - name: created_at
+        type: DateTime
+      - name: email
+        type: String
+      - name: profile_icon
+        type: String
+      - name: user_id
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: email
+      type: String
+      parentIndexes: 0c000000
+      hasSubField: 0
+      possibleFields:
+      - name: application
+        type: SocialApplicationEnum
+      - name: created_at
+        type: DateTime
+      - name: email
+        type: String
+      - name: profile_icon
+        type: String
+      - name: user_id
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: profile_icon
+      type: String
+      parentIndexes: 0c000000
+      hasSubField: 0
+      possibleFields:
+      - name: application
+        type: SocialApplicationEnum
+      - name: created_at
+        type: DateTime
+      - name: email
+        type: String
+      - name: profile_icon
+        type: String
+      - name: user_id
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: user_id
+      type: String
+      parentIndexes: 0c000000
+      hasSubField: 0
+      possibleFields:
+      - name: application
+        type: SocialApplicationEnum
+      - name: created_at
+        type: DateTime
+      - name: email
+        type: String
+      - name: profile_icon
+        type: String
+      - name: user_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: inventory
+      type: Inventory
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: character
+        type: Character
+      - name: inventory
+        type: Inventory
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: social_networks
+        type: SocialNetwork
+      hasChanged: 0
+    - index: 0
+      name: avatar
+      type: PlayerItem
+      parentIndexes: 12000000
+      hasSubField: 1
+      possibleFields:
+      - name: avatar
+        type: PlayerItem
+      - name: bottom
+        type: PlayerItem
+      - name: currency
+        type: PlayerItem
+      - name: decorate
+        type: PlayerItem
+      - name: effect
+        type: PlayerItem
+      - name: environment
+        type: PlayerItem
+      - name: head
+        type: PlayerItem
+      - name: item
+        type: PlayerItem
+      - name: mechanic
+        type: PlayerItem
+      - name: mob
+        type: PlayerItem
+      - name: moodtone
+        type: PlayerItem
+      - name: pet
+        type: PlayerItem
+      - name: preset
+        type: PlayerItem
+      - name: set
+        type: PlayerItem
+      - name: shoes
+        type: PlayerItem
+      - name: skin
+        type: PlayerItem
+      - name: structure
+        type: PlayerItem
+      - name: top
+        type: PlayerItem
+      - name: user_inventory
+        type: PlayerItem
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 1200000013000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 1
+      name: attribute_json
+      type: String
+      parentIndexes: 1200000013000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 2
+      name: category
+      type: String
+      parentIndexes: 1200000013000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 4
+      name: item_id
+      type: String
+      parentIndexes: 1200000013000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 5
+      name: player_id
+      type: String
+      parentIndexes: 1200000013000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 6
+      name: sub_category
+      type: String
+      parentIndexes: 1200000013000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 2
+      name: currency
+      type: PlayerItem
+      parentIndexes: 12000000
+      hasSubField: 1
+      possibleFields:
+      - name: avatar
+        type: PlayerItem
+      - name: bottom
+        type: PlayerItem
+      - name: currency
+        type: PlayerItem
+      - name: decorate
+        type: PlayerItem
+      - name: effect
+        type: PlayerItem
+      - name: environment
+        type: PlayerItem
+      - name: head
+        type: PlayerItem
+      - name: item
+        type: PlayerItem
+      - name: mechanic
+        type: PlayerItem
+      - name: mob
+        type: PlayerItem
+      - name: moodtone
+        type: PlayerItem
+      - name: pet
+        type: PlayerItem
+      - name: preset
+        type: PlayerItem
+      - name: set
+        type: PlayerItem
+      - name: shoes
+        type: PlayerItem
+      - name: skin
+        type: PlayerItem
+      - name: structure
+        type: PlayerItem
+      - name: top
+        type: PlayerItem
+      - name: user_inventory
+        type: PlayerItem
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 120000001a000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 1
+      name: attribute_json
+      type: String
+      parentIndexes: 120000001a000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 2
+      name: category
+      type: String
+      parentIndexes: 120000001a000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 4
+      name: item_id
+      type: String
+      parentIndexes: 120000001a000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 5
+      name: player_id
+      type: String
+      parentIndexes: 120000001a000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 6
+      name: sub_category
+      type: String
+      parentIndexes: 120000001a000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 3
+      name: decorate
+      type: PlayerItem
+      parentIndexes: 12000000
+      hasSubField: 1
+      possibleFields:
+      - name: avatar
+        type: PlayerItem
+      - name: bottom
+        type: PlayerItem
+      - name: currency
+        type: PlayerItem
+      - name: decorate
+        type: PlayerItem
+      - name: effect
+        type: PlayerItem
+      - name: environment
+        type: PlayerItem
+      - name: head
+        type: PlayerItem
+      - name: item
+        type: PlayerItem
+      - name: mechanic
+        type: PlayerItem
+      - name: mob
+        type: PlayerItem
+      - name: moodtone
+        type: PlayerItem
+      - name: pet
+        type: PlayerItem
+      - name: preset
+        type: PlayerItem
+      - name: set
+        type: PlayerItem
+      - name: shoes
+        type: PlayerItem
+      - name: skin
+        type: PlayerItem
+      - name: structure
+        type: PlayerItem
+      - name: top
+        type: PlayerItem
+      - name: user_inventory
+        type: PlayerItem
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 1200000021000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 1
+      name: attribute_json
+      type: String
+      parentIndexes: 1200000021000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 2
+      name: category
+      type: String
+      parentIndexes: 1200000021000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 4
+      name: item_id
+      type: String
+      parentIndexes: 1200000021000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 5
+      name: player_id
+      type: String
+      parentIndexes: 1200000021000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 6
+      name: sub_category
+      type: String
+      parentIndexes: 1200000021000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 5
+      name: environment
+      type: PlayerItem
+      parentIndexes: 12000000
+      hasSubField: 1
+      possibleFields:
+      - name: avatar
+        type: PlayerItem
+      - name: bottom
+        type: PlayerItem
+      - name: currency
+        type: PlayerItem
+      - name: decorate
+        type: PlayerItem
+      - name: effect
+        type: PlayerItem
+      - name: environment
+        type: PlayerItem
+      - name: head
+        type: PlayerItem
+      - name: item
+        type: PlayerItem
+      - name: mechanic
+        type: PlayerItem
+      - name: mob
+        type: PlayerItem
+      - name: moodtone
+        type: PlayerItem
+      - name: pet
+        type: PlayerItem
+      - name: preset
+        type: PlayerItem
+      - name: set
+        type: PlayerItem
+      - name: shoes
+        type: PlayerItem
+      - name: skin
+        type: PlayerItem
+      - name: structure
+        type: PlayerItem
+      - name: top
+        type: PlayerItem
+      - name: user_inventory
+        type: PlayerItem
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 1200000028000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 1
+      name: attribute_json
+      type: String
+      parentIndexes: 1200000028000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 2
+      name: category
+      type: String
+      parentIndexes: 1200000028000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 4
+      name: item_id
+      type: String
+      parentIndexes: 1200000028000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 5
+      name: player_id
+      type: String
+      parentIndexes: 1200000028000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 6
+      name: sub_category
+      type: String
+      parentIndexes: 1200000028000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 7
+      name: item
+      type: PlayerItem
+      parentIndexes: 12000000
+      hasSubField: 1
+      possibleFields:
+      - name: avatar
+        type: PlayerItem
+      - name: bottom
+        type: PlayerItem
+      - name: currency
+        type: PlayerItem
+      - name: decorate
+        type: PlayerItem
+      - name: effect
+        type: PlayerItem
+      - name: environment
+        type: PlayerItem
+      - name: head
+        type: PlayerItem
+      - name: item
+        type: PlayerItem
+      - name: mechanic
+        type: PlayerItem
+      - name: mob
+        type: PlayerItem
+      - name: moodtone
+        type: PlayerItem
+      - name: pet
+        type: PlayerItem
+      - name: preset
+        type: PlayerItem
+      - name: set
+        type: PlayerItem
+      - name: shoes
+        type: PlayerItem
+      - name: skin
+        type: PlayerItem
+      - name: structure
+        type: PlayerItem
+      - name: top
+        type: PlayerItem
+      - name: user_inventory
+        type: PlayerItem
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 120000002f000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 1
+      name: attribute_json
+      type: String
+      parentIndexes: 120000002f000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 2
+      name: category
+      type: String
+      parentIndexes: 120000002f000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 4
+      name: item_id
+      type: String
+      parentIndexes: 120000002f000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 5
+      name: player_id
+      type: String
+      parentIndexes: 120000002f000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 6
+      name: sub_category
+      type: String
+      parentIndexes: 120000002f000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 8
+      name: mechanic
+      type: PlayerItem
+      parentIndexes: 12000000
+      hasSubField: 1
+      possibleFields:
+      - name: avatar
+        type: PlayerItem
+      - name: bottom
+        type: PlayerItem
+      - name: currency
+        type: PlayerItem
+      - name: decorate
+        type: PlayerItem
+      - name: effect
+        type: PlayerItem
+      - name: environment
+        type: PlayerItem
+      - name: head
+        type: PlayerItem
+      - name: item
+        type: PlayerItem
+      - name: mechanic
+        type: PlayerItem
+      - name: mob
+        type: PlayerItem
+      - name: moodtone
+        type: PlayerItem
+      - name: pet
+        type: PlayerItem
+      - name: preset
+        type: PlayerItem
+      - name: set
+        type: PlayerItem
+      - name: shoes
+        type: PlayerItem
+      - name: skin
+        type: PlayerItem
+      - name: structure
+        type: PlayerItem
+      - name: top
+        type: PlayerItem
+      - name: user_inventory
+        type: PlayerItem
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 1200000036000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 1
+      name: attribute_json
+      type: String
+      parentIndexes: 1200000036000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 2
+      name: category
+      type: String
+      parentIndexes: 1200000036000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 4
+      name: item_id
+      type: String
+      parentIndexes: 1200000036000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 5
+      name: player_id
+      type: String
+      parentIndexes: 1200000036000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 6
+      name: sub_category
+      type: String
+      parentIndexes: 1200000036000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 9
+      name: mob
+      type: PlayerItem
+      parentIndexes: 12000000
+      hasSubField: 1
+      possibleFields:
+      - name: avatar
+        type: PlayerItem
+      - name: bottom
+        type: PlayerItem
+      - name: currency
+        type: PlayerItem
+      - name: decorate
+        type: PlayerItem
+      - name: effect
+        type: PlayerItem
+      - name: environment
+        type: PlayerItem
+      - name: head
+        type: PlayerItem
+      - name: item
+        type: PlayerItem
+      - name: mechanic
+        type: PlayerItem
+      - name: mob
+        type: PlayerItem
+      - name: moodtone
+        type: PlayerItem
+      - name: pet
+        type: PlayerItem
+      - name: preset
+        type: PlayerItem
+      - name: set
+        type: PlayerItem
+      - name: shoes
+        type: PlayerItem
+      - name: skin
+        type: PlayerItem
+      - name: structure
+        type: PlayerItem
+      - name: top
+        type: PlayerItem
+      - name: user_inventory
+        type: PlayerItem
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 120000003d000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 1
+      name: attribute_json
+      type: String
+      parentIndexes: 120000003d000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 2
+      name: category
+      type: String
+      parentIndexes: 120000003d000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 4
+      name: item_id
+      type: String
+      parentIndexes: 120000003d000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 5
+      name: player_id
+      type: String
+      parentIndexes: 120000003d000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 6
+      name: sub_category
+      type: String
+      parentIndexes: 120000003d000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 10
+      name: moodtone
+      type: PlayerItem
+      parentIndexes: 12000000
+      hasSubField: 1
+      possibleFields:
+      - name: avatar
+        type: PlayerItem
+      - name: bottom
+        type: PlayerItem
+      - name: currency
+        type: PlayerItem
+      - name: decorate
+        type: PlayerItem
+      - name: effect
+        type: PlayerItem
+      - name: environment
+        type: PlayerItem
+      - name: head
+        type: PlayerItem
+      - name: item
+        type: PlayerItem
+      - name: mechanic
+        type: PlayerItem
+      - name: mob
+        type: PlayerItem
+      - name: moodtone
+        type: PlayerItem
+      - name: pet
+        type: PlayerItem
+      - name: preset
+        type: PlayerItem
+      - name: set
+        type: PlayerItem
+      - name: shoes
+        type: PlayerItem
+      - name: skin
+        type: PlayerItem
+      - name: structure
+        type: PlayerItem
+      - name: top
+        type: PlayerItem
+      - name: user_inventory
+        type: PlayerItem
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 1200000044000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 1
+      name: attribute_json
+      type: String
+      parentIndexes: 1200000044000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 2
+      name: category
+      type: String
+      parentIndexes: 1200000044000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 4
+      name: item_id
+      type: String
+      parentIndexes: 1200000044000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 5
+      name: player_id
+      type: String
+      parentIndexes: 1200000044000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 6
+      name: sub_category
+      type: String
+      parentIndexes: 1200000044000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 12
+      name: preset
+      type: PlayerItem
+      parentIndexes: 12000000
+      hasSubField: 1
+      possibleFields:
+      - name: avatar
+        type: PlayerItem
+      - name: bottom
+        type: PlayerItem
+      - name: currency
+        type: PlayerItem
+      - name: decorate
+        type: PlayerItem
+      - name: effect
+        type: PlayerItem
+      - name: environment
+        type: PlayerItem
+      - name: head
+        type: PlayerItem
+      - name: item
+        type: PlayerItem
+      - name: mechanic
+        type: PlayerItem
+      - name: mob
+        type: PlayerItem
+      - name: moodtone
+        type: PlayerItem
+      - name: pet
+        type: PlayerItem
+      - name: preset
+        type: PlayerItem
+      - name: set
+        type: PlayerItem
+      - name: shoes
+        type: PlayerItem
+      - name: skin
+        type: PlayerItem
+      - name: structure
+        type: PlayerItem
+      - name: top
+        type: PlayerItem
+      - name: user_inventory
+        type: PlayerItem
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 120000004b000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 1
+      name: attribute_json
+      type: String
+      parentIndexes: 120000004b000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 2
+      name: category
+      type: String
+      parentIndexes: 120000004b000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 4
+      name: item_id
+      type: String
+      parentIndexes: 120000004b000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 5
+      name: player_id
+      type: String
+      parentIndexes: 120000004b000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 6
+      name: sub_category
+      type: String
+      parentIndexes: 120000004b000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 16
+      name: structure
+      type: PlayerItem
+      parentIndexes: 12000000
+      hasSubField: 1
+      possibleFields:
+      - name: avatar
+        type: PlayerItem
+      - name: bottom
+        type: PlayerItem
+      - name: currency
+        type: PlayerItem
+      - name: decorate
+        type: PlayerItem
+      - name: effect
+        type: PlayerItem
+      - name: environment
+        type: PlayerItem
+      - name: head
+        type: PlayerItem
+      - name: item
+        type: PlayerItem
+      - name: mechanic
+        type: PlayerItem
+      - name: mob
+        type: PlayerItem
+      - name: moodtone
+        type: PlayerItem
+      - name: pet
+        type: PlayerItem
+      - name: preset
+        type: PlayerItem
+      - name: set
+        type: PlayerItem
+      - name: shoes
+        type: PlayerItem
+      - name: skin
+        type: PlayerItem
+      - name: structure
+        type: PlayerItem
+      - name: top
+        type: PlayerItem
+      - name: user_inventory
+        type: PlayerItem
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 1200000052000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 1
+      name: attribute_json
+      type: String
+      parentIndexes: 1200000052000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 2
+      name: category
+      type: String
+      parentIndexes: 1200000052000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 4
+      name: item_id
+      type: String
+      parentIndexes: 1200000052000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 5
+      name: player_id
+      type: String
+      parentIndexes: 1200000052000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 6
+      name: sub_category
+      type: String
+      parentIndexes: 1200000052000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 18
+      name: user_inventory
+      type: PlayerItem
+      parentIndexes: 12000000
+      hasSubField: 1
+      possibleFields:
+      - name: avatar
+        type: PlayerItem
+      - name: bottom
+        type: PlayerItem
+      - name: currency
+        type: PlayerItem
+      - name: decorate
+        type: PlayerItem
+      - name: effect
+        type: PlayerItem
+      - name: environment
+        type: PlayerItem
+      - name: head
+        type: PlayerItem
+      - name: item
+        type: PlayerItem
+      - name: mechanic
+        type: PlayerItem
+      - name: mob
+        type: PlayerItem
+      - name: moodtone
+        type: PlayerItem
+      - name: pet
+        type: PlayerItem
+      - name: preset
+        type: PlayerItem
+      - name: set
+        type: PlayerItem
+      - name: shoes
+        type: PlayerItem
+      - name: skin
+        type: PlayerItem
+      - name: structure
+        type: PlayerItem
+      - name: top
+        type: PlayerItem
+      - name: user_inventory
+        type: PlayerItem
+      hasChanged: 0
+    - index: 4
+      name: expire_at
+      type: DateTime
+      parentIndexes: 1200000059000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: expire_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 1200000059000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 1
+      name: attribute_json
+      type: String
+      parentIndexes: 1200000059000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 2
+      name: category
+      type: String
+      parentIndexes: 1200000059000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 4
+      name: item_id
+      type: String
+      parentIndexes: 1200000059000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 5
+      name: player_id
+      type: String
+      parentIndexes: 1200000059000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    - index: 6
+      name: sub_category
+      type: String
+      parentIndexes: 1200000059000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: attribute_json
+        type: String
+      - name: category
+        type: String
+      - name: created_at
+        type: DateTime
+      - name: item_id
+        type: String
+      - name: player_id
+        type: String
+      - name: sub_category
+        type: String
+      - name: updated_at
+        type: DateTime
+      hasChanged: 0
+    isComplete: 1
+  mutations:
+  - name: LoginEmail
+    type: 1
+    query: "mutation LoginEmail{\n    LoginEmail(  email :\"nattapong.w.game.ygg@gmail.com\",
+      password :\"123456\" ){\n        player_id\n        profile{\n            country\n           
+      region\n            description\n            exp\n            friend_code\n           
+      icon_id\n            icon_url\n            last_online\n            name\n       
+      }\n        refresh_token\n        token\n    }\n}"
+    queryString: LoginEmail
+    returnType: LoginRes
+    queryOptions:
+    - LinkSocial
+    - LoginEmail
+    - LoginSocial
+    - RefreshToken
+    - RegisterEmail
+    - UnlinkSocial
+    - UpdateCharacter
+    - UpdateProfile
+    fields:
+    - index: 0
+      name: player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: profile
+      type: profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 9
+      name: region
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: exp
+      type: Int
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: icon_url
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: last_online
+      type: DateTime
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: refresh_token
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: token
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  - name: LoginSocial
+    type: 1
+    query: "mutation LoginSocial{\n    LoginSocial{\n        player_id\n        profile{\n           
+      country\n            description\n            exp\n            friend_code\n           
+      icon_id\n            icon_url\n            last_online\n            name\n           
+      region\n        }\n        refresh_token\n        token\n    }\n}"
+    queryString: LoginSocial
+    returnType: LoginRes
+    queryOptions:
+    - LinkSocial
+    - LoginEmail
+    - LoginSocial
+    - RefreshToken
+    - RegisterEmail
+    - UnlinkSocial
+    - UpdateCharacter
+    - UpdateProfile
+    fields:
+    - index: 0
+      name: player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: profile
+      type: profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: exp
+      type: Int
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: icon_url
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: last_online
+      type: DateTime
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 9
+      name: region
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: refresh_token
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: token
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  - name: UpdateProfile
+    type: 1
+    query: "mutation UpdateProfile{\n    UpdateProfile(  name :\"esterna\", description
+      :\"\", icon_id :\"GRANDORA_16\", country :\"\", region :\"\" ){\n        country\n       
+      description\n        friend_code\n        icon_id\n        icon_url\n       
+      last_online\n        name\n        region\n    }\n}"
+    queryString: UpdateProfile
+    returnType: profile
+    queryOptions:
+    - LinkSocial
+    - LoginEmail
+    - LoginSocial
+    - RefreshToken
+    - RegisterEmail
+    - UnlinkSocial
+    - UpdateCharacter
+    - UpdateProfile
+    fields:
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: icon_url
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: last_online
+      type: DateTime
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 9
+      name: region
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  - name: LoginEmailv2
+    type: 1
+    query: "mutation LoginEmailv2{\n    LoginEmailv2(  email :\"nattapong.w.game.ygg@gmail.com\",
+      password :\"sica5814\" ){\n        player_id\n        refresh_token\n       
+      token\n        profile{\n            country\n            name\n           
+      region\n            description\n            exp\n            friend_code\n           
+      icon_id\n            icon_url\n            last_online\n        }\n    }\n}"
+    queryString: LoginEmailv2
+    returnType: LoginRes
+    queryOptions:
+    - LinkSocial
+    - LoginEmail
+    - LoginEmailv2
+    - LoginSocial
+    - LoginSocialv2
+    - RefreshToken
+    - RegisterEmail
+    - RegisterEmailv2
+    - UnlinkSocial
+    - UpdateCharacter
+    - UpdateProfile
+    fields:
+    - index: 0
+      name: player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: refresh_token
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: token
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: profile
+      type: profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 03000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 03000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 9
+      name: region
+      type: String
+      parentIndexes: 03000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 03000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: exp
+      type: Int
+      parentIndexes: 03000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 03000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 03000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: icon_url
+      type: String
+      parentIndexes: 03000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: last_online
+      type: DateTime
+      parentIndexes: 03000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  - name: LoginSocialv2
+    type: 1
+    query: "mutation LoginSocialv2{\n    LoginSocialv2{\n        player_id\n       
+      profile{\n            country\n            description\n            icon_id\n           
+      friend_code\n            icon_url\n            last_online\n            name\n           
+      region\n        }\n        refresh_token\n        token\n    }\n}"
+    queryString: LoginSocialv2
+    returnType: LoginRes
+    queryOptions:
+    - LinkSocial
+    - LoginEmail
+    - LoginEmailv2
+    - LoginSocial
+    - LoginSocialv2
+    - RefreshToken
+    - RegisterEmail
+    - RegisterEmailv2
+    - UnlinkSocial
+    - UpdateCharacter
+    - UpdateProfile
+    fields:
+    - index: 0
+      name: player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: profile
+      type: profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: icon_url
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: last_online
+      type: DateTime
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 9
+      name: region
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: refresh_token
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: token
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  - name: LoginEmailSSO
+    type: 1
+    query: "mutation LoginEmailSSO{\n    LoginEmailSSO(  email :\"grdvin10int008@email.com\",
+      password :\"123456\" ){\n        player_id\n        profile{\n            country\n           
+      name\n            region\n            description\n            exp\n           
+      friend_code\n            highest_score\n            icon_id\n            icon_url\n           
+      last_online\n        }\n        refresh_token\n        token\n    }\n}"
+    queryString: LoginEmailSSO
+    returnType: LoginRes
+    queryOptions:
+    - ConfirmEmailSSO
+    - LinkSocial
+    - LoginEmail
+    - LoginEmailSSO
+    - LoginEmailv2
+    - LoginSocial
+    - LoginSocialv2
+    - RefreshToken
+    - RegisterEmailSSO
+    - RegisterEmailv2
+    - ResendConfirmEmailSSO
+    - ResetPasswordSSO
+    - UnlinkSocial
+    - UpdateCharacter
+    - UpdatePasswordSSO
+    - UpdateProfile
+    fields:
+    - index: 0
+      name: player_id
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: profile
+      type: Profile
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: country
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 8
+      name: name
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 9
+      name: region
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: description
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: exp
+      type: Int
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: friend_code
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: highest_score
+      type: Int
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: icon_id
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: icon_url
+      type: String
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: last_online
+      type: DateTime
+      parentIndexes: 01000000
+      hasSubField: 0
+      possibleFields:
+      - name: country
+        type: String
+      - name: description
+        type: String
+      - name: exp
+        type: Int
+      - name: friend_code
+        type: String
+      - name: highest_score
+        type: Int
+      - name: icon_id
+        type: String
+      - name: icon_url
+        type: String
+      - name: last_online
+        type: DateTime
+      - name: name
+        type: String
+      - name: region
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: refresh_token
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: token
+      type: String
+      parentIndexes: 
+      hasSubField: 0
+      possibleFields:
+      - name: player_id
+        type: String
+      - name: profile
+        type: Profile
+      - name: refresh_token
+        type: String
+      - name: token
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  subscriptions: []
+  loading: 0

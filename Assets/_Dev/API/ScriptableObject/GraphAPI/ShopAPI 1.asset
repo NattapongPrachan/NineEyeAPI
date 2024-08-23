@@ -1,0 +1,4526 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccf793b7ca1cc645b9cd36d753b8e3c, type: 3}
+  m_Name: ShopAPI 1
+  m_EditorClassIdentifier: 
+  url: https://preview.api-grandoragame.com/shop-service/graph
+  queries:
+  - name: GetProducts
+    type: 0
+    query: "query GetProducts{\n    GetProducts{\n        asset_shop{\n           
+      bonus_rewards{\n                amount\n                item_id\n        }\n           
+      first_bonus_rewards{\n                amount\n                item_id\n       
+      }\n            prices{\n                currency_type\n                discount\n               
+      price\n                total_price\n        }\n            rewards{\n               
+      amount\n                item_id\n        }\n            product_id\n           
+      sub_category\n            shop_name\n            sale_start\n            sale_end\n           
+      promotion_type\n            product_name\n            is_bought\n           
+      image_url\n            iap_type\n            iap_id\n            is_iap\n           
+      description\n        }\n        bundle_shop{\n            prices{\n               
+      currency_type\n                discount\n                price\n               
+      total_price\n        }\n            bonus_rewards{\n                amount\n               
+      item_id\n        }\n            first_bonus_rewards{\n                amount\n               
+      item_id\n        }\n            rewards{\n                amount\n               
+      item_id\n        }\n            sub_category\n            shop_name\n           
+      sale_start\n            sale_end\n            promotion_type\n            product_name\n           
+      is_iap\n            is_bought\n            image_url\n            iap_type\n           
+      iap_id\n            description\n            product_id\n        }\n       
+      package_shop{\n            bonus_rewards{\n                amount\n               
+      item_id\n        }\n            description\n            first_bonus_rewards{\n               
+      amount\n                item_id\n        }\n            prices{\n               
+      currency_type\n                discount\n                price\n               
+      total_price\n        }\n            rewards{\n                amount\n               
+      item_id\n        }\n            sub_category\n            shop_name\n           
+      sale_start\n            sale_end\n            promotion_type\n            product_name\n           
+      product_id\n            iap_id\n            iap_type\n            image_url\n           
+      is_bought\n            is_iap\n        }\n        recommend_shop{\n           
+      rewards{\n                amount\n                item_id\n        }\n           
+      bonus_rewards{\n                amount\n                item_id\n        }\n           
+      prices{\n                currency_type\n                discount\n               
+      price\n                total_price\n        }\n            sale_start\n           
+      sale_end\n            is_bought\n            sub_category\n            shop_name\n           
+      promotion_type\n            product_name\n            product_id\n           
+      description\n        }\n        top_up_shop{\n            bonus_rewards{\n               
+      amount\n                item_id\n        }\n            rewards{\n               
+      amount\n                item_id\n        }\n            first_bonus_rewards{\n               
+      amount\n                item_id\n        }\n            prices{\n               
+      currency_type\n                discount\n                price\n               
+      total_price\n        }\n            sub_category\n            shop_name\n           
+      sale_start\n            sale_end\n            promotion_type\n            product_name\n           
+      product_id\n            is_iap\n            is_bought\n            image_url\n           
+      iap_type\n            iap_id\n            description\n        }\n    }\n}"
+    queryString: GetProducts
+    returnType: ProductRes
+    queryOptions:
+    - GetBoughtCounts
+    - GetMonsterShop
+    - GetPlayerMonster
+    - GetProducts
+    - GetRefreshMonster
+    fields:
+    - index: 0
+      name: asset_shop
+      type: Product
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: asset_shop
+        type: Product
+      - name: bundle_shop
+        type: Product
+      - name: package_shop
+        type: Product
+      - name: recommend_shop
+        type: Product
+      - name: top_up_shop
+        type: Product
+      hasChanged: 0
+    - index: 0
+      name: bonus_rewards
+      type: Reward
+      parentIndexes: 00000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 0000000001000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: item_id
+      type: String
+      parentIndexes: 0000000001000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: first_bonus_rewards
+      type: Reward
+      parentIndexes: 00000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 0000000004000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: item_id
+      type: String
+      parentIndexes: 0000000004000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 10
+      name: prices
+      type: Price
+      parentIndexes: 00000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: currency_type
+      type: String
+      parentIndexes: 0000000007000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 1
+      name: discount
+      type: Float
+      parentIndexes: 0000000007000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 2
+      name: price
+      type: Int
+      parentIndexes: 0000000007000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 3
+      name: total_price
+      type: Float
+      parentIndexes: 0000000007000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 15
+      name: rewards
+      type: Reward
+      parentIndexes: 00000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 000000000c000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: item_id
+      type: String
+      parentIndexes: 000000000c000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 11
+      name: product_id
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 19
+      name: sub_category
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 18
+      name: shop_name
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 17
+      name: sale_start
+      type: DateTime
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 16
+      name: sale_end
+      type: DateTime
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 13
+      name: promotion_type
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 12
+      name: product_name
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: is_bought
+      type: Boolean
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: image_url
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: iap_type
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: iap_id
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 8
+      name: is_iap
+      type: Boolean
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: description
+      type: String
+      parentIndexes: 00000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: bundle_shop
+      type: Product
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: asset_shop
+        type: Product
+      - name: bundle_shop
+        type: Product
+      - name: package_shop
+        type: Product
+      - name: recommend_shop
+        type: Product
+      - name: top_up_shop
+        type: Product
+      hasChanged: 0
+    - index: 10
+      name: prices
+      type: Price
+      parentIndexes: 1c000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: currency_type
+      type: String
+      parentIndexes: 1c0000001d000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 1
+      name: discount
+      type: Float
+      parentIndexes: 1c00000020000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 2
+      name: price
+      type: Int
+      parentIndexes: 1c00000020000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 3
+      name: total_price
+      type: Float
+      parentIndexes: 1c00000020000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 0
+      name: bonus_rewards
+      type: Reward
+      parentIndexes: 1c000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 1c00000022000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: item_id
+      type: String
+      parentIndexes: 1c00000022000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: first_bonus_rewards
+      type: Reward
+      parentIndexes: 1b000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 1b00000025000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: item_id
+      type: String
+      parentIndexes: 1b00000025000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 15
+      name: rewards
+      type: Reward
+      parentIndexes: 1b000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 1b00000028000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: item_id
+      type: String
+      parentIndexes: 1b00000028000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 19
+      name: sub_category
+      type: String
+      parentIndexes: 1b000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 18
+      name: shop_name
+      type: String
+      parentIndexes: 1b000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 17
+      name: sale_start
+      type: DateTime
+      parentIndexes: 1b000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 16
+      name: sale_end
+      type: DateTime
+      parentIndexes: 1b000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 13
+      name: promotion_type
+      type: String
+      parentIndexes: 1b000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 12
+      name: product_name
+      type: String
+      parentIndexes: 1b000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 8
+      name: is_iap
+      type: Boolean
+      parentIndexes: 1b000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: is_bought
+      type: Boolean
+      parentIndexes: 1b000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: image_url
+      type: String
+      parentIndexes: 1b000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: iap_type
+      type: String
+      parentIndexes: 1b000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: iap_id
+      type: String
+      parentIndexes: 1b000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: description
+      type: String
+      parentIndexes: 1b000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 11
+      name: product_id
+      type: String
+      parentIndexes: 08000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: package_shop
+      type: Product
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: asset_shop
+        type: Product
+      - name: bundle_shop
+        type: Product
+      - name: package_shop
+        type: Product
+      - name: recommend_shop
+        type: Product
+      - name: top_up_shop
+        type: Product
+      hasChanged: 0
+    - index: 0
+      name: bonus_rewards
+      type: Reward
+      parentIndexes: 38000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 3800000039000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: item_id
+      type: String
+      parentIndexes: 3800000039000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: description
+      type: String
+      parentIndexes: 36000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: first_bonus_rewards
+      type: Reward
+      parentIndexes: 36000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 360000003d000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: item_id
+      type: String
+      parentIndexes: 360000003d000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 10
+      name: prices
+      type: Price
+      parentIndexes: 36000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: currency_type
+      type: String
+      parentIndexes: 3600000040000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 1
+      name: discount
+      type: Float
+      parentIndexes: 3600000040000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 2
+      name: price
+      type: Int
+      parentIndexes: 3600000040000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 3
+      name: total_price
+      type: Float
+      parentIndexes: 3600000040000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 15
+      name: rewards
+      type: Reward
+      parentIndexes: 36000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 3600000045000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: item_id
+      type: String
+      parentIndexes: 3600000045000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 19
+      name: sub_category
+      type: String
+      parentIndexes: 36000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 18
+      name: shop_name
+      type: String
+      parentIndexes: 36000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 17
+      name: sale_start
+      type: DateTime
+      parentIndexes: 36000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 16
+      name: sale_end
+      type: DateTime
+      parentIndexes: 36000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 13
+      name: promotion_type
+      type: String
+      parentIndexes: 36000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 12
+      name: product_name
+      type: String
+      parentIndexes: 36000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 11
+      name: product_id
+      type: String
+      parentIndexes: 36000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: iap_id
+      type: String
+      parentIndexes: 36000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: iap_type
+      type: String
+      parentIndexes: 36000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: image_url
+      type: String
+      parentIndexes: 36000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: is_bought
+      type: Boolean
+      parentIndexes: 36000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 8
+      name: is_iap
+      type: Boolean
+      parentIndexes: 36000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: recommend_shop
+      type: Product
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: asset_shop
+        type: Product
+      - name: bundle_shop
+        type: Product
+      - name: package_shop
+        type: Product
+      - name: recommend_shop
+        type: Product
+      - name: top_up_shop
+        type: Product
+      hasChanged: 0
+    - index: 15
+      name: rewards
+      type: Reward
+      parentIndexes: 54000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 5400000055000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: item_id
+      type: String
+      parentIndexes: 5400000055000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: bonus_rewards
+      type: Reward
+      parentIndexes: 54000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 5400000058000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: item_id
+      type: String
+      parentIndexes: 5400000058000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 10
+      name: prices
+      type: Price
+      parentIndexes: 54000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: currency_type
+      type: String
+      parentIndexes: 540000005b000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 1
+      name: discount
+      type: Float
+      parentIndexes: 540000005b000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 2
+      name: price
+      type: Int
+      parentIndexes: 540000005b000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 3
+      name: total_price
+      type: Float
+      parentIndexes: 540000005b000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 17
+      name: sale_start
+      type: DateTime
+      parentIndexes: 53000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 16
+      name: sale_end
+      type: DateTime
+      parentIndexes: 53000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: is_bought
+      type: Boolean
+      parentIndexes: 53000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 19
+      name: sub_category
+      type: String
+      parentIndexes: 53000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 18
+      name: shop_name
+      type: String
+      parentIndexes: 53000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 13
+      name: promotion_type
+      type: String
+      parentIndexes: 53000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 12
+      name: product_name
+      type: String
+      parentIndexes: 53000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 11
+      name: product_id
+      type: String
+      parentIndexes: 53000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: description
+      type: String
+      parentIndexes: 53000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: top_up_shop
+      type: Product
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: asset_shop
+        type: Product
+      - name: bundle_shop
+        type: Product
+      - name: package_shop
+        type: Product
+      - name: recommend_shop
+        type: Product
+      - name: top_up_shop
+        type: Product
+      hasChanged: 0
+    - index: 0
+      name: bonus_rewards
+      type: Reward
+      parentIndexes: 69000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 690000006a000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: item_id
+      type: String
+      parentIndexes: 690000006a000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 15
+      name: rewards
+      type: Reward
+      parentIndexes: 69000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 690000006d000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: item_id
+      type: String
+      parentIndexes: 690000006d000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: first_bonus_rewards
+      type: Reward
+      parentIndexes: 62000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 6200000070000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: item_id
+      type: String
+      parentIndexes: 6200000070000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: item_id
+        type: String
+      hasChanged: 0
+    - index: 10
+      name: prices
+      type: Price
+      parentIndexes: 62000000
+      hasSubField: 1
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 0
+      name: currency_type
+      type: String
+      parentIndexes: 6200000073000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 1
+      name: discount
+      type: Float
+      parentIndexes: 6200000070000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 2
+      name: price
+      type: Int
+      parentIndexes: 6200000070000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 3
+      name: total_price
+      type: Float
+      parentIndexes: 6200000070000000
+      hasSubField: 0
+      possibleFields:
+      - name: currency_type
+        type: String
+      - name: discount
+        type: Float
+      - name: price
+        type: Int
+      - name: total_price
+        type: Float
+      hasChanged: 0
+    - index: 19
+      name: sub_category
+      type: String
+      parentIndexes: 62000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 18
+      name: shop_name
+      type: String
+      parentIndexes: 62000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 17
+      name: sale_start
+      type: DateTime
+      parentIndexes: 62000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 16
+      name: sale_end
+      type: DateTime
+      parentIndexes: 62000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 13
+      name: promotion_type
+      type: String
+      parentIndexes: 62000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 12
+      name: product_name
+      type: String
+      parentIndexes: 62000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 11
+      name: product_id
+      type: String
+      parentIndexes: 62000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 8
+      name: is_iap
+      type: Boolean
+      parentIndexes: 62000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 7
+      name: is_bought
+      type: Boolean
+      parentIndexes: 62000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 6
+      name: image_url
+      type: String
+      parentIndexes: 62000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 5
+      name: iap_type
+      type: String
+      parentIndexes: 62000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 4
+      name: iap_id
+      type: String
+      parentIndexes: 62000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: description
+      type: String
+      parentIndexes: 62000000
+      hasSubField: 0
+      possibleFields:
+      - name: bonus_rewards
+        type: Reward
+      - name: buy_limit
+        type: Int
+      - name: description
+        type: String
+      - name: first_bonus_rewards
+        type: Reward
+      - name: iap_id
+        type: String
+      - name: iap_type
+        type: String
+      - name: image_url
+        type: String
+      - name: is_bought
+        type: Boolean
+      - name: is_iap
+        type: Boolean
+      - name: is_pinned
+        type: Boolean
+      - name: prices
+        type: Price
+      - name: product_id
+        type: String
+      - name: product_name
+        type: String
+      - name: promotion_type
+        type: String
+      - name: refresh_time
+        type: String
+      - name: rewards
+        type: Reward
+      - name: sale_end
+        type: DateTime
+      - name: sale_start
+        type: DateTime
+      - name: shop_name
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  mutations: []
+  subscriptions: []
+  loading: 0

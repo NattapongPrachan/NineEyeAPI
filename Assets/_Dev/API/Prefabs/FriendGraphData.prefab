@@ -1,0 +1,1068 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7125560634949620265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5600664349183930980}
+  - component: {fileID: 3875697209355570713}
+  - component: {fileID: 6724084121429748093}
+  - component: {fileID: 7296981415928609275}
+  - component: {fileID: 391718597732008719}
+  - component: {fileID: 1566412337187594773}
+  - component: {fileID: 3843050314472329016}
+  - component: {fileID: 3359157253142228765}
+  - component: {fileID: 870158406127781620}
+  - component: {fileID: 2262284902458593874}
+  - component: {fileID: 3025214726831876641}
+  - component: {fileID: 4596212640553551394}
+  - component: {fileID: 3501461104193833908}
+  - component: {fileID: 699655323364666795}
+  - component: {fileID: 5377399394665910334}
+  - component: {fileID: 8666346673912609622}
+  - component: {fileID: 3034812840289746348}
+  - component: {fileID: 4349409626882458661}
+  - component: {fileID: 6142233830646234358}
+  - component: {fileID: 5096789319448286827}
+  - component: {fileID: 8185853931510223484}
+  - component: {fileID: 2825850057288220196}
+  - component: {fileID: 4802210167885389370}
+  - component: {fileID: 7545254594583576234}
+  - component: {fileID: 681313847498913829}
+  - component: {fileID: 8302866860195711613}
+  m_Layer: 0
+  m_Name: FriendGraphData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5600664349183930980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3875697209355570713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb219b23cdf4b314f94a27bca3cc8012, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6724084121429748093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3f6869a9f7d7340ad3a59830c5f236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetFriendList
+  QueryType: 0
+  quriesName:
+  - GetBlockPlayerList
+  - GetPrivacy
+  - GetFriendList
+  - GetPlayerByFriendCode
+  - GetSuggestFriendList
+--- !u!114 &7296981415928609275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bff8a36ceeefd444a55900c14622d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 03010a00000069006e006a0065006300740044006100740061002f0000000001330000004700720061006e0064006f00720061002e0044006100740061002e0046007200690065006e00640043006f006400650049006e006a0065006300740044006100740061002c00200041007300730065006d0062006c0079002d004300530068006100720070002d010a00000046007200690065006e00640043006f006400650005
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetPlayerByFriendCode
+  QueryType: 0
+  quriesName:
+  - GetBlockPlayerList
+  - GetPrivacy
+  - GetFriendList
+  - GetPlayerByFriendCode
+  - GetSuggestFriendList
+--- !u!114 &391718597732008719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 641d5dd739fb6084b94090d50496e207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetBlockPlayerList
+  QueryType: 0
+  quriesName:
+  - GetBlockPlayerList
+  - GetPrivacy
+  - GetFriendList
+  - GetPlayerByFriendCode
+  - GetSuggestFriendList
+--- !u!114 &1566412337187594773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50110e4338db5f048bd4d64837fa46fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetPrivacy
+  QueryType: 0
+  quriesName:
+  - GetBlockPlayerList
+  - GetPrivacy
+  - GetFriendList
+  - GetPlayerByFriendCode
+  - GetSuggestFriendList
+--- !u!114 &3843050314472329016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc774dc81cf6fb54499c52c30163f174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 03010a00000069006e006a0065006300740044006100740061002f0000000001370000004700720061006e0064006f00720061002e0044006100740061002e005300750067006700750065007300740046007200690065006e00640049006e006a0065006300740044006100740061002c00200041007300730065006d0062006c0079002d0043005300680061007200700017010600000041006d006f0075006e0074000000000005
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetSuggestFriendList
+  QueryType: 0
+  quriesName:
+  - GetBlockPlayerList
+  - GetPrivacy
+  - GetFriendList
+  - GetPlayerByFriendCode
+  - GetSuggestFriendList
+--- !u!114 &3359157253142228765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa39a7434472884abbc9caee7d54376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 03010a00000069006e006a0065006300740044006100740061002f0000000001340000004700720061006e0064006f00720061002e0044006100740061002e004f00740068006500720050006c00610079006500720049006e006a0065006300740044006100740061002c00200041007300730065006d0062006c0079002d004300530068006100720070002d010800000050006c0061007900650072004900640005
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: AcceptFriend
+  QueryType: 1
+  quriesName:
+  - BlockPlayer
+  - UnBlockPlayer
+  - UpdatePrivacy
+  - AcceptFriend
+  - DeclineFriendRequest
+  - RemoveFriend
+  - SendFriendRequest
+  - FavoriteFriend
+  - ReadFriendShip
+  - AcceptRequestJoinGame
+  - InviteToGame
+  - RequestJoinGame
+  - UpdateLobby
+--- !u!114 &870158406127781620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fb35de3e3b104744879faa55c810dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 03010a00000069006e006a0065006300740044006100740061002f0000000001340000004700720061006e0064006f00720061002e0044006100740061002e004f00740068006500720050006c00610079006500720049006e006a0065006300740044006100740061002c00200041007300730065006d0062006c0079002d004300530068006100720070002d010800000050006c0061007900650072004900640005
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: BlockPlayer
+  QueryType: 1
+  quriesName:
+  - BlockPlayer
+  - UnBlockPlayer
+  - UpdatePrivacy
+  - AcceptFriend
+  - DeclineFriendRequest
+  - RemoveFriend
+  - SendFriendRequest
+  - FavoriteFriend
+  - ReadFriendShip
+  - AcceptRequestJoinGame
+  - InviteToGame
+  - RequestJoinGame
+  - UpdateLobby
+--- !u!114 &2262284902458593874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b1de9db6c4305f4788999d1ede69b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 03010a00000069006e006a0065006300740044006100740061002f0000000001340000004700720061006e0064006f00720061002e0044006100740061002e004f00740068006500720050006c00610079006500720049006e006a0065006300740044006100740061002c00200041007300730065006d0062006c0079002d004300530068006100720070002d010800000050006c0061007900650072004900640005
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: DeclineFriendRequest
+  QueryType: 1
+  quriesName:
+  - BlockPlayer
+  - UnBlockPlayer
+  - UpdatePrivacy
+  - AcceptFriend
+  - DeclineFriendRequest
+  - RemoveFriend
+  - SendFriendRequest
+  - FavoriteFriend
+  - ReadFriendShip
+  - AcceptRequestJoinGame
+  - InviteToGame
+  - RequestJoinGame
+  - UpdateLobby
+--- !u!114 &3025214726831876641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0792f10087847b4f9a9a31d23f381fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 03010a00000069006e006a0065006300740044006100740061002f0000000001340000004700720061006e0064006f00720061002e0044006100740061002e004f00740068006500720050006c00610079006500720049006e006a0065006300740044006100740061002c00200041007300730065006d0062006c0079002d004300530068006100720070002d010800000050006c0061007900650072004900640005
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: RemoveFriend
+  QueryType: 1
+  quriesName:
+  - BlockPlayer
+  - UnBlockPlayer
+  - UpdatePrivacy
+  - AcceptFriend
+  - DeclineFriendRequest
+  - RemoveFriend
+  - SendFriendRequest
+  - FavoriteFriend
+  - ReadFriendShip
+  - AcceptRequestJoinGame
+  - InviteToGame
+  - RequestJoinGame
+  - UpdateLobby
+--- !u!114 &4596212640553551394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52373832c28debb4490112b5f11ed3c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 03010a00000069006e006a0065006300740044006100740061002f0000000001340000004700720061006e0064006f00720061002e0044006100740061002e004f00740068006500720050006c00610079006500720049006e006a0065006300740044006100740061002c00200041007300730065006d0062006c0079002d004300530068006100720070002d010800000050006c0061007900650072004900640005
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: SendFriendRequest
+  QueryType: 1
+  quriesName:
+  - BlockPlayer
+  - UnBlockPlayer
+  - UpdatePrivacy
+  - AcceptFriend
+  - DeclineFriendRequest
+  - RemoveFriend
+  - SendFriendRequest
+  - FavoriteFriend
+  - ReadFriendShip
+  - AcceptRequestJoinGame
+  - InviteToGame
+  - RequestJoinGame
+  - UpdateLobby
+--- !u!114 &3501461104193833908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c459842787f7c54b80ca6ea69d7376f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 03010a00000069006e006a0065006300740044006100740061002f0000000001340000004700720061006e0064006f00720061002e0044006100740061002e004f00740068006500720050006c00610079006500720049006e006a0065006300740044006100740061002c00200041007300730065006d0062006c0079002d004300530068006100720070002d010800000050006c0061007900650072004900640005
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: UnBlockPlayer
+  QueryType: 1
+  quriesName:
+  - BlockPlayer
+  - UnBlockPlayer
+  - UpdatePrivacy
+  - AcceptFriend
+  - DeclineFriendRequest
+  - RemoveFriend
+  - SendFriendRequest
+  - FavoriteFriend
+  - ReadFriendShip
+  - AcceptRequestJoinGame
+  - InviteToGame
+  - RequestJoinGame
+  - UpdateLobby
+--- !u!114 &699655323364666795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e2ac9adeee94724d8d93b11124a4df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: UpdatePrivacy
+  QueryType: 1
+  quriesName:
+  - BlockPlayer
+  - UnBlockPlayer
+  - UpdatePrivacy
+  - AcceptFriend
+  - DeclineFriendRequest
+  - RemoveFriend
+  - SendFriendRequest
+  - FavoriteFriend
+  - ReadFriendShip
+  - AcceptRequestJoinGame
+  - InviteToGame
+  - RequestJoinGame
+  - UpdateLobby
+--- !u!114 &5377399394665910334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef58115f39e1bf641965fafa49b6d0ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: FavoriteFriend
+  QueryType: 1
+  quriesName:
+  - BlockPlayer
+  - UnBlockPlayer
+  - UpdatePrivacy
+  - AcceptFriend
+  - DeclineFriendRequest
+  - RemoveFriend
+  - SendFriendRequest
+  - FavoriteFriend
+  - ReadFriendShip
+  - AcceptRequestJoinGame
+  - InviteToGame
+  - RequestJoinGame
+  - UpdateLobby
+--- !u!114 &8666346673912609622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7bbf122065ca274a91b2737ee3228f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 03010a00000069006e006a0065006300740044006100740061002f0000000001330000004700720061006e0064006f00720061002e0044006100740061002e00520065006100640046007200690065006e00640049006e006a0065006300740044006100740061002c00200041007300730065006d0062006c0079002d004300530068006100720070001d010500000053007400610074006500000000000000000005
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: ReadFriendShip
+  QueryType: 1
+  quriesName:
+  - BlockPlayer
+  - UnBlockPlayer
+  - UpdatePrivacy
+  - AcceptFriend
+  - DeclineFriendRequest
+  - RemoveFriend
+  - SendFriendRequest
+  - FavoriteFriend
+  - ReadFriendShip
+  - AcceptRequestJoinGame
+  - InviteToGame
+  - RequestJoinGame
+  - UpdateLobby
+--- !u!114 &3034812840289746348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d9f1c25e7e29f44a89863cb5d7ee94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: 8a87acda05a7c754e9b7ef4254990f28, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: OnlineStatus
+  QueryType: 1
+  quriesName:
+  - OnlineStatus
+--- !u!114 &4349409626882458661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f423ae4121b93f498d97896c88655f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: d53c05c585aa3c24381e20d4d12b9370, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: OnlineStatus
+  QueryType: 2
+  quriesName:
+  - ChatMessage
+  - Test
+  - OnlineStatus
+  - NewFriend
+  - InviteGame
+  - RequestJoinGame
+  - AcceptJoinGame
+--- !u!114 &6142233830646234358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37672f99bf2f03245b633fb8d49459d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: d53c05c585aa3c24381e20d4d12b9370, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: NewFriend
+  QueryType: 2
+  quriesName:
+  - ChatMessage
+  - Test
+  - OnlineStatus
+  - NewFriend
+  - InviteGame
+  - RequestJoinGame
+  - AcceptJoinGame
+--- !u!114 &5096789319448286827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34068e5b37cc3634a9a30331d6702b6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: AcceptRequestJoinGame
+  QueryType: 1
+  quriesName:
+  - BlockPlayer
+  - UnBlockPlayer
+  - UpdatePrivacy
+  - AcceptFriend
+  - DeclineFriendRequest
+  - RemoveFriend
+  - SendFriendRequest
+  - FavoriteFriend
+  - ReadFriendShip
+  - AcceptRequestJoinGame
+  - InviteToGame
+  - RequestJoinGame
+  - UpdateLobby
+--- !u!114 &8185853931510223484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4700e02395c62334e84541f78195d508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: InviteToGame
+  QueryType: 1
+  quriesName:
+  - BlockPlayer
+  - UnBlockPlayer
+  - UpdatePrivacy
+  - AcceptFriend
+  - DeclineFriendRequest
+  - RemoveFriend
+  - SendFriendRequest
+  - FavoriteFriend
+  - ReadFriendShip
+  - AcceptRequestJoinGame
+  - InviteToGame
+  - RequestJoinGame
+  - UpdateLobby
+--- !u!114 &2825850057288220196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b226fc4df1ccb744b9b63dad6a66a4d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 03010a00000069006e006a0065006300740044006100740061002f0000000001340000004700720061006e0064006f00720061002e0044006100740061002e004f00740068006500720050006c00610079006500720049006e006a0065006300740044006100740061002c00200041007300730065006d0062006c0079002d004300530068006100720070002d010800000050006c0061007900650072004900640005
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: RequestJoinGame
+  QueryType: 1
+  quriesName:
+  - BlockPlayer
+  - UnBlockPlayer
+  - UpdatePrivacy
+  - AcceptFriend
+  - DeclineFriendRequest
+  - RemoveFriend
+  - SendFriendRequest
+  - FavoriteFriend
+  - ReadFriendShip
+  - AcceptRequestJoinGame
+  - InviteToGame
+  - RequestJoinGame
+  - UpdateLobby
+--- !u!114 &4802210167885389370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fbc4cb0c4833b74ca6d06734d16763f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 03010a00000069006e006a0065006300740044006100740061002f00000000012e0000004700720061006e0064006f00720061002e0044006100740061002e004c006f0062006200790049006e006a0065006300740044006100740061002c00200041007300730065006d0062006c0079002d004300530068006100720070002d01070000004c006f006200620079004900640005
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: cf286f6ca4f9e62449ef8380c9515766, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: UpdateLobby
+  QueryType: 1
+  quriesName:
+  - BlockPlayer
+  - UnBlockPlayer
+  - UpdatePrivacy
+  - AcceptFriend
+  - DeclineFriendRequest
+  - RemoveFriend
+  - SendFriendRequest
+  - FavoriteFriend
+  - ReadFriendShip
+  - AcceptRequestJoinGame
+  - InviteToGame
+  - RequestJoinGame
+  - UpdateLobby
+--- !u!114 &7545254594583576234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c478ba954dbcbcc4f88b58139845161e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: d53c05c585aa3c24381e20d4d12b9370, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: InviteGame
+  QueryType: 2
+  quriesName:
+  - ChatMessage
+  - Test
+  - OnlineStatus
+  - NewFriend
+  - InviteGame
+  - RequestJoinGame
+  - AcceptJoinGame
+--- !u!114 &681313847498913829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 237827e25b90b044083c861dceb6099d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: d53c05c585aa3c24381e20d4d12b9370, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: RequestJoinGame
+  QueryType: 2
+  quriesName:
+  - ChatMessage
+  - Test
+  - OnlineStatus
+  - NewFriend
+  - InviteGame
+  - RequestJoinGame
+  - AcceptJoinGame
+--- !u!114 &8302866860195711613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125560634949620265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46753f57b06eead42b2dc1da9b91f15f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: d53c05c585aa3c24381e20d4d12b9370, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: AcceptJoinGame
+  QueryType: 2
+  quriesName:
+  - ChatMessage
+  - Test
+  - OnlineStatus
+  - NewFriend
+  - InviteGame
+  - RequestJoinGame
+  - AcceptJoinGame

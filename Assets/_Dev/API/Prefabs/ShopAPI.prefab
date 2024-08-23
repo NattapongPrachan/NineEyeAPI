@@ -1,0 +1,224 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1470698179328058035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 836760886291608949}
+  - component: {fileID: 7666759304348238108}
+  - component: {fileID: 8899669008599993465}
+  - component: {fileID: 904978149341679791}
+  - component: {fileID: 2071721891599935323}
+  - component: {fileID: 4967873487976361753}
+  - component: {fileID: 1465220559898115890}
+  m_Layer: 0
+  m_Name: ShopAPI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &836760886291608949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470698179328058035}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7666759304348238108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470698179328058035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f394e7bf0ffc84999ebc0980ee5f24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: 32cd776957218584d89406f107edbec9, type: 2}
+  _ignoreFirstDataHolder: 1
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: BuyProduct
+  QueryType: 1
+  quriesName:
+  - BuyProduct
+--- !u!114 &8899669008599993465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470698179328058035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb219b23cdf4b314f94a27bca3cc8012, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &904978149341679791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470698179328058035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f9c8075b746c934fa072bcaf4153223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: 32cd776957218584d89406f107edbec9, type: 2}
+  _ignoreFirstDataHolder: 1
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetProducts
+  QueryType: 0
+  quriesName:
+  - GetProducts
+--- !u!114 &2071721891599935323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470698179328058035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f430164c707ce5438781ce372a4a2f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: e5edfc5e00c4741429f376df25baed28, type: 2}
+  _ignoreFirstDataHolder: 1
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetMonsterShop
+  QueryType: 0
+  quriesName:
+  - GetPlayerMonster
+  - GetMonsterShop
+  - GetRefreshMonster
+--- !u!114 &4967873487976361753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470698179328058035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fd853346ae3ce84d82458ab6765ace6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: e5edfc5e00c4741429f376df25baed28, type: 2}
+  _ignoreFirstDataHolder: 1
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetPlayerMonster
+  QueryType: 0
+  quriesName:
+  - GetPlayerMonster
+  - GetMonsterShop
+  - GetRefreshMonster
+  responseData:
+    playerMonster: []
+--- !u!114 &1465220559898115890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470698179328058035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde52faa43801c149a8b8e9491777edd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: e5edfc5e00c4741429f376df25baed28, type: 2}
+  _ignoreFirstDataHolder: 1
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetRefreshMonster
+  QueryType: 0
+  quriesName:
+  - GetPlayerMonster
+  - GetMonsterShop
+  - GetRefreshMonster

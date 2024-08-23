@@ -1,0 +1,305 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4142202006232198093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2230741680825492180}
+  - component: {fileID: 473394515733182929}
+  - component: {fileID: 8924919738191558362}
+  - component: {fileID: 4319007923665726988}
+  - component: {fileID: 8517926658392119376}
+  - component: {fileID: 4798043522400535673}
+  - component: {fileID: 2241388337400341463}
+  - component: {fileID: 4713292933503001302}
+  m_Layer: 0
+  m_Name: ChatGraphData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2230741680825492180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4142202006232198093}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &473394515733182929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4142202006232198093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb219b23cdf4b314f94a27bca3cc8012, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8924919738191558362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4142202006232198093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2799a6974c9c43c4f9ebecab65f02b34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: c0b3e153e34c5194995bd684880c2804, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetPrivateChatList
+  QueryType: 0
+  quriesName:
+  - GetPrivateChatList
+  - GetTargetPrivateMessageList
+--- !u!114 &4319007923665726988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4142202006232198093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a88aa9a30c4c36b46902c79d27319985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: injectData
+      Entry: 7
+      Data: Grandora.Data.PrivateMessageInjectData, Assembly-CSharp
+    - Name: TargetPlayerId
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _graphApi: {fileID: 11400000, guid: c0b3e153e34c5194995bd684880c2804, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetTargetPrivateMessageList
+  QueryType: 0
+  quriesName:
+  - GetPrivateChatList
+  - GetTargetPrivateMessageList
+--- !u!114 &8517926658392119376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4142202006232198093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720fae896bb4b36438698ab9208343b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: injectData
+      Entry: 7
+      Data: Grandora.Data.PrivateMessageInjectData, Assembly-CSharp
+    - Name: TargetPlayerId
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _graphApi: {fileID: 11400000, guid: c0b3e153e34c5194995bd684880c2804, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: DeletePrivateMessage
+  QueryType: 1
+  quriesName:
+  - DeletePrivateMessage
+  - UpdateLastRead
+  - SendPrivateMessage
+--- !u!114 &4798043522400535673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4142202006232198093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196eeb3a339660f46846be66e460d822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: injectData
+      Entry: 7
+      Data: Grandora.Data.SendPrivateMessageInjectData, Assembly-CSharp
+    - Name: TargetPlayerId
+      Entry: 6
+      Data: 
+    - Name: Content
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _graphApi: {fileID: 11400000, guid: c0b3e153e34c5194995bd684880c2804, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: SendPrivateMessage
+  QueryType: 1
+  quriesName:
+  - DeletePrivateMessage
+  - UpdateLastRead
+  - SendPrivateMessage
+--- !u!114 &2241388337400341463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4142202006232198093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6340c728eaafef145a8d81a7bf8813a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: injectData
+      Entry: 7
+      Data: Grandora.Data.PrivateMessageInjectData, Assembly-CSharp
+    - Name: TargetPlayerId
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _graphApi: {fileID: 11400000, guid: c0b3e153e34c5194995bd684880c2804, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: UpdateLastRead
+  QueryType: 1
+  quriesName:
+  - DeletePrivateMessage
+  - UpdateLastRead
+  - SendPrivateMessage
+--- !u!114 &4713292933503001302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4142202006232198093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6784dbf9d5342e64db7c7a6641e4b663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: d53c05c585aa3c24381e20d4d12b9370, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList:
+  - Tst:
+      content: 'your token from Authorization Header is , MM:SS time: 44:31'
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: ChatMessage
+  QueryType: 2
+  quriesName:
+  - ChatMessage
+  - Test
+  - OnlineStatus
+  - NewFriend
+  - InviteGame
+  - RequestJoinGame
+  - AcceptJoinGame

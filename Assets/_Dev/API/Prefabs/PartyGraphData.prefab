@@ -1,0 +1,394 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7105501583161903084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2235130289991960980}
+  - component: {fileID: 1865690734089590293}
+  - component: {fileID: 3288205852436454898}
+  - component: {fileID: 6671068369360863192}
+  - component: {fileID: 6731233902590190465}
+  - component: {fileID: 2072970024626320651}
+  - component: {fileID: 3094680245268271841}
+  - component: {fileID: 3615882426533346531}
+  - component: {fileID: 1480954000451371595}
+  - component: {fileID: 1791155141298195715}
+  - component: {fileID: 6639794043686706234}
+  m_Layer: 0
+  m_Name: PartyGraphData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2235130289991960980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105501583161903084}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1865690734089590293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105501583161903084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be582d3e83c77d8429e2be98fda4c63f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: dc3a951a4b97e1a4ca93792c8686cbe8, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetParty
+  QueryType: 0
+  quriesName:
+  - GetParty
+--- !u!114 &3288205852436454898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105501583161903084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb219b23cdf4b314f94a27bca3cc8012, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6671068369360863192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105501583161903084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 937109183a094f24a88199442d12a9a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: dc3a951a4b97e1a4ca93792c8686cbe8, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: AcceptJoinPartyRequest
+  QueryType: 1
+  quriesName:
+  - InviteParty
+  - AcceptPartyInvite
+  - DeclinePartyInvite
+  - LeaveParty
+  - RequestJoinParty
+  - AcceptJoinPartyRequest
+  - KickPartyMember
+--- !u!114 &6731233902590190465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105501583161903084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195c822ab1075df4294831021bd124e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: dc3a951a4b97e1a4ca93792c8686cbe8, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: AcceptPartyInvite
+  QueryType: 1
+  quriesName:
+  - InviteParty
+  - AcceptPartyInvite
+  - DeclinePartyInvite
+  - LeaveParty
+  - RequestJoinParty
+  - AcceptJoinPartyRequest
+  - KickPartyMember
+--- !u!114 &2072970024626320651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105501583161903084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c03c57461029e4f42b4e47992f388b48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: dc3a951a4b97e1a4ca93792c8686cbe8, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: InviteParty
+  QueryType: 1
+  quriesName:
+  - InviteParty
+  - AcceptPartyInvite
+  - DeclinePartyInvite
+  - LeaveParty
+  - RequestJoinParty
+  - AcceptJoinPartyRequest
+  - KickPartyMember
+--- !u!114 &3094680245268271841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105501583161903084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef8c40b6a63023b40bf6cae6b315b07c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: dc3a951a4b97e1a4ca93792c8686cbe8, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: DeclinePartyInvite
+  QueryType: 1
+  quriesName:
+  - InviteParty
+  - AcceptPartyInvite
+  - DeclinePartyInvite
+  - LeaveParty
+  - RequestJoinParty
+  - AcceptJoinPartyRequest
+  - KickPartyMember
+--- !u!114 &3615882426533346531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105501583161903084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c67d245cdc55ae4d93feee683b37cee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: dc3a951a4b97e1a4ca93792c8686cbe8, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: RequestJoinParty
+  QueryType: 1
+  quriesName:
+  - InviteParty
+  - AcceptPartyInvite
+  - DeclinePartyInvite
+  - LeaveParty
+  - RequestJoinParty
+  - AcceptJoinPartyRequest
+  - KickPartyMember
+--- !u!114 &1480954000451371595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105501583161903084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afef9d5559c855d488678681f81fd9df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: dc3a951a4b97e1a4ca93792c8686cbe8, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: LeaveParty
+  QueryType: 1
+  quriesName:
+  - InviteParty
+  - AcceptPartyInvite
+  - DeclinePartyInvite
+  - LeaveParty
+  - RequestJoinParty
+  - AcceptJoinPartyRequest
+  - KickPartyMember
+--- !u!114 &1791155141298195715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105501583161903084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0555d4cb8e259e447908ff40ab815f8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: 1fa9e196629714d4a9a6abcc434c94cd, type: 2}
+  _ignoreFirstDataHolder: 1
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: Party
+  QueryType: 2
+  quriesName:
+  - Party
+--- !u!114 &6639794043686706234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7105501583161903084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d16ae94eafb3e46919c86340fa2620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: dc3a951a4b97e1a4ca93792c8686cbe8, type: 2}
+  _ignoreFirstDataHolder: 1
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: KickPartyMember
+  QueryType: 1
+  quriesName:
+  - InviteParty
+  - AcceptPartyInvite
+  - DeclinePartyInvite
+  - LeaveParty
+  - RequestJoinParty
+  - AcceptJoinPartyRequest
+  - KickPartyMember

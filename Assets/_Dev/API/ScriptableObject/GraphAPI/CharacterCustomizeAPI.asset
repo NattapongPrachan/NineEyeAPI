@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccf793b7ca1cc645b9cd36d753b8e3c, type: 3}
+  m_Name: CharacterCustomizeAPI
+  m_EditorClassIdentifier: 
+  url: https://preview.api-grandoragame.com/player-service/graph
+  queries:
+  - name: GetSelf
+    type: 0
+    query: "query GetSelf{\n    GetSelf{\n        inventory{\n            avatar{\n               
+      amount\n                sub_category\n                item_id\n               
+      category\n            }\n        }\n    }\n}"
+    queryString: GetSelf
+    returnType: player
+    queryOptions:
+    - GetCharacter
+    - GetSelf
+    - GetSetDataByID
+    fields:
+    - index: 1
+      name: inventory
+      type: Inventory
+      parentIndexes: 
+      hasSubField: 1
+      possibleFields:
+      - name: character
+        type: Character
+      - name: inventory
+        type: Inventory
+      - name: player_id
+        type: String
+      - name: profile
+        type: profile
+      - name: social_networks
+        type: social_network
+      hasChanged: 0
+    - index: 0
+      name: avatar
+      type: PlayerItem
+      parentIndexes: 00000000
+      hasSubField: 1
+      possibleFields:
+      - name: avatar
+        type: PlayerItem
+      - name: bottom
+        type: PlayerItem
+      - name: currency
+        type: PlayerItem
+      - name: decorate
+        type: PlayerItem
+      - name: effect
+        type: PlayerItem
+      - name: environment
+        type: PlayerItem
+      - name: head
+        type: PlayerItem
+      - name: item
+        type: PlayerItem
+      - name: mechanic
+        type: PlayerItem
+      - name: mob
+        type: PlayerItem
+      - name: moodtone
+        type: PlayerItem
+      - name: pet
+        type: PlayerItem
+      - name: preset
+        type: PlayerItem
+      - name: set
+        type: PlayerItem
+      - name: shoes
+        type: PlayerItem
+      - name: skin
+        type: PlayerItem
+      - name: structure
+        type: PlayerItem
+      - name: top
+        type: PlayerItem
+      hasChanged: 0
+    - index: 0
+      name: amount
+      type: Int
+      parentIndexes: 0000000001000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: category
+        type: String
+      - name: item_id
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 3
+      name: sub_category
+      type: String
+      parentIndexes: 0000000001000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: category
+        type: String
+      - name: item_id
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 2
+      name: item_id
+      type: String
+      parentIndexes: 0000000001000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: category
+        type: String
+      - name: item_id
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    - index: 1
+      name: category
+      type: String
+      parentIndexes: 0000000001000000
+      hasSubField: 0
+      possibleFields:
+      - name: amount
+        type: Int
+      - name: category
+        type: String
+      - name: item_id
+        type: String
+      - name: sub_category
+        type: String
+      hasChanged: 0
+    isComplete: 1
+  mutations: []
+  subscriptions: []
+  loading: 0

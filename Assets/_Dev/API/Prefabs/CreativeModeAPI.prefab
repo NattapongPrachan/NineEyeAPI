@@ -1,0 +1,517 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7204458004679231743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5031871774572894511}
+  - component: {fileID: 3926804438292067352}
+  - component: {fileID: 4432893644130792442}
+  - component: {fileID: 2974009969471469255}
+  - component: {fileID: 8584221145651224535}
+  - component: {fileID: 6773428416667899997}
+  - component: {fileID: 2037195409635791395}
+  - component: {fileID: 288698633345706524}
+  - component: {fileID: 3410652463988216663}
+  - component: {fileID: 8148951448562756818}
+  - component: {fileID: 2282708153900182611}
+  - component: {fileID: 5458847848609127721}
+  m_Layer: 0
+  m_Name: CreativeModeAPI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5031871774572894511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204458004679231743}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3926804438292067352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204458004679231743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c905a21191ec94284f3bf6d7c0f16f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: 1eb710997a1b00b4f87b1055d26e8af0, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList:
+  - creativeProjectsData:
+    - creativeExpandingData: 
+      description: 
+      gamePermission: friend
+      imageUrl: 
+      isPublish: 0
+      maxPlayer: 5
+      playerId: ff76a0b5-3fda-43e4-86b3-a69eaeec034c
+      playerName: 
+      projectId: c57fbbb4-b550-48c9-8092-0696dd979708
+      projectName: test
+      publishAt: 01/01/0001 07:00:04
+      tagGame: []
+      template: 
+      visitor: 0
+      like: 0
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetProjects
+  QueryType: 0
+  quriesName:
+  - GetProjectByID
+  - GetProjects
+  - GetPublishProject
+--- !u!114 &4432893644130792442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204458004679231743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4671b9c894e5a84e8020bb0096974fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: 1eb710997a1b00b4f87b1055d26e8af0, type: 2}
+  _ignoreFirstDataHolder: 1
+  QueryEvent: {fileID: 0}
+  elementList:
+  - creativeExpandingData: SDadasd
+    description: 
+    gamePermission: friend
+    imageUrl: 
+    isPublish: 0
+    maxPlayer: 5
+    playerId: ff76a0b5-3fda-43e4-86b3-a69eaeec034c
+    playerName: 
+    projectId: c57fbbb4-b550-48c9-8092-0696dd979708
+    projectName: BossTest1
+    publishAt: 01/01/0001 07:00:04
+    tagGame: []
+    template: 
+    visitor: 0
+    like: 0
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetProjectByID
+  QueryType: 0
+  quriesName:
+  - GetProjectByID
+  - GetProjects
+  - GetPublishProject
+--- !u!114 &2974009969471469255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204458004679231743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb219b23cdf4b314f94a27bca3cc8012, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8584221145651224535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204458004679231743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0e5c44764311a14b81e48fe4377c707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: 1eb710997a1b00b4f87b1055d26e8af0, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList:
+  - publishProjectsData: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: GetPublishProject
+  QueryType: 0
+  quriesName:
+  - GetProjectByID
+  - GetProjects
+  - GetPublishProject
+--- !u!114 &6773428416667899997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204458004679231743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb4bf224d5fca914ea76dde863e0d134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: d328dfe9c29e5134b843f821403fcf61, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: OfficialProjectList
+  QueryType: 0
+  quriesName:
+  - OfficialProjectList
+--- !u!114 &2037195409635791395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204458004679231743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 402d95c90f1792647b7b76ef4a3d7b49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: 1eb710997a1b00b4f87b1055d26e8af0, type: 2}
+  _ignoreFirstDataHolder: 1
+  QueryEvent: {fileID: 0}
+  elementList:
+  - creativeExpandingData: SDadasd
+    description: 
+    gamePermission: 
+    imageUrl: 
+    isPublish: 0
+    maxPlayer: 5
+    playerId: ff76a0b5-3fda-43e4-86b3-a69eaeec034c
+    playerName: 
+    projectId: c57fbbb4-b550-48c9-8092-0696dd979708
+    projectName: BossTest1
+    publishAt: 01/01/0001 00:00:00
+    tagGame: []
+    template: 
+    visitor: 0
+    like: 0
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: UpdateProject
+  QueryType: 1
+  quriesName:
+  - CreateProject
+  - DeleteProject
+  - UpdateProject
+  - UpdatePublishProject
+  - LikeProject
+  - VisitProject
+--- !u!114 &288698633345706524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204458004679231743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3054e4311242d37439d436ae9844de6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: 1eb710997a1b00b4f87b1055d26e8af0, type: 2}
+  _ignoreFirstDataHolder: 1
+  QueryEvent: {fileID: 0}
+  elementList:
+  - creativeExpandingData: Bosssss
+    description: 
+    gamePermission: 
+    imageUrl: 
+    isPublish: 0
+    maxPlayer: 5
+    playerId: ff76a0b5-3fda-43e4-86b3-a69eaeec034c
+    playerName: 
+    projectId: c57fbbb4-b550-48c9-8092-0696dd979708
+    projectName: BossTwst2
+    publishAt: 2024-01-11T15:24:58.452360017+07:00
+    tagGame: []
+    template: 
+    visitor: 0
+    like: 0
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: UpdatePublishProject
+  QueryType: 1
+  quriesName:
+  - CreateProject
+  - DeleteProject
+  - UpdateProject
+  - UpdatePublishProject
+  - LikeProject
+  - VisitProject
+--- !u!114 &3410652463988216663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204458004679231743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6a7a845eeb5d0d4eb25081b83c72d20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: 1eb710997a1b00b4f87b1055d26e8af0, type: 2}
+  _ignoreFirstDataHolder: 1
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: project creation limit reached for the current package
+    extensions:
+      errorCode: 0
+  queryString: CreateProject
+  QueryType: 1
+  quriesName:
+  - CreateProject
+  - DeleteProject
+  - UpdateProject
+  - UpdatePublishProject
+  - LikeProject
+  - VisitProject
+--- !u!114 &8148951448562756818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204458004679231743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 740cc8d4a45eed9479c4df864ba51930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _graphApi: {fileID: 11400000, guid: 1eb710997a1b00b4f87b1055d26e8af0, type: 2}
+  _ignoreFirstDataHolder: 1
+  QueryEvent: {fileID: 0}
+  elementList:
+  - creativeExpandingData: Bosssss
+    description: 
+    gamePermission: friend
+    imageUrl: 
+    isPublish: 0
+    maxPlayer: 5
+    playerId: ff76a0b5-3fda-43e4-86b3-a69eaeec034c
+    playerName: 
+    projectId: c57fbbb4-b550-48c9-8092-0696dd979708
+    projectName: BossTwst2
+    publishAt: 01/11/2024 15:24:58
+    tagGame: []
+    template: 
+    visitor: 0
+    like: 0
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: DeleteProject
+  QueryType: 1
+  quriesName:
+  - CreateProject
+  - DeleteProject
+  - UpdateProject
+  - UpdatePublishProject
+  - LikeProject
+  - VisitProject
+--- !u!114 &2282708153900182611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204458004679231743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f206b31d227b8044bb0049c1a96f9fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: injectData
+      Entry: 7
+      Data: CreativeProjectIdRequest, Assembly-CSharp
+    - Name: projectId
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _graphApi: {fileID: 11400000, guid: 1eb710997a1b00b4f87b1055d26e8af0, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: LikeProject
+  QueryType: 1
+  quriesName:
+  - CreateProject
+  - DeleteProject
+  - UpdateProject
+  - UpdatePublishProject
+  - LikeProject
+  - VisitProject
+--- !u!114 &5458847848609127721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204458004679231743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1bd3d1204630794a9d4c4e6448d1637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: injectData
+      Entry: 7
+      Data: CreativeProjectIdRequest, Assembly-CSharp
+    - Name: projectId
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _graphApi: {fileID: 11400000, guid: 1eb710997a1b00b4f87b1055d26e8af0, type: 2}
+  _ignoreFirstDataHolder: 0
+  QueryEvent: {fileID: 0}
+  elementList: []
+  ErrorMessage:
+    message: 
+    extensions:
+      errorCode: 0
+  queryString: VisitProject
+  QueryType: 1
+  quriesName:
+  - CreateProject
+  - DeleteProject
+  - UpdateProject
+  - UpdatePublishProject
+  - LikeProject
+  - VisitProject
