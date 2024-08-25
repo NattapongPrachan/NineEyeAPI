@@ -8,9 +8,49 @@ namespace API.Data
 {
     public class AuthAPIData : NetworkDataListHolder<AuthSignupData>
     {
+        public ClientEndpointTemplate RefreshTokenEndpoint;
+        public ClientEndpointTemplate RefreshTokenEXEndpoint;
+        public ClientEndpointTemplate SigninEndpoint;
+        public ClientEndpointTemplate SigninTokenEndpoint;
         public ClientEndpointTemplate SignupEndpoint;
-        public ClientEndpointTemplate SigninClientEndpoint;
+        public ClientEndpointTemplate SocialLoginEndpoint;
+        public ClientEndpointTemplate SocialLinkEndpoint;
+        public ClientEndpointTemplate UpdateAvatarEndpoint;
+        public ClientEndpointTemplate UpdateNameEndpoint;
+        public ClientEndpointTemplate UpdateSomeStatEndpoint;
+        public ClientEndpointTemplate CurrentEndpoint;
+        public ClientEndpointTemplate RefreshStatEndpoint;
         public SignupData SignupData;
+
+        [Button]
+        public void RefreshToken()
+        {
+            var request = CreateRequest(RefreshTokenEndpoint, null, Result =>
+            {
+
+
+            });
+            ServerConnector.Instance.Request(request);
+        }
+        [Button]
+        public void RefreshTokenEX()
+        {
+            var request = CreateRequest(RefreshTokenEndpoint, null, Result =>
+            {
+
+
+            });
+            ServerConnector.Instance.Request(request);
+        }
+        [Button]
+        public void Signin()
+        {
+            var request = CreateRequest(SigninEndpoint, null, Result =>
+            {
+            });
+            Debug.Log(request.endpoint);
+            ServerConnector.Instance.Request(request);
+        }
         [Button]
         public void Signup()
         {
@@ -24,14 +64,63 @@ namespace API.Data
             ServerConnector.Instance.Request(request);
         }
         [Button]
-        public void Signin()
+        public void SocialLogin()
         {
-            var request = CreateRequest(SigninClientEndpoint, null, Result =>
+            var request = CreateRequest(SocialLoginEndpoint, null, Result =>
             {
             });
-            Debug.Log(request.endpoint);
             ServerConnector.Instance.Request(request);
         }
+        [Button]
+        public void SocialLink()
+        {
+            var request = CreateRequest(SocialLinkEndpoint, null, Result =>
+            {
+            });
+            ServerConnector.Instance.Request(request);
+        }
+        [Button]
+        public void UpdateAvatar()
+        {
+            var request = CreateRequest(UpdateAvatarEndpoint, null, Result =>
+            {
+            });
+            ServerConnector.Instance.Request(request);
+        }
+        [Button]
+        public void UpdateName()
+        {
+            var request = CreateRequest(UpdateNameEndpoint, null, Result =>
+            {
+            });
+            ServerConnector.Instance.Request(request);
+        }
+        [Button]
+        public void UpdateSomeStat()
+        {
+            var request = CreateRequest(UpdateSomeStatEndpoint, null, Result =>
+            {
+            });
+            ServerConnector.Instance.Request(request);
+        }
+        [Button]
+        public void Current()
+        {
+            var request = CreateRequest(CurrentEndpoint, null, Result =>
+            {
+            });
+            ServerConnector.Instance.Request(request);
+        }
+        [Button]
+        public void RefreshStat()
+        {
+            var request = CreateRequest(RefreshStatEndpoint, null, Result =>
+            {
+            });
+            ServerConnector.Instance.Request(request);
+        }
+
+
     }
     
 }

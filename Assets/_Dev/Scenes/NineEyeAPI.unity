@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 46760810}
   - component: {fileID: 46760811}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Auth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -184,6 +184,38 @@ MonoBehaviour:
     useThisEndpointOnly: 0
     debugMode: 0
     extensionServices: 0
+  RefreshTokenEndpoint:
+    endpoint: 
+    verb: 0
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  RefreshTokenEXEndpoint:
+    endpoint: 
+    verb: 0
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  SigninEndpoint:
+    endpoint: 
+    verb: 0
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  SigninTokenEndpoint:
+    endpoint: 
+    verb: 0
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
   SignupEndpoint:
     endpoint: /auth/signup
     verb: 2
@@ -192,9 +224,57 @@ MonoBehaviour:
     useThisEndpointOnly: 0
     debugMode: 0
     extensionServices: 0
-  SigninClientEndpoint:
-    endpoint: /auth/signin
-    verb: 2
+  SocialLoginEndpoint:
+    endpoint: 
+    verb: 0
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  SocialLinkEndpoint:
+    endpoint: 
+    verb: 0
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  UpdateAvatarEndpoint:
+    endpoint: 
+    verb: 0
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  UpdateNameEndpoint:
+    endpoint: 
+    verb: 0
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  UpdateSomeStatEndpoint:
+    endpoint: 
+    verb: 0
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  CurrentEndpoint:
+    endpoint: 
+    verb: 0
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  RefreshStatEndpoint:
+    endpoint: 
+    verb: 0
     parameterType: 0
     isShowLoading: 0
     useThisEndpointOnly: 0
