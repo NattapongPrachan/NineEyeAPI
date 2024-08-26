@@ -123,170 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &46760809
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 46760810}
-  - component: {fileID: 46760811}
-  m_Layer: 0
-  m_Name: Auth
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &46760810
+--- !u!4 &46760810 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8741042204644750517, guid: 8f123af191621344d9391ab0127637af,
+    type: 3}
+  m_PrefabInstance: {fileID: 8741042204606576607}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46760809}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 538468587}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &46760811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46760809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d96e9ca72d5d314fa1ef14063ca891c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: OnDataUpdate
-      Entry: 6
-      Data: 
-  elementList: []
-  getRequestTemplate:
-    endpoint: /auth/refresh_token
-    verb: 2
-    parameterType: 0
-    isShowLoading: 0
-    useThisEndpointOnly: 0
-    debugMode: 0
-    extensionServices: 0
-  RefreshTokenEndpoint:
-    endpoint: /auth/refresh_token
-    verb: 2
-    parameterType: 0
-    isShowLoading: 0
-    useThisEndpointOnly: 0
-    debugMode: 0
-    extensionServices: 0
-  RefreshTokenEXEndpoint:
-    endpoint: /auth/refresh_token_ex
-    verb: 2
-    parameterType: 0
-    isShowLoading: 0
-    useThisEndpointOnly: 0
-    debugMode: 0
-    extensionServices: 0
-  SigninEndpoint:
-    endpoint: /auth/signin
-    verb: 2
-    parameterType: 0
-    isShowLoading: 0
-    useThisEndpointOnly: 0
-    debugMode: 0
-    extensionServices: 0
-  SigninTokenEndpoint:
-    endpoint: /auth/signin_token
-    verb: 2
-    parameterType: 0
-    isShowLoading: 0
-    useThisEndpointOnly: 0
-    debugMode: 0
-    extensionServices: 0
-  SignupEndpoint:
-    endpoint: /auth/signup
-    verb: 2
-    parameterType: 0
-    isShowLoading: 0
-    useThisEndpointOnly: 0
-    debugMode: 0
-    extensionServices: 0
-  SocialLoginEndpoint:
-    endpoint: /auth/social_login
-    verb: 2
-    parameterType: 0
-    isShowLoading: 0
-    useThisEndpointOnly: 0
-    debugMode: 0
-    extensionServices: 0
-  SocialLinkEndpoint:
-    endpoint: /auth/social_link
-    verb: 2
-    parameterType: 0
-    isShowLoading: 0
-    useThisEndpointOnly: 0
-    debugMode: 0
-    extensionServices: 0
-  UpdateAvatarEndpoint:
-    endpoint: /auth/update_avatar
-    verb: 2
-    parameterType: 0
-    isShowLoading: 0
-    useThisEndpointOnly: 0
-    debugMode: 0
-    extensionServices: 0
-  UpdateNameEndpoint:
-    endpoint: /auth/update_name
-    verb: 2
-    parameterType: 0
-    isShowLoading: 0
-    useThisEndpointOnly: 0
-    debugMode: 0
-    extensionServices: 0
-  UpdateSomeStatEndpoint:
-    endpoint: /auth/update_somestat
-    verb: 2
-    parameterType: 0
-    isShowLoading: 0
-    useThisEndpointOnly: 0
-    debugMode: 0
-    extensionServices: 0
-  CurrentEndpoint:
-    endpoint: /auth/current
-    verb: 2
-    parameterType: 0
-    isShowLoading: 0
-    useThisEndpointOnly: 0
-    debugMode: 0
-    extensionServices: 0
-  RefreshStatEndpoint:
-    endpoint: /auth/refresh_stat
-    verb: 2
-    parameterType: 0
-    isShowLoading: 0
-    useThisEndpointOnly: 0
-    debugMode: 0
-    extensionServices: 0
-  SignupData:
-    name: Ygg1234
-    email: nattapong.game.ygg@gmail.com
-    password: Ygg1234
 --- !u!1 &538468585
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,6 +193,7 @@ Transform:
   m_Children:
   - {fileID: 46760810}
   - {fileID: 1916511737}
+  - {fileID: 7497593000374597894}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -530,96 +373,240 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1916511736
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1916511737}
-  - component: {fileID: 1916511738}
-  m_Layer: 0
-  m_Name: Privilege
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1916511737
+--- !u!4 &1916511737 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3807185406173915254, guid: a273e59a660892445a293228476645a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 3807185407015619983}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916511736}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 538468587}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1916511738
-MonoBehaviour:
+--- !u!1001 &3807185407015619983
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 538468587}
+    m_Modifications:
+    - target: {fileID: 3807185406173915253, guid: a273e59a660892445a293228476645a9,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 3807185406173915253, guid: a273e59a660892445a293228476645a9,
+        type: 3}
+    - target: {fileID: 3807185406173915254, guid: a273e59a660892445a293228476645a9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807185406173915254, guid: a273e59a660892445a293228476645a9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807185406173915254, guid: a273e59a660892445a293228476645a9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807185406173915254, guid: a273e59a660892445a293228476645a9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807185406173915254, guid: a273e59a660892445a293228476645a9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807185406173915254, guid: a273e59a660892445a293228476645a9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807185406173915254, guid: a273e59a660892445a293228476645a9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807185406173915254, guid: a273e59a660892445a293228476645a9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807185406173915254, guid: a273e59a660892445a293228476645a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807185406173915254, guid: a273e59a660892445a293228476645a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807185406173915254, guid: a273e59a660892445a293228476645a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807185406173915255, guid: a273e59a660892445a293228476645a9,
+        type: 3}
+      propertyPath: m_Name
+      value: Privilege
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a273e59a660892445a293228476645a9, type: 3}
+--- !u!1001 &7497593000374597893
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 538468587}
+    m_Modifications:
+    - target: {fileID: 685273091714271676, guid: 7cc53d78c388a1b44ab7af75afd90f64,
+        type: 3}
+      propertyPath: m_Name
+      value: Promotion
+      objectReference: {fileID: 0}
+    - target: {fileID: 6399593787980435624, guid: 7cc53d78c388a1b44ab7af75afd90f64,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 6399593787980435624, guid: 7cc53d78c388a1b44ab7af75afd90f64,
+        type: 3}
+    - target: {fileID: 7502159236264213321, guid: 7cc53d78c388a1b44ab7af75afd90f64,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502159236264213321, guid: 7cc53d78c388a1b44ab7af75afd90f64,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502159236264213321, guid: 7cc53d78c388a1b44ab7af75afd90f64,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502159236264213321, guid: 7cc53d78c388a1b44ab7af75afd90f64,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502159236264213321, guid: 7cc53d78c388a1b44ab7af75afd90f64,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502159236264213321, guid: 7cc53d78c388a1b44ab7af75afd90f64,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502159236264213321, guid: 7cc53d78c388a1b44ab7af75afd90f64,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502159236264213321, guid: 7cc53d78c388a1b44ab7af75afd90f64,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502159236264213321, guid: 7cc53d78c388a1b44ab7af75afd90f64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502159236264213321, guid: 7cc53d78c388a1b44ab7af75afd90f64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502159236264213321, guid: 7cc53d78c388a1b44ab7af75afd90f64,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7cc53d78c388a1b44ab7af75afd90f64, type: 3}
+--- !u!4 &7497593000374597894 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7502159236264213321, guid: 7cc53d78c388a1b44ab7af75afd90f64,
+    type: 3}
+  m_PrefabInstance: {fileID: 7497593000374597893}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916511736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a771da687fd664419ea0be275de4fa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: OnDataUpdate
-      Entry: 6
-      Data: 
-    - Name: elementList
-      Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[PrivilegeAllData, Assembly-CSharp]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 1|PrivilegeAllData, Assembly-CSharp
-    - Name: PrivilegeList
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  getRequestTemplate:
-    endpoint: /promotion/all
-    verb: 2
-    parameterType: 0
-    isShowLoading: 0
-    useThisEndpointOnly: 0
-    debugMode: 0
-    extensionServices: 0
-  PrivilegesAllEndpoint:
-    endpoint: /privilege/all
-    verb: 2
-    parameterType: 0
-    isShowLoading: 0
-    useThisEndpointOnly: 0
-    debugMode: 0
-    extensionServices: 0
+--- !u!1001 &8741042204606576607
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 538468587}
+    m_Modifications:
+    - target: {fileID: 8741042204644750516, guid: 8f123af191621344d9391ab0127637af,
+        type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 8741042204644750516, guid: 8f123af191621344d9391ab0127637af,
+        type: 3}
+    - target: {fileID: 8741042204644750517, guid: 8f123af191621344d9391ab0127637af,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741042204644750517, guid: 8f123af191621344d9391ab0127637af,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741042204644750517, guid: 8f123af191621344d9391ab0127637af,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741042204644750517, guid: 8f123af191621344d9391ab0127637af,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741042204644750517, guid: 8f123af191621344d9391ab0127637af,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741042204644750517, guid: 8f123af191621344d9391ab0127637af,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741042204644750517, guid: 8f123af191621344d9391ab0127637af,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741042204644750517, guid: 8f123af191621344d9391ab0127637af,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741042204644750517, guid: 8f123af191621344d9391ab0127637af,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741042204644750517, guid: 8f123af191621344d9391ab0127637af,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741042204644750517, guid: 8f123af191621344d9391ab0127637af,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741042204644750518, guid: 8f123af191621344d9391ab0127637af,
+        type: 3}
+      propertyPath: m_Name
+      value: Auth
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8f123af191621344d9391ab0127637af, type: 3}

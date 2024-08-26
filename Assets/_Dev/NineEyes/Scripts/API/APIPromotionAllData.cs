@@ -7,6 +7,7 @@ using UnityEngine;
 public class APIPromotionAllData : NetworkDataListHolder<PromotionAllData>
 {
     public ClientEndpointTemplate PromotionAllEndpoint;
+    
     [Button]
     public void PromotionAll()
     {
