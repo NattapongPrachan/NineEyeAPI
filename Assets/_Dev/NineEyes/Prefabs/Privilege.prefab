@@ -1,0 +1,427 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3807185406173915255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3807185406173915254}
+  - component: {fileID: 3807185406173915253}
+  m_Layer: 0
+  m_Name: Privilege
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3807185406173915254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3807185406173915255}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3807185406173915253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3807185406173915255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a771da687fd664419ea0be275de4fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: OnDataUpdate
+      Entry: 6
+      Data: 
+    - Name: elementList
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PrivilegeAllData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PrivilegeAllData, Assembly-CSharp
+    - Name: PrivilegeList
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[PrivilegeData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 3|PrivilegeData, Assembly-CSharp
+    - Name: enable
+      Entry: 5
+      Data: true
+    - Name: msPrivilegeCode
+      Entry: 1
+      Data: DEEP_HELL
+    - Name: msParentPrivilegeCode
+      Entry: 6
+      Data: 
+    - Name: imageUrl_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/privilege/deep_hell_3.png
+    - Name: imageUrl_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/privilege/deep_hell_3.png
+    - Name: imageUrl_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: imageUrl_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: imageUrl_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: imageUrl_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: imageUrl_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: imageUrl_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: imageUrl_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: imageUrl_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_en
+      Entry: 1
+      Data: DEEP HELL
+    - Name: title_th
+      Entry: 1
+      Data: "\u0E1D\u0E48\u0E32\u0E02\u0E38\u0E21\u0E19\u0E23\u0E01"
+    - Name: title_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_en
+      Entry: 1
+      Data: Description of DEEP HELL
+    - Name: description_th
+      Entry: 1
+      Data: "\u0E04\u0E33\u0E2D\u0E18\u0E34\u0E1A\u0E32\u0E22\u0E02\u0E2D\u0E07 \u0E1D\u0E48\u0E32\u0E02\u0E38\u0E21\u0E19\u0E23\u0E01"
+    - Name: description_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: mapStatCode
+      Entry: 1
+      Data: DEEP_HELL
+    - Name: dayCount
+      Entry: 3
+      Data: 30
+    - Name: priceMode
+      Entry: 1
+      Data: MONEY
+    - Name: priceInDiamond
+      Entry: 3
+      Data: 0
+    - Name: priceInDollar
+      Entry: 3
+      Data: 30
+    - Name: priceAppleID
+      Entry: 1
+      Data: 
+    - Name: priceAndroidID
+      Entry: 1
+      Data: 
+    - Name: createdAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: updatedAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: msPromotionIDs
+      Entry: 7
+      Data: 4|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: msParentPrivilege
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|PrivilegeData, Assembly-CSharp
+    - Name: enable
+      Entry: 5
+      Data: true
+    - Name: msPrivilegeCode
+      Entry: 1
+      Data: VIP_1
+    - Name: msParentPrivilegeCode
+      Entry: 6
+      Data: 
+    - Name: imageUrl_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/privilege/vip1_2.png
+    - Name: imageUrl_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/privilege/vip1_2.png
+    - Name: imageUrl_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: imageUrl_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: imageUrl_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: imageUrl_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: imageUrl_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: imageUrl_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: imageUrl_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: imageUrl_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_en
+      Entry: 1
+      Data: VIP 1
+    - Name: title_th
+      Entry: 1
+      Data: "\u0E27\u0E35\u0E44\u0E2D\u0E1E\u0E35 1"
+    - Name: title_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_en
+      Entry: 1
+      Data: Description of VIP 1
+    - Name: description_th
+      Entry: 1
+      Data: "\u0E04\u0E33\u0E2D\u0E18\u0E34\u0E1A\u0E32\u0E22\u0E02\u0E2D\u0E07 \u0E27\u0E35\u0E44\u0E2D\u0E1E\u0E35
+        1"
+    - Name: description_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: mapStatCode
+      Entry: 1
+      Data: VIP_1
+    - Name: dayCount
+      Entry: 3
+      Data: 30
+    - Name: priceMode
+      Entry: 1
+      Data: MONEY
+    - Name: priceInDiamond
+      Entry: 3
+      Data: 0
+    - Name: priceInDollar
+      Entry: 3
+      Data: 10
+    - Name: priceAppleID
+      Entry: 1
+      Data: 
+    - Name: priceAndroidID
+      Entry: 1
+      Data: 
+    - Name: createdAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: updatedAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: msPromotionIDs
+      Entry: 7
+      Data: 6|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 9
+    - Name: 
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60ca
+    - Name: 
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60ce
+    - Name: 
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60d2
+    - Name: 
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60d6
+    - Name: 
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60da
+    - Name: 
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60de
+    - Name: 
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60e2
+    - Name: 
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60e6
+    - Name: 
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60ea
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: msParentPrivilege
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  getRequestTemplate:
+    endpoint: /promotion/all
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  PrivilegesAllEndpoint:
+    endpoint: /privilege/all
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
