@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 10
+  serializedVersion: 9
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -44,6 +44,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -66,6 +67,9 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -100,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 3
+    serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -113,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    buildHeightMesh: 0
+    accuratePlacement: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -143,13 +147,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46760809}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 538468587}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &46760811
 MonoBehaviour:
@@ -185,32 +188,32 @@ MonoBehaviour:
     debugMode: 0
     extensionServices: 0
   RefreshTokenEndpoint:
-    endpoint: 
-    verb: 0
+    endpoint: /auth/refresh_token
+    verb: 2
     parameterType: 0
     isShowLoading: 0
     useThisEndpointOnly: 0
     debugMode: 0
     extensionServices: 0
   RefreshTokenEXEndpoint:
-    endpoint: 
-    verb: 0
+    endpoint: /auth/refresh_token_ex
+    verb: 2
     parameterType: 0
     isShowLoading: 0
     useThisEndpointOnly: 0
     debugMode: 0
     extensionServices: 0
   SigninEndpoint:
-    endpoint: 
-    verb: 0
+    endpoint: /auth/signin
+    verb: 2
     parameterType: 0
     isShowLoading: 0
     useThisEndpointOnly: 0
     debugMode: 0
     extensionServices: 0
   SigninTokenEndpoint:
-    endpoint: 
-    verb: 0
+    endpoint: /auth/signin_token
+    verb: 2
     parameterType: 0
     isShowLoading: 0
     useThisEndpointOnly: 0
@@ -225,56 +228,56 @@ MonoBehaviour:
     debugMode: 0
     extensionServices: 0
   SocialLoginEndpoint:
-    endpoint: 
-    verb: 0
+    endpoint: /auth/social_login
+    verb: 2
     parameterType: 0
     isShowLoading: 0
     useThisEndpointOnly: 0
     debugMode: 0
     extensionServices: 0
   SocialLinkEndpoint:
-    endpoint: 
-    verb: 0
+    endpoint: /auth/social_link
+    verb: 2
     parameterType: 0
     isShowLoading: 0
     useThisEndpointOnly: 0
     debugMode: 0
     extensionServices: 0
   UpdateAvatarEndpoint:
-    endpoint: 
-    verb: 0
+    endpoint: /auth/update_avatar
+    verb: 2
     parameterType: 0
     isShowLoading: 0
     useThisEndpointOnly: 0
     debugMode: 0
     extensionServices: 0
   UpdateNameEndpoint:
-    endpoint: 
-    verb: 0
+    endpoint: /auth/update_name
+    verb: 2
     parameterType: 0
     isShowLoading: 0
     useThisEndpointOnly: 0
     debugMode: 0
     extensionServices: 0
   UpdateSomeStatEndpoint:
-    endpoint: 
-    verb: 0
+    endpoint: /auth/update_somestat
+    verb: 2
     parameterType: 0
     isShowLoading: 0
     useThisEndpointOnly: 0
     debugMode: 0
     extensionServices: 0
   CurrentEndpoint:
-    endpoint: 
-    verb: 0
+    endpoint: /auth/current
+    verb: 2
     parameterType: 0
     isShowLoading: 0
     useThisEndpointOnly: 0
     debugMode: 0
     extensionServices: 0
   RefreshStatEndpoint:
-    endpoint: 
-    verb: 0
+    endpoint: /auth/refresh_stat
+    verb: 2
     parameterType: 0
     isShowLoading: 0
     useThisEndpointOnly: 0
@@ -342,14 +345,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538468585}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 46760810}
+  - {fileID: 1916511737}
   m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -376,8 +379,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -436,13 +440,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -484,17 +487,9 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -528,18 +523,103 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1660057539 &9223372036854775807
-SceneRoots:
+--- !u!1 &1916511736
+GameObject:
   m_ObjectHideFlags: 0
-  m_Roots:
-  - {fileID: 963194228}
-  - {fileID: 705507995}
-  - {fileID: 538468587}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1916511737}
+  - component: {fileID: 1916511738}
+  m_Layer: 0
+  m_Name: Privilege
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1916511737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916511736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 538468587}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1916511738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916511736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a771da687fd664419ea0be275de4fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: OnDataUpdate
+      Entry: 6
+      Data: 
+    - Name: elementList
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PrivilegeAllData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PrivilegeAllData, Assembly-CSharp
+    - Name: PrivilegeList
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  getRequestTemplate:
+    endpoint: /promotion/all
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  PrivilegesAllEndpoint:
+    endpoint: /privilege/all
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0

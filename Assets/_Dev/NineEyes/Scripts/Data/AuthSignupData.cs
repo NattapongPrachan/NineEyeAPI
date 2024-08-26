@@ -9,7 +9,7 @@ public class AuthSignupData : NetworkData
     public override string UserId => "";
 }
 [System.Serializable]
-public struct SignupData
+public class SignupData
 {
     public string name;
     public string email;
