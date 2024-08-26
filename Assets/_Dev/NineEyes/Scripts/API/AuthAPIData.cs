@@ -55,7 +55,7 @@ namespace API.Data
         public void Signup()
         {
             Debug.Log(SignupData.name);
-            var request = CreateRequest(SignupEndpoint, null, Result =>
+            var request = CreateRequest(SignupEndpoint, SignupData, Result =>
             {
 
                 Debug.Log("Result " + Result);

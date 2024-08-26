@@ -12,9 +12,6 @@ public class AuthGuildData : NetworkData
 public struct GuildRequest
 {
     public string name;
-    public string email;
-    public string password;
-
 }
 [System.Serializable]
 public class GuildResponse
