@@ -1,0 +1,1697 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &685273091714271676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7502159236264213321}
+  - component: {fileID: 6399593787980435624}
+  m_Layer: 0
+  m_Name: Promotion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7502159236264213321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685273091714271676}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6399593787980435624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685273091714271676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6a13f3532fae14590f7ff3c5639776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: OnDataUpdate
+      Entry: 6
+      Data: 
+    - Name: elementList
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[PromotionAllData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 1|PromotionAllData, Assembly-CSharp
+    - Name: PromotionPages
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[PromotionPage, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: PromotionPage, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60ec
+    - Name: priority
+      Entry: 3
+      Data: 300
+    - Name: layout
+      Entry: 3
+      Data: 2
+    - Name: mSPromo1_Id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60da
+    - Name: mSPromo2_Id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60ce
+    - Name: mSPromo3_Id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60d2
+    - Name: mSPromo4_Id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60d6
+    - Name: mSPromo5_Id
+      Entry: 6
+      Data: 
+    - Name: mSPromo6_Id
+      Entry: 6
+      Data: 
+    - Name: mSPromo7_Id
+      Entry: 6
+      Data: 
+    - Name: mSPromo8_Id
+      Entry: 6
+      Data: 
+    - Name: mSPromo9_Id
+      Entry: 6
+      Data: 
+    - Name: EffectiveAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: EffectiveUntil
+      Entry: 1
+      Data: 06/27/2124 17:57:42
+    - Name: createdAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: updatedAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: promo1
+      Entry: 7
+      Data: 3|PromotionData, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60da
+    - Name: msPromotionCode
+      Entry: 1
+      Data: PROMO_CODE_005
+    - Name: model
+      Entry: 1
+      Data: REPEATABLE
+    - Name: title_en
+      Entry: 1
+      Data: Test Promo 5
+    - Name: title_th
+      Entry: 1
+      Data: "\u0E17\u0E14\u0E2A\u0E2D\u0E1A\u0E42\u0E1B\u0E23 5"
+    - Name: title_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_en
+      Entry: 1
+      Data: Description Test Promo 5
+    - Name: description_th
+      Entry: 1
+      Data: "Description \u0E17\u0E14\u0E2A\u0E2D\u0E1A\u0E42\u0E1B\u0E23 5"
+    - Name: description_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_11a.jpg
+    - Name: image_1_1_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_11a.jpg
+    - Name: image_1_1_Url_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_21.jpg
+    - Name: image_2_1_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_21.jpg
+    - Name: image_2_1_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_12.jpg
+    - Name: image_1_2_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_12.jpg
+    - Name: image_1_2_Url_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/dev/application/promo/promo_3_1.jpg
+    - Name: image_3_1_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/dev/application/promo/promo_3_1.jpg
+    - Name: image_3_1_Url_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_32.jpg
+    - Name: image_3_2_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_32.jpg
+    - Name: image_3_2_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: msPrivilegeIDs
+      Entry: 7
+      Data: 4|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60c4
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: priceMode
+      Entry: 1
+      Data: MONEY
+    - Name: promotionRewardId
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60d7
+    - Name: priceInDiamond
+      Entry: 3
+      Data: 0
+    - Name: priceInDollar
+      Entry: 4
+      Data: 49.99
+    - Name: priceAppleID
+      Entry: 1
+      Data: ApplePackageID_5
+    - Name: priceAndroidID
+      Entry: 1
+      Data: AndroidPackageID_5
+    - Name: createdAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: updatedAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: msPrivileges
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[PrivilegesCodeData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: PrivilegesCodeData, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60c4
+    - Name: msPrivilegeCode
+      Entry: 1
+      Data: VIP_1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: promo2
+      Entry: 7
+      Data: 6|PromotionData, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60ce
+    - Name: msPromotionCode
+      Entry: 1
+      Data: PROMO_CODE_002
+    - Name: model
+      Entry: 1
+      Data: REPEATABLE
+    - Name: title_en
+      Entry: 1
+      Data: Test Promo 2
+    - Name: title_th
+      Entry: 1
+      Data: "\u0E17\u0E14\u0E2A\u0E2D\u0E1A\u0E42\u0E1B\u0E23 2"
+    - Name: title_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_en
+      Entry: 1
+      Data: Description Test Promo 2
+    - Name: description_th
+      Entry: 1
+      Data: "Description \u0E17\u0E14\u0E2A\u0E2D\u0E1A\u0E42\u0E1B\u0E23 2"
+    - Name: description_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_11b.jpg
+    - Name: image_1_1_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_11b.jpg
+    - Name: image_1_1_Url_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_21.jpg
+    - Name: image_2_1_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_21.jpg
+    - Name: image_2_1_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_12.jpg
+    - Name: image_1_2_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_12.jpg
+    - Name: image_1_2_Url_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/dev/application/promo/promo_3_1.jpg
+    - Name: image_3_1_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/dev/application/promo/promo_3_1.jpg
+    - Name: image_3_1_Url_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_32.jpg
+    - Name: image_3_2_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_32.jpg
+    - Name: image_3_2_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: msPrivilegeIDs
+      Entry: 7
+      Data: 7|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60c4
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: priceMode
+      Entry: 1
+      Data: MONEY
+    - Name: promotionRewardId
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60cb
+    - Name: priceInDiamond
+      Entry: 3
+      Data: 0
+    - Name: priceInDollar
+      Entry: 4
+      Data: 19.99
+    - Name: priceAppleID
+      Entry: 1
+      Data: ApplePackageID_2
+    - Name: priceAndroidID
+      Entry: 1
+      Data: AndroidPackageID_2
+    - Name: createdAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: updatedAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: msPrivileges
+      Entry: 7
+      Data: 8|System.Collections.Generic.List`1[[PrivilegesCodeData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: PrivilegesCodeData, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60c4
+    - Name: msPrivilegeCode
+      Entry: 1
+      Data: VIP_1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: promo3
+      Entry: 7
+      Data: 9|PromotionData, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60d2
+    - Name: msPromotionCode
+      Entry: 1
+      Data: PROMO_CODE_003
+    - Name: model
+      Entry: 1
+      Data: REPEATABLE
+    - Name: title_en
+      Entry: 1
+      Data: Test Promo 3
+    - Name: title_th
+      Entry: 1
+      Data: "\u0E17\u0E14\u0E2A\u0E2D\u0E1A\u0E42\u0E1B\u0E23 3"
+    - Name: title_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_en
+      Entry: 1
+      Data: Description Test Promo 3
+    - Name: description_th
+      Entry: 1
+      Data: "Description \u0E17\u0E14\u0E2A\u0E2D\u0E1A\u0E42\u0E1B\u0E23 3"
+    - Name: description_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_11a.jpg
+    - Name: image_1_1_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_11a.jpg
+    - Name: image_1_1_Url_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_21.jpg
+    - Name: image_2_1_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_21.jpg
+    - Name: image_2_1_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_12.jpg
+    - Name: image_1_2_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_12.jpg
+    - Name: image_1_2_Url_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/dev/application/promo/promo_3_1.jpg
+    - Name: image_3_1_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/dev/application/promo/promo_3_1.jpg
+    - Name: image_3_1_Url_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_32.jpg
+    - Name: image_3_2_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_32.jpg
+    - Name: image_3_2_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: msPrivilegeIDs
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60c4
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: priceMode
+      Entry: 1
+      Data: MONEY
+    - Name: promotionRewardId
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60cf
+    - Name: priceInDiamond
+      Entry: 3
+      Data: 0
+    - Name: priceInDollar
+      Entry: 4
+      Data: 29.99
+    - Name: priceAppleID
+      Entry: 1
+      Data: ApplePackageID_3
+    - Name: priceAndroidID
+      Entry: 1
+      Data: AndroidPackageID_3
+    - Name: createdAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: updatedAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: msPrivileges
+      Entry: 7
+      Data: 11|System.Collections.Generic.List`1[[PrivilegesCodeData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: PrivilegesCodeData, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60c4
+    - Name: msPrivilegeCode
+      Entry: 1
+      Data: VIP_1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: promo4
+      Entry: 7
+      Data: 12|PromotionData, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60d6
+    - Name: msPromotionCode
+      Entry: 1
+      Data: PROMO_CODE_004
+    - Name: model
+      Entry: 1
+      Data: REPEATABLE
+    - Name: title_en
+      Entry: 1
+      Data: Test Promo 4
+    - Name: title_th
+      Entry: 1
+      Data: "\u0E17\u0E14\u0E2A\u0E2D\u0E1A\u0E42\u0E1B\u0E23 4"
+    - Name: title_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_en
+      Entry: 1
+      Data: Description Test Promo 4
+    - Name: description_th
+      Entry: 1
+      Data: "Description \u0E17\u0E14\u0E2A\u0E2D\u0E1A\u0E42\u0E1B\u0E23 4"
+    - Name: description_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_11b.jpg
+    - Name: image_1_1_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_11b.jpg
+    - Name: image_1_1_Url_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_21.jpg
+    - Name: image_2_1_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_21.jpg
+    - Name: image_2_1_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_12.jpg
+    - Name: image_1_2_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_12.jpg
+    - Name: image_1_2_Url_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/dev/application/promo/promo_3_1.jpg
+    - Name: image_3_1_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/dev/application/promo/promo_3_1.jpg
+    - Name: image_3_1_Url_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_32.jpg
+    - Name: image_3_2_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_32.jpg
+    - Name: image_3_2_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: msPrivilegeIDs
+      Entry: 7
+      Data: 13|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60c4
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: priceMode
+      Entry: 1
+      Data: MONEY
+    - Name: promotionRewardId
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60d3
+    - Name: priceInDiamond
+      Entry: 3
+      Data: 0
+    - Name: priceInDollar
+      Entry: 4
+      Data: 39.99
+    - Name: priceAppleID
+      Entry: 1
+      Data: ApplePackageID_4
+    - Name: priceAndroidID
+      Entry: 1
+      Data: AndroidPackageID_4
+    - Name: createdAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: updatedAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: msPrivileges
+      Entry: 7
+      Data: 14|System.Collections.Generic.List`1[[PrivilegesCodeData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: PrivilegesCodeData, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60c4
+    - Name: msPrivilegeCode
+      Entry: 1
+      Data: VIP_1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: promo5
+      Entry: 6
+      Data: 
+    - Name: promo6
+      Entry: 6
+      Data: 
+    - Name: promo7
+      Entry: 6
+      Data: 
+    - Name: promo8
+      Entry: 6
+      Data: 
+    - Name: promo9
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: PromotionPage, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60eb
+    - Name: priority
+      Entry: 3
+      Data: 200
+    - Name: layout
+      Entry: 3
+      Data: 1
+    - Name: mSPromo1_Id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60ca
+    - Name: mSPromo2_Id
+      Entry: 6
+      Data: 
+    - Name: mSPromo3_Id
+      Entry: 6
+      Data: 
+    - Name: mSPromo4_Id
+      Entry: 6
+      Data: 
+    - Name: mSPromo5_Id
+      Entry: 6
+      Data: 
+    - Name: mSPromo6_Id
+      Entry: 6
+      Data: 
+    - Name: mSPromo7_Id
+      Entry: 6
+      Data: 
+    - Name: mSPromo8_Id
+      Entry: 6
+      Data: 
+    - Name: mSPromo9_Id
+      Entry: 6
+      Data: 
+    - Name: EffectiveAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: EffectiveUntil
+      Entry: 1
+      Data: 06/27/2124 17:57:42
+    - Name: createdAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: updatedAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: promo1
+      Entry: 7
+      Data: 15|PromotionData, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60ca
+    - Name: msPromotionCode
+      Entry: 1
+      Data: PROMO_CODE_001
+    - Name: model
+      Entry: 1
+      Data: REPEATABLE
+    - Name: title_en
+      Entry: 1
+      Data: Test Promo 1
+    - Name: title_th
+      Entry: 1
+      Data: "\u0E17\u0E14\u0E2A\u0E2D\u0E1A\u0E42\u0E1B\u0E23 1"
+    - Name: title_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: title_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_en
+      Entry: 1
+      Data: Description Test Promo 1
+    - Name: description_th
+      Entry: 1
+      Data: "Description \u0E17\u0E14\u0E2A\u0E2D\u0E1A\u0E42\u0E1B\u0E23 1"
+    - Name: description_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: description_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_11a.jpg
+    - Name: image_1_1_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_11a.jpg
+    - Name: image_1_1_Url_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_1_Url_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_21.jpg
+    - Name: image_2_1_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_21.jpg
+    - Name: image_2_1_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_2_1_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_12.jpg
+    - Name: image_1_2_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_12.jpg
+    - Name: image_1_2_Url_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_1_2_Url_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/dev/application/promo/promo_3_1.jpg
+    - Name: image_3_1_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/dev/application/promo/promo_3_1.jpg
+    - Name: image_3_1_Url_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_1_Url_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_Url_en
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_32.jpg
+    - Name: image_3_2_Url_th
+      Entry: 1
+      Data: https://ygg-pet-assets.mayawizardgames.com/seed_assets/bundle_2023_11/bundle_32.jpg
+    - Name: image_3_2_zh_hant
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_zh_hans
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_de
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_fr
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_ko
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_jp
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_es
+      Entry: 1
+      Data: Please Update Information
+    - Name: image_3_2_ru
+      Entry: 1
+      Data: Please Update Information
+    - Name: msPrivilegeIDs
+      Entry: 7
+      Data: 16|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60c4
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: priceMode
+      Entry: 1
+      Data: MONEY
+    - Name: promotionRewardId
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60c7
+    - Name: priceInDiamond
+      Entry: 3
+      Data: 0
+    - Name: priceInDollar
+      Entry: 4
+      Data: 9.99
+    - Name: priceAppleID
+      Entry: 1
+      Data: ApplePackageID_1
+    - Name: priceAndroidID
+      Entry: 1
+      Data: AndroidPackageID_1
+    - Name: createdAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: updatedAt
+      Entry: 1
+      Data: 07/21/2024 17:57:42
+    - Name: msPrivileges
+      Entry: 7
+      Data: 17|System.Collections.Generic.List`1[[PrivilegesCodeData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: PrivilegesCodeData, Assembly-CSharp
+    - Name: id
+      Entry: 1
+      Data: 669d4c161df94dddf0cb60c4
+    - Name: msPrivilegeCode
+      Entry: 1
+      Data: VIP_1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: promo2
+      Entry: 6
+      Data: 
+    - Name: promo3
+      Entry: 6
+      Data: 
+    - Name: promo4
+      Entry: 6
+      Data: 
+    - Name: promo5
+      Entry: 6
+      Data: 
+    - Name: promo6
+      Entry: 6
+      Data: 
+    - Name: promo7
+      Entry: 6
+      Data: 
+    - Name: promo8
+      Entry: 6
+      Data: 
+    - Name: promo9
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  getRequestTemplate:
+    endpoint: 
+    verb: 0
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  PromotionAllEndpoint:
+    endpoint: /promotion/all
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
