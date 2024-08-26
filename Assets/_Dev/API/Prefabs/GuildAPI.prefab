@@ -1,0 +1,263 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1624810501305489746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1830752215050827901}
+  - component: {fileID: 7836386360081961699}
+  m_Layer: 0
+  m_Name: GuildAPI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1830752215050827901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624810501305489746}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7836386360081961699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624810501305489746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1013620999bd2614ea259e4c80fa3a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: OnDataUpdate
+      Entry: 6
+      Data: 
+  elementList: []
+  getRequestTemplate:
+    endpoint: 
+    verb: 0
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  AcceptRequestEndpoint:
+    endpoint: /guild/accept_request
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  CancelInviteEndpoint:
+    endpoint: /guild/Cancel_invite_player
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  CheckGuildNameEndpoint:
+    endpoint: /guild/check_valid_guild_name
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  CreateGuildEndpoint:
+    endpoint: /guild/create
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  DailyCheckInEndpoint:
+    endpoint: /guild/daily_check_in
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  DeclineRequestEndpoint:
+    endpoint: /guild/decline_request
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  DungeonsEndpoint:
+    endpoint: /guild/dungeons
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  GetGuildBuffsEndpoint:
+    endpoint: /guild/get_guild_buffs
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  GetTopRankEndpoint:
+    endpoint: /guild/get_guild_top_rank
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  GetGuildRankEndpoint:
+    endpoint: /guild/get_my_guild_rank
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  GetGuildVisitEndpoint:
+    endpoint: /guild/guild_visit
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  GetGuildIconsEndpoint:
+    endpoint: /guild/icons
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  InvitePlayerEndpoint:
+    endpoint: /guild/invite_player
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  LeaveGuildEndpoint:
+    endpoint: /guild/leave_guild
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  GuildLevelEndpoint:
+    endpoint: /guild/levels
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  GuildDataEndpoint:
+    endpoint: /guild/my_guild_data
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  RemovePlayerEndpoint:
+    endpoint: /guild/remove_player_from_guild
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  SearchEndpoint:
+    endpoint: /guild/search
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  SearchPlayerEndpoint:
+    endpoint: /guild/searchPlayers
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  SuggestEndpoint:
+    endpoint: /guild/suggest
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  UpdateGuildAnnounceEndpoint:
+    endpoint: /guild/update_guild_announce
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  UpdateGuildBuffEndpoint:
+    endpoint: /guild/update_guild_buff
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  UpdateGuildIconEndpoint:
+    endpoint: /guild/update_guild_icon
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  UpgradeGuildEndpoint:
+    endpoint: /guild/upgrade
+    verb: 2
+    parameterType: 0
+    isShowLoading: 0
+    useThisEndpointOnly: 0
+    debugMode: 0
+    extensionServices: 0
+  GuildRequestData:
+    name: 
+    email: 
+    password: 
