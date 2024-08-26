@@ -258,6 +258,4 @@ MonoBehaviour:
     debugMode: 0
     extensionServices: 0
   GuildRequestData:
-    name: 
-    email: 
-    password: 
+    name: Wonderland
