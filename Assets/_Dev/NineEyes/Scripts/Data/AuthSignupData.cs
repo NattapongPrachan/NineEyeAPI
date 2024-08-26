@@ -1,4 +1,5 @@
 using Grandora.Heimdall;
+using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,6 +25,7 @@ public class SignpResponse
 [System.Serializable]
 public class GameUser
 {
+    //[JsonProperty("id")]
     public string id;
     public string name;
     public string email;
