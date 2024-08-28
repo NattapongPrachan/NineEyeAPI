@@ -1,10 +1,7 @@
 using Grandora.Heimdall;
-using Newtonsoft.Json;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+
 [System.Serializable]
-public class AuthGuildData : NetworkData
+public class GuildAllData : NetworkData
 {
     public override string UserId => "";
 }
@@ -19,6 +16,13 @@ public class GuildResponse
     public GameUser user;
     public string token;
 }
+
+public class GuildAcceptRequestResponse : GuildAllData
+{
+    public string title;
+    public string content;
+}
+
 [System.Serializable]
 public class GuildData
 {

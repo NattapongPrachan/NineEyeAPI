@@ -1,12 +1,10 @@
 using Grandora.Heimdall;
 using Sirenix.OdinInspector;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace API.Data
 {
-    public class GuildAPIData : NetworkDataListHolder<AuthGuildData>
+    public class GuildAPIData : NetworkDataListHolder<GuildAllData>
     {
         public ClientEndpointTemplate AcceptRequestEndpoint;
         public ClientEndpointTemplate CancelInviteEndpoint;
