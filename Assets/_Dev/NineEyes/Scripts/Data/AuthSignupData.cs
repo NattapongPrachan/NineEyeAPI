@@ -7,11 +7,29 @@ using UnityEngine;
 public class AuthSignupData : NetworkData
 {
     public override string UserId => "";
+    public UserData user;
+    public string token;
+}
+[System.Serializable]
+public struct UserData
+{
+    public string id;
+    public string name;
+    public string email;
+    public string userType;
+    public string lls;
 }
 [System.Serializable]
 public class SignupData
 {
     public string name;
+    public string email;
+    public string password;
+
+}
+[System.Serializable]
+public class SigninData
+{
     public string email;
     public string password;
 

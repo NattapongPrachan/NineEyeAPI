@@ -1,4 +1,5 @@
 using Grandora.Heimdall;
+using Newtonsoft.Json;
 using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
@@ -21,7 +22,7 @@ namespace API.Data
         public ClientEndpointTemplate CurrentEndpoint;
         public ClientEndpointTemplate RefreshStatEndpoint;
         public SignupData SignupData;
-
+        public SigninData SigninData;
         [Button]
         public void RefreshToken()
         {
@@ -45,7 +46,7 @@ namespace API.Data
         [Button]
         public void Signin()
         {
-            var request = CreateRequest(SigninEndpoint, null, Result =>
+            var request = CreateRequest(SigninEndpoint, SigninData, Result =>
             {
             });
             Debug.Log(request.endpoint);
@@ -57,7 +58,7 @@ namespace API.Data
             Debug.Log(SignupData.name);
             var request = CreateRequest(SignupEndpoint, SignupData, Result =>
             {
-
+                this.RefreshByJSON(Result.jsonObject);
                 Debug.Log("Result " + Result);
             });
             Debug.Log(request.endpoint);
@@ -66,7 +67,7 @@ namespace API.Data
         [Button]
         public void SocialLogin()
         {
-            var request = CreateRequest(SocialLoginEndpoint, null, Result =>
+            var request = CreateRequest(SocialLoginEndpoint, SignupData, Result =>
             {
             });
             ServerConnector.Instance.Request(request);
