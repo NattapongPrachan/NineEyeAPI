@@ -7,6 +7,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Networking;
 using Grandora.ServerConnect;
+using Newtonsoft.Json;
 
 namespace Grandora.Heimdall
 {
@@ -110,7 +111,8 @@ namespace Grandora.Heimdall
         #region add dataform
         void InjectJsonIntoUnityWebRequest(ClientRequest clientRequest, UnityWebRequest unityWebRequest)
         {
-            var json = clientRequest.jsonPostData;
+            var json = JsonConvert.SerializeObject(clientRequest.jsonPostData);
+            Debug.Log("Json postJsonData" + clientRequest.jsonPostData);
             if (json == null)
                 return;
 
@@ -162,7 +164,9 @@ namespace Grandora.Heimdall
         }
         static byte[] CreateBodyTypeRequestRawData(object json, UnityWebRequest request)
         {
+            Debug.Log("json " + json);
             var rawData = Encoding.UTF8.GetBytes(json.ToString());
+            Debug.Log("rawdata " + rawData);
             return rawData;
         }
         #endregion
@@ -185,12 +189,10 @@ namespace Grandora.Heimdall
                 return Application.isEditor && config.isUseEditorAccessToken;
             }
             var accessTokenToInject = IsShouldUseEditorAccessToken() ? config.editorAccessToken : accessToken;
+            request.SetRequestHeader(AccessTokenFieldname, accessTokenToInject);
             print("requestHeader " + AccessTokenFieldname);
             print("AccessTokenPrefix " + AccessTokenPrefix);
             print("AccessToken Toinject " + accessTokenToInject);
-#if GRANDORA_CLIENT // Headless ยังไม่จำเป็นต้อง Set Token (ตอนนี้)
-            request.SetRequestHeader(AccessTokenFieldname, accessTokenToInject);
-#endif
         }
         void InjectAdditionalRequestHeaders(UnityWebRequest request)
         {
@@ -220,6 +222,7 @@ namespace Grandora.Heimdall
             if(clientRequest.extensions == ExtensionServices.Default)
             {
                 ServerConnectionURL connection = config.serverConnectionURL.FirstOrDefault(url => url.serverConnected == config.targetServer);
+                Debug.Log("connectrion " + connection);
                 baseUrl = connection.GetURL();
             }
             else

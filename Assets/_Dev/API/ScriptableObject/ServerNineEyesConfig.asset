@@ -19,11 +19,11 @@ MonoBehaviour:
   isForceUseServerDebugModeFormThisConfig: 0
   serverDebugMode: 0
   URL: https://ygg-pet-api-dev.mayawizardgames.com
-  targetServer: 1
+  targetServer: 0
   serverConnectionURL:
   - publicURL: https://ygg-pet-api-dev.mayawizardgames.com
     internalURL: 
-    serverConnected: 1
+    serverConnected: 0
   extensionServerConnectionURL: []
   timeoutInSeconds: 10
   delayBetweenEachChainedREquestInSeconds: 1

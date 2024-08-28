@@ -58,15 +58,15 @@ namespace Grandora.Heimdall
                     NullValueHandling = NullValueHandling.Ignore
                 });
                 jsonObject = JObject.Parse(deserializeString);
-                #region try to get Token
-                    var tokenJson = GetStringValue(jsonObject,TokenFiledName);
-                    if(!string.IsNullOrEmpty(tokenJson))
-                    {
-                        var token = JsonConvert.DeserializeObject<TokenData>(tokenJson);
-                        ServerConnector.Instance.SetTokenData(token);
-                       // GraphConnector.Instance.SetTokenData(token);
-                    }
-                #endregion
+                //#region try to get Token
+                //    var tokenJson = GetStringValue(jsonObject,TokenFiledName);
+                //    if(!string.IsNullOrEmpty(tokenJson))
+                //    {
+                //        var token = JsonConvert.DeserializeObject<TokenData>(tokenJson);
+                //        ServerConnector.Instance.SetTokenData(token);
+                //       // GraphConnector.Instance.SetTokenData(token);
+                //    }
+                //#endregion
                 message = request.error;
                 var messageFormResponse = GetStringValue(jsonObject,MessageFieldName);
                 if(!string.IsNullOrEmpty(messageFormResponse))
